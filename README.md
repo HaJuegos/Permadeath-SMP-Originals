@@ -26,13 +26,21 @@
 - Todo en el add-on es automatico.
 - Si deseas instalar el mundo ya creado, por favor sigue estos pasos si no concoces como se hace: [**__Ver imagen__**](https://media.discordapp.net/attachments/964653057390546954/997570733473550536/exmple.png)
 - Para revivir a un compañero, deja un bloque de comandos en repetir con el siguiente comando:
-> /scoreboard set "nombre del jugador con comillas" ban 0 y luego el comando en el chat del juego: /execute "nombre del jugador" ~ ~ ~ function revivir_lol
+> `/scoreboard set "nombre del jugador con comillas" ban 0`
+y luego el comando en el chat del juego: 
+> `/execute "nombre del jugador" ~ ~ ~ function revivir_lol`
+
 - Si quieres aumentar las horas del death train por dias, pon el siguiente comando:
-> /function aumentar_dia y para regresarlo pon: /function regresar_dia
+	> `/function aumentar_dia` 
+y para regresarlo pon: 
+	> `/function regresar_dia`
+
 - Tu boton de interaccion es diferente en las distintas plataformas:
-> PC: Click derecho o el que hayas asignado
-> Telefono: Manten el dedo en tu pantalla
-> Consolas: El boton llamado "interactuar" que salga en la pantalla o que hayas asignado de tu mando o controlador
+	> PC: `Click derecho o el que hayas asignado`
+	
+	> Telefono: `Manten el dedo en tu pantalla`
+	
+	> Consolas: `El boton llamado "interactuar" que salga en la pantalla o que hayas asignado de tu mando o controlador`
 
 ## OPCIONES EXPERIMENTALES
 - _Este add-on, depende de opciones experimentales, ya los puedes ver en el template del mundo y cuando lo crees, Procura tenerlos activos para no tener problemas algunos._
