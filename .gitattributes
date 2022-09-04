@@ -1,0 +1,4 @@
+*.json linguist-detectable=true
+test/**/*/*.json linguist-vendored=true
+*.js linguist-detectable=true
+test/**/*/*.js linguist-vendored=true
