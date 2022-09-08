@@ -162,11 +162,10 @@ Todos estos te atacaran a plena vista y aumentaran un poco su velocidad para ata
 - Todos los ravagers ahora tienen Fuerza II y Velocidad I y su drop aumenta a 20% (totems)
 - Aparece la armadura de Netherite, este se puede:
 	- Obtener por medio de:
-	- GigaSlimes; Spawnean con mas tamaño, vida y daño (Pechera)
-	- GigaMagma Cubes; Spawnean con mas tamaño, vida y daño (Pantalones)
-	- Ghast Demoniacos; Estos pueden spawnear entre 40 a 60 de vida y las bolas de fuego tienen de 3 a 5 de poder de explosion (Botas)
-	- Arañas de cueva; Efectos de pocion y Skeletons de clase (Casco)
-	
+		- GigaSlimes; Spawnean con mas tamaño, vida y daño (Pechera)
+		- GigaMagma Cubes; Spawnean con mas tamaño, vida y daño (Pantalones)
+		- Ghast Demoniacos; Estos pueden spawnear entre 40 a 60 de vida y las bolas de fuego tienen de 3 a 5 de poder de explosion (Botas)
+		- Arañas de cueva; Efectos de pocion y Skeletons de clase (Casco)
 	- Al llevar la armadura completa puesta, se te agrega mas vida (28 de vida) (vuelves a tener 20 si no la llevas puesta), Esta armadura es completamente indestructible.
 
 • Dia 30:
@@ -192,6 +191,93 @@ Todos estos te atacaran a plena vista y aumentaran un poco su velocidad para ata
 - Los SilverFish y El Endermite ahora tienen los 5 tipos de efectos de la lista de los tipos de arañas
 - Los Shulkers y Bolas de shulkers pueden dejar al golpear o morir, una tnt y el shulker tiene un 20% de posibilidad de dejarte un Caparazon de Shulker inmune a explosiones y despawn
 - Aparecen EnderGhast y EnderCreepers en el End.
+
+• Dia 40:
+
+- Todos los jugadores, se les reemplazara 5 slots de su inventario por el item llamado "vacio estructural"
+- Se habilita el PVP
+- Ya no son obtenibles todo tipo de antorcha
+- Todas las nuevas estructuras ahora no tendran nada en loot (cofres)
+- Todos los jugadores pierden 4 corazones
+- 3% de posibilidad de fallar un totem y gastaras uno de mas
+- El Aliento del dragon ahora se obtiene por medio de las Frutas del End
+- Aparecen mobs hostiles en las islas champiñon y en la deep dark
+- El drop del Shulker ahora cambia a 2%
+- 1% de posibilidad de que los endermans sean hostiles
+- Los phantoms llevan ahora Esqueletos de Clase
+- Los Creepers ahora llevan Velocidad y Resistencia II
+- Los Iron Golems ahora llevan Fuerza I
+- Todos los Guardianes ahora llevan Resistencia II y Velocidad III
+- Las Arañas normales ahora son de cueva
+- Los Zombies ahora son Vindicadores con Fuerza I y tienen doble de vida
+- Los Perros ahora son Gatos
+- Las Vacas, Ovejas, Cerdos, Pollos y Champivacas ahora son Ravagers
+- Los Endermans en el Nether ahora son Ender Creepers
+- Las brujas ahora:
+	- Tienen Doble de vida y Velocidad II
+	- Lanza pociones de: Daño Instantaneo IV, Veneno III x 5m o Lentitud V x 20s
+
+- Hay una minima posibilidad entre 10000 de recibir 1m de ceguera si estas en lluvia
+- Aparece la Super Golden Apple +:
+	- Se craftea con 8 lingotes de oro en cada lado y una manzana de oro en medio
+	- Esta te proporciona Health Boost I x 5m
+
+- Aparece la Hyper Golden Apple +:
+	- Se craftea con 8 bloques de oro en cada lado y una manzana de oro en medio
+	- Solo se puede comer 1 vez y te agrega 2 corazones permanentes
+
+- Aparecen los Gatos SuperNova:
+	- Su poder de explosion es de: 124 en radio
+
+- Aparece la Reliquia del Fin:
+	- Esta se craftea con un bloque de diamante en medio y dos shulkers encima y por debajo
+	- Te regresa los slots bloqueados al tenerlos en el inventario
+	- Ahora se pueden descraftear las cajas de shulker
+
+- Se genera el portal hacia el "The Beginning"
+	- Si nadie lo encuentra hasta el dia 50, no se generara
+	- No se puede entrar a este portal hasta el dia 50
+	- Se generara cerca de 2506 96 1915 siempre
+
+- Los Ghast Demoniacos ahora son un 75% Ghast FLotantes:
+	- Ghast Flotante:
+		- Sus Bolas de fuego dan: Levitacion de nivel 50 x 20s Y Wither V x 20s
+		- No explotan ni hacen daño al impactar
+
+- Aparece El Jockey Ravager del Nether:
+	- El mob principal(base) es un ravager, llamado "Ultra Ravager":
+		- Puede Dropear 1 totem y tiene 250 de vida, tambien lleva Velocidad II y Fuerza II
+
+	- El Mob Segundario es un Zombie Pigman, llamado "Carlos el Esclavo":
+		- Puede Dropear 32 de oro, tiene 75 de vida, Una armor Full malla con Proteccion II y una espada con empuje X
+
+	- El Ultimo Mob es un Aldeano, llamado "Jess la Emperatriz":
+		- Puede Dropear 2 manzanas de Oro, Tiene 120 de vida
+
+- Aparecen los zombie pigman Jockeys:
+	- Pigman sobre cerdo:
+		- El cerdo lleva los mismos efectos de una araña. El pigman lleva una armadura de netherite rosa y hace 20 de daño
+
+	- Pigman Sobre abeja:
+		- La abeja tiene 50 corazones
+		- El pigman lleva armadura de netherite amarilla y hace 6 de daño
+
+	- Pigman sobre Ghast:
+		- El ghast no es peligroso, pero se teletrasporta el 80% de las veces
+		- EL Pigman tiene Velocidad IV y hace 4 de daño
+
+	- Pigman sobre Magma Cube:
+		- Ambos tienen medio corazon y el pigman es inmune a los proyectiles
+
+- Todos estos pigmans solo pueden ser generados por un mismo pigman, Es decir que es necesario que un zombie pigman se genere para que se remplaze por un jockey, La posibilidad de que esto pase es un 10% de 100% por defecto en este dia.
+
+- Aparece el modulo de Muerte:
+	- Es un Spider Jockey conformado por:
+		- Araña de cueva normal(base)
+		- Shulker de Color Rojo(Segundario) con el mismo comportamiento
+		- Una Vagoneta con Un Mob Spawner que spawnea pociones de daño Instantaneo IV (Ultimo)
+
+- Este se generara por medio de la araña de cueva con un 10% de posibilidad de generarse en este mismo, el unico mob no despawneable de forma natural es la vagoneta con spawner. Tampoco hay forma de librarse de el (si no usas comandos claro).
 
 Att: Ha Juegos
 ```
