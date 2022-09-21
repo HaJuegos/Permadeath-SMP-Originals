@@ -1,22 +1,26 @@
 # DESCARGAS RAPIDAS
 
 - Descargar Todo del add-on (Mundo, comportamientos y texturas):
-	- [**__DESCARGAR TODO__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/tener_todo_del_addon.mcaddon)
+	- [**__DESCARGAR TODO__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/todo_del_addon.mcaddon)
 
 - Add-on Por separado:
 
 	- [**__DESCARGAR TEXTURAS__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/mcaddon-mcpack/texturas.mcpack)
-	- [**__DESCARGAR DIAS POR SEPARADO__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/mcaddon-mcpack/comportamientos_separados.mcpack)
+	- [**__DESCARGAR DIAS POR SEPARADO__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/mcaddon-mcpack/comportamientos_separados.mcaddon)
 	- [**__DESCARGAR DIAS EN 1 SOLO ADD-ON__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/mcaddon-mcpack/comportamiento_junto.mcpack)
 
 - Mundo Template con todo ya configurado:
 
-	- [**__DESCARGAR MUNDO__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/mundo_ya_creado/Mundo_con_todo_ya_hecho.mctemplate)
+	- [**__DESCARGAR MUNDO__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/mundo_ya_creado/Mundo_con_todo_ya_hecho.mcpack)
 
 - Archivos Zip para uso libre:
 
 	- [**__DESCARGAR TEXTURAS__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/archivos_zip/texturas.zip)
-	- [**__DESCARGAR COMPORTAMIENTOS__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/archivos_zip/todos_los_comportamientos.zip)
+	- [**__DESCARGAR COMPORTAMIENTOS__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/archivos_zip/todos%20los%20comportamientos.zip)
+
+- Opciones Experimentales:
+	
+	- [**__MIRAR OPCIONES EXPERIMENTALES__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/tree/main/Descargas#opciones-experimentales)
 	
 ### ¿Que trae el Add-on?
 
