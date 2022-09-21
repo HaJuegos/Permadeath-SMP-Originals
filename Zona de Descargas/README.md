@@ -20,7 +20,7 @@
 
 - Opciones Experimentales:
 	
-	- [**__MIRAR OPCIONES EXPERIMENTALES__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/tree/main/Descargas#opciones-experimentales)
+	- [**__MIRAR OPCIONES EXPERIMENTALES__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/tree/main/Zona%20de%20Descargas#opciones-experimentales)
 	
 ### ¿Que trae el Add-on?
 
