@@ -7,11 +7,11 @@
 
 	- [**__DESCARGAR TEXTURAS__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/mcaddon-mcpack/texturas.mcpack)
 	- [**__DESCARGAR DIAS POR SEPARADO__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/mcaddon-mcpack/comportamientos_separados.mcaddon)
-	- [**__DESCARGAR DIAS EN 1 SOLO ADD-ON__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/mcaddon-mcpack/comportamiento_junto.mcpack)
+	- [**__DESCARGAR DIAS EN 1 SOLO ADD-ON__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/mcaddon-mcpack/comportamiento_junto.mcaddon)
 
 - Mundo Template con todo ya configurado:
 
-	- [**__DESCARGAR MUNDO__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/mundo_ya_creado/Mundo_con_todo_ya_hecho.mcpack)
+	- [**__DESCARGAR MUNDO__**](https://github.com/HaJuegos/Permadeath-SMP-Originals/raw/main/Zona%20de%20Descargas/mundo_ya_creado/Mundo_con_todo_ya_hecho.mctemplate)
 
 - Archivos Zip para uso libre:
 
@@ -25,7 +25,7 @@
 ### ¿Que trae el Add-on?
 
 ```txt
-Permadeath Originals Add-on - Beta v0.0.1 By Ha Juegos
+Permadeath Originals Add-on - Beta v0.0.2 By Ha Juegos Cat!
 
 ** Este Add-on aun esta en fase beta y puede tener errores inesperados, por favor si encuentras algo raro, reportalo en: https://discord.gg/WH9KpNWXUz
 
@@ -288,6 +288,6 @@ Att: Ha Juegos
 ```
 ## Opciones experimentales:
 
-![New](https://cdn.discordapp.com/attachments/997603479822536794/1015812030764163082/1.png)
+![New](https://cdn.discordapp.com/attachments/997603479822536794/1035704906075603045/unknown.png)
 
-![old](https://cdn.discordapp.com/attachments/997603479822536794/1015812031028412506/2.png)
+![old](https://cdn.discordapp.com/attachments/997603479822536794/1035704412317945948/unknown.png)

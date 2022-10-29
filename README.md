@@ -45,9 +45,9 @@ y para regresarlo pon:
 ## OPCIONES EXPERIMENTALES
 - _Este add-on, depende de opciones experimentales, ya los puedes ver en el template del mundo y cuando lo crees, Procura tenerlos activos para no tener problemas algunos._
 
-![New](https://cdn.discordapp.com/attachments/997603479822536794/1015812030764163082/1.png)
+![New](https://cdn.discordapp.com/attachments/997603479822536794/1035704906075603045/unknown.png)
 
-![old](https://cdn.discordapp.com/attachments/997603479822536794/1015812031028412506/2.png)
+![old](https://cdn.discordapp.com/attachments/997603479822536794/1035704412317945948/unknown.png)
 
 ## COMO INSTALAR EL ADD-ON EN SERVIDORES
 
