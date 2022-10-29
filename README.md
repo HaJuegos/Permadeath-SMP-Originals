@@ -12,7 +12,7 @@
   <a href="https://github.com/HaJuegos/HardPlus-Minecraft-Difficulty"><img src="https://img.shields.io/github/stars/HaJuegos/Permadeath-SMP-Originals?label=Estrellas%20En%20Total&style=plastic&logo=github&color=blueviolet" alt="GitHub Stars "/></a>
 </p>
 <p align="center">
-  <a href="https://twitter.com/ha_juegos?s=09"><img src="https://img.shields.io/twitter/follow/ha_juegos?style=plastic&color=success&logo=twitter&label=Sigueme%20en%20Twitter" alt="Twitter "/></a>
+  <a href="https://twitter.com/ha_juegos?s=09"><img src="https://img.shields.io/twitter/follow/Ha_Juegos_Cat?style=plastic&color=success&logo=twitter&label=Sigueme%20en%20Twitter" alt="Twitter "/></a>
   <a href="https://www.youtube.com/watch?v=SWd6QM0TTJo"><img src="https://img.shields.io/youtube/views/SWd6QM0TTJo?style=plastic&logo=youtube&color=red&label=Video%20Tutorial" alt="Youtube "/></a>
 </p>
 
