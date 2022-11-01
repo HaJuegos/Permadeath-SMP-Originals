@@ -7,22 +7,22 @@
 </p>
 
 <p align="center">
-  <a href="https://discord.gg/9jZHkhu86P"><img src="https://img.shields.io/discord/782053401281429504?style=plastic&color=red&logo=discord&label=Server%20De%20Discord" alt="Discord "/></a>
+  <a href="https://discord.gg/WH9KpNWXUz"><img src="https://img.shields.io/discord/782053401281429504?style=plastic&color=red&logo=discord&label=The%20Games%20Store%20Server" alt="Discord "/></a>
   <a href="https://ko-fi.com/hajuegos0710"><img src="https://img.shields.io/npm/v/express?url=https://ko-fi.com/hajuegos0710&style=plastic&logo=kofi&label=Doname%20Aqui!&color=inactive" alt="Ko-Fi "/></a>
-  <a href="https://github.com/HaJuegos/HardPlus-Minecraft-Difficulty"><img src="https://img.shields.io/github/stars/HaJuegos/Permadeath-SMP-Originals?label=Estrellas%20En%20Total&style=plastic&logo=github&color=blueviolet" alt="GitHub Stars "/></a>
+  <a href="https://github.com/HaJuegos/Permadeath-SMP-Originals"><img src="https://img.shields.io/github/stars/HaJuegos/Permadeath-SMP-Originals?label=Estrellas%20En%20Total&style=plastic&logo=github&color=blueviolet" alt="GitHub Stars "/></a>
 </p>
 <p align="center">
-  <a href="https://twitter.com/ha_juegos?s=09"><img src="https://img.shields.io/twitter/follow/Ha_Juegos_Cat?style=plastic&color=success&logo=twitter&label=Sigueme%20en%20Twitter" alt="Twitter "/></a>
+  <a href="https://twitter.com/Ha_Juegos_Cat"><img src="https://img.shields.io/twitter/follow/Ha_Juegos_Cat?style=plastic&color=success&logo=twitter&label=Sigueme%20en%20Twitter" alt="Twitter "/></a>
   <a href="https://www.youtube.com/watch?v=SWd6QM0TTJo"><img src="https://img.shields.io/youtube/views/SWd6QM0TTJo?style=plastic&logo=youtube&color=red&label=Video%20Tutorial" alt="Youtube "/></a>
 </p>
 
 ## NOTAS DE USO
 
-- Este Add-on fue creado unicamente por Ha Juegos#0123 y pertenece a Ha Juegos#0123, Cualquier copia o modificacion no autorizada o subida, Links de descargas externos, Subir contenido con el add-on sin dejar permisos y decir que es de tu propiedad. es completamente sancionable. Para mas informacion sobre tus modificaciones o otro tipo de cosa, contactame en Privado en discord (Ha Juegos#0123), via twitter (https://twitter.com/Ha_Juegos_Cat) o via correo (hajuegos87@gmail.com). Gracias por descargar y probar este add-on :D. Se que se puede mejorar bastante con el tiempo para llegar a una version definitiva. Disfruta!. Si viste un bug o quiere reportar algo para mejorar, puedes hacerlo directamente en este proyecto de GitHub (https://github.com/HaJuegos/Permadeath-SMP-Originals/issues/new/choose) o en mi server de discord (https://discord.gg/9jZHkhu86P) Cualquier reporte de bug o idea para mejorar se agradecera bastante o hasta se puede recompensar en el futuro.
+- Este Add-on fue creado unicamente por Ha Juegos Cat! y pertenece a Ha Juegos Cat!, Cualquier copia o modificacion no autorizada o subida, Links de descargas externos, Subir contenido con el add-on sin dejar permisos y decir que es de tu propiedad. es completamente sancionable. Para mas informacion sobre tus modificaciones o otro tipo de cosa, contactame en Privado en discord (HaJuegos Cat!#0069, via twitter (https://twitter.com/Ha_Juegos_Cat) o via correo (hajuegos87@gmail.com). Gracias por descargar y probar este add-on :D. Se que se puede mejorar bastante con el tiempo para llegar a una version definitiva. Disfruta!. Si viste un bug o quiere reportar algo para mejorar, puedes hacerlo directamente en este proyecto de GitHub (https://github.com/HaJuegos/Permadeath-SMP-Originals/issues/new/choose) o en mi server de discord (https://discord.gg/WH9KpNWXU) Cualquier reporte de bug o idea para mejorar se agradecera bastante o hasta se puede recompensar en el futuro.
 
 ## GUIA DE USO
 
-- **El Add-on solo soporta la version 1.19.20/21/22 en adelante de Minecraft Bedrock. Esto no es definitivo ya que cualquier version oficial futura, puede provocar daños o bugs inesperados**.
+- **El Add-on solo soporta la version 1.19.40 de Minecraft Bedrock. Esto no es definitivo ya que cualquier version oficial futura, puede provocar daños o bugs inesperados**.
 - Todo en el add-on es automatico.
 - Si deseas instalar el mundo ya creado, por favor sigue estos pasos si no concoces como se hace: [**__Ver imagen__**](https://media.discordapp.net/attachments/964653057390546954/997570733473550536/exmple.png)
 - Para revivir a un compañero, deja un bloque de comandos en repetir con el siguiente comando:
