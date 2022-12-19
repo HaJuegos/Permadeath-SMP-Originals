@@ -1,0 +1,58 @@
+## This file belongs to: "Ha Juegos" (Copyright 2022), Any unauthorized modification or change will be penalized, more information to authorize your copies you can contact me on discord: https://discord.gg/p6a7tqVJxn
+## My youtube channel for more updates: https://www.youtube.com/c/HaJuegos
+## ********************************************************************
+## Este archivo pertenece a: "Ha Juegos" (Copyright 2022), Cualquier modificación o cambio no autorizado será sancionado, más información para autorizar tus copias puedes contactar conmigo en discord: https://discord.gg/p6a7tqVJxn
+## Mi canal de youtube para más actualizaciones: https://www.youtube.com/c/HaJuegos
+
+disconnect.kicked=§cHas sido ¡PERMABANEADO!
+disconnect.kicked.reason=§cHas sido ¡PERMABANEADO!
+disconnect.removed=§cHas sido ¡PERMABANEADO!
+disconnect.removed.reason=§cHas sido ¡PERMABANEADO!
+
+## Entitys
+
+entity.ha:death_train.name=§4Sistema Death Train§r
+
+entity.ha:area_cloud_any_effects.name=§6§lPERMADEATH DEMON§r
+entity.ha:area_cloud_alert_damage.name=§6§lPERMADEATH DEMON§r
+entity.ha:area_cloud_white.name=§6§lPERMADEATH DEMON§r
+entity.ha:area_lava_bedrock.name=§6§lPERMADEATH DEMON§r
+entity.ender_dragon.name=§6§lPERMADEATH DEMON§r
+
+entity.ha:summon_portal.name=Entidad que no genera mas portales
+
+entity.ha:spawner_minecart.name=Vagoneta con un Generador de Mobs
+
+## Items 
+
+item.ha:leather_red_boots=Botas de cuero pero rojas
+item.ha:leather_red_chestplate=Túnica de cuero pero roja
+item.ha:leather_red_helmet=Gorra de cuero pero roja
+item.ha:leather_red_leggings=Pantalones de cuero pero roja
+
+item.netherite_boots.name=§5Botas de Netherite§f
+item.netherite_leggings.name=§5Pantalones de Netherite§f
+item.netherite_chestplate.name=§5Pechera de Netherite§f
+item.netherite_helmet.name=§5Casco de Netherite§f
+
+item.ha:shulker_shell=Caparazon de Shulker
+
+item.ha:relic_of_the_end=§6Reliquia del Fin§r
+item.ha:air_structure=Vacio Estructural
+
+item.ha:super_golden_apple=§6SUPER Golden Apple+
+item.ha:stack_gold_ingot=Lingote de Oro (8 Unidades)
+
+item.ha:hyper_golden_apple=§6HYPER Golden Apple+
+item.ha:stack_gold_block=Bloque de Oro (8 Unidades)
+
+## Rose
+item.ha:netherite_helmet_rose=Casco de netherite rosa
+item.ha:netherite_chestplate_rose=Pechera de netherite rosa
+item.ha:netherite_leggings_rose=Pantalones de netherite rosa
+item.ha:netherite_boots_rose=Botas de netherite rosa
+## Yellow
+item.ha:netherite_helmet_yellow=Casco de netherite amarilla
+item.ha:netherite_chestplate_yellow=Pechera de netherite amarilla
+item.ha:netherite_leggings_yellow=Pantalones de netherite amarilla
+item.ha:netherite_boots_yellow=Botas de netherite amarilla
