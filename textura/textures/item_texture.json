@@ -1,0 +1,64 @@
+/* Este archivo fue editado por @Ha_Juegos_Cat!. Cualquier modificacion que hagas a este mismo, Por favor deja el credito inicial que merece del creador del add-on para no tener problemas!. Si quieres contactarme hablame en mi Server de Discord: https://discord.gg/9jZHkhu86P
+Mi Canal de YouTube: https://www.youtube.com/c/HaJuegos */
+/* This file was edited by @Ha_Juegos_Cat!. Any modifications you make to it, please leave the initial credit to the creator of the add-on so you don't have problems. If you want to contact me talk to me on my Discord Server: https://discord.gg/9jZHkhu86P
+My YouTube Channel: https://www.youtube.com/c/HaJuegos */
+{
+	"resource_pack_name": "vanilla",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		// Armors
+		"leather_red_helmet": {
+			"textures" : "textures/items/leather_red_armor/helmet"
+		},
+		"leather_red_chestplate": {
+			"textures" : "textures/items/leather_red_armor/chestplate"
+		},
+		"leather_red_leggings": {
+			"textures" : "textures/items/leather_red_armor/leggings"
+		},
+		"leather_red_boots": {
+			"textures" : "textures/items/leather_red_armor/boots"
+		},
+		"yellow_boots": {
+			"textures" : "textures/items/color_armors/yellow/boots"
+		},
+		"yellow_helmet": {
+			"textures" : "textures/items/color_armors/yellow/helmet"
+		},
+		"yellow_chestplate": {
+			"textures" : "textures/items/color_armors/yellow/chestplate"
+		},
+		"yellow_leggings": {
+			"textures" : "textures/items/color_armors/yellow/leggings"
+		},
+		"rose_boots": {
+			"textures" : "textures/items/color_armors/rose/boots"
+		},
+		"rose_helmet": {
+			"textures" : "textures/items/color_armors/rose/helmet"
+		},
+		"rose_chestplate": {
+			"textures" : "textures/items/color_armors/rose/chestplate"
+		},
+		"rose_leggings": {
+			"textures" : "textures/items/color_armors/rose/leggings"
+		},
+		//Items
+		"vacio_estructura": {
+			"textures" : "textures/items/air_structure"
+		},
+		"reliquia_final": {
+			"textures" : "textures/items/end_relic"
+		},
+		"stack_gold_ingot": {
+			"textures": "textures/items/8_gold_ingot"
+		},
+		"stack_gold_block": {
+			"textures": "textures/items/8_gold_block"
+		}
+	}
+}
+/* Este archivo fue editado por @Ha_Juegos_Cat!. Cualquier modificacion que hagas a este mismo, Por favor deja el credito inicial que merece del creador del add-on para no tener problemas!. Si quieres contactarme hablame en mi Server de Discord: https://discord.gg/9jZHkhu86P
+Mi Canal de YouTube: https://www.youtube.com/c/HaJuegos */
+/* This file was edited by @Ha_Juegos_Cat!. Any modifications you make to it, please leave the initial credit to the creator of the add-on so you don't have problems. If you want to contact me talk to me on my Discord Server: https://discord.gg/9jZHkhu86P
+My YouTube Channel: https://www.youtube.com/c/HaJuegos */
