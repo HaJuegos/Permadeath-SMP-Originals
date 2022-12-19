@@ -1,0 +1,48 @@
+/* Este archivo fue editado por @Ha_Juegos_Cat!. Cualquier modificacion que hagas a este mismo, Por favor deja el credito inicial que merece del creador del add-on para no tener problemas!. Si quieres contactarme hablame en mi Server de Discord: https://discord.gg/9jZHkhu86P
+Mi Canal de YouTube: https://www.youtube.com/c/HaJuegos */
+/* This file was edited by @Ha_Juegos_Cat!. Any modifications you make to it, please leave the initial credit to the creator of the add-on so you don't have problems. If you want to contact me talk to me on my Discord Server: https://discord.gg/9jZHkhu86P
+My YouTube Channel: https://www.youtube.com/c/HaJuegos */
+
+[2022] [Ha Juegos]
+
+Este complemento no debe ser distribuido o compartido si esta modificado, tambien debe informarse de cualquier modificacion publica de este mismo para no tener problemas con ello mismo. Si necesitas ayuda o informacion de contacto unete a mi Server de Discord.
+
+Mis Redes Sociales:
+Youtube: https://www.youtube.com/c/HaJuegos
+Twitter: https://twitter.com/ha_juegos
+Ko-fi Pagina de donaciones: https://ko-fi.com/hajuegos0710
+Comunidad de Discord: https://discord.gg/9jZHkhu86P
+Twitch: https://www.twitch.tv/ha_juegos
+
+
+¡ACLARACION!:
+Este complemento no esta autorizado ni promocionado por su creador original: ElRichMC. Todos los respectivos creditos y contenido original de la misma serie hacia el, yo solo hago una recreacion de este mismo sin lucrarme o robar contenido del mismo. Porfavor ve y apoya a los creadores originales de la serie.
+
+Creadores originales de Permadeath Java SMP:
+
+ElRichMC:
+Youtube Channel: https://youtube.com/user/ElRichMC
+Twitter: https://twitter.com/ElRichMC
+Twitch: https://twitch.tv/elrichmc
+
+Kernel Freeze:
+Youtube Channel: https://youtube.com/c/KernelFreeze
+Twitter: https://twitter.com/KernelFreeze
+Twitch: https://twitch.tv/kernelfreeze
+
+----------------------------------------------------------------------------------------------------
+
+
+Creador del Icono del Add-on:
+
+LouisDoodles:
+Twitter: https://twitter.com/LouisIsDoodling
+Twich: https://www.twitch.tv/LouisDoodles_
+Discord: https://discord.gg/gcPfR9YFP6
+
+Creador del Codigo Script de Gametest:
+
+Convex:
+Twich: https://www.twitch.tv/convex03
+Youtube: https://www.youtube.com/channel/UCOH8ibZZ2284cOJDQKmYBEA
+Twitter: https://twitter.com/convex__
