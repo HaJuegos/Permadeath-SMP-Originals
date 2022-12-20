@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cdn.discordapp.com/attachments/997603479822536794/1015812094525964288/pack_icon.png" alt="Addon Icon" width=300>
+  <img src="https://cdn.discordapp.com/attachments/997603479822536794/1015812094525964288/pack_icon.png" alt="Addon Icon" width=450>
   <h3 align="center">Permadeath SMP Add-on Originals</h3>
   
  <p align="center">
