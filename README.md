@@ -18,17 +18,29 @@
 
 ## NOTAS DE USO
 
-- Este Add-on fue creado unicamente por Ha Juegos Cat! y pertenece a Ha Juegos Cat!, Cualquier copia o modificacion no autorizada o subida, Links de descargas externos, Subir contenido con el add-on sin dejar permisos y decir que es de tu propiedad. es completamente sancionable. Para mas informacion sobre tus modificaciones o otro tipo de cosa, contactame en Privado en discord (HaJuegos Cat!#0069, via twitter (https://twitter.com/Ha_Juegos_Cat) o via correo (hajuegos87@gmail.com). Gracias por descargar y probar este add-on :D. Se que se puede mejorar bastante con el tiempo para llegar a una version definitiva. Disfruta!. Si viste un bug o quiere reportar algo para mejorar, puedes hacerlo directamente en este proyecto de GitHub (https://github.com/HaJuegos/Permadeath-SMP-Originals/issues/new/choose) o en mi server de discord (https://discord.gg/WH9KpNWXU) Cualquier reporte de bug o idea para mejorar se agradecera bastante o hasta se puede recompensar en el futuro.
+- Este add-on fue completamente desarrollado por Ha Juegos Cat! y los scripts fueron creados por Convex, cualquier re-uso, link diferente, autocomercio o alguna cosa no autorizada por mi Ha Juegos Cat!, Sera sancionada. Por favor si vas a usar este add-on, recuerda dejar creditos a todos los que aparecen en el archivo con el mismo nombre. Si quieres usar algo de este add-on, por favor pide permiso personalmente en mi [Discord](https://discord.gg/9jZHkhu86P) o por Mensaje Privado de [Twitter](https://twitter.com/Ha_Juegos_Cat) y resolveremos cualquier duda que tengas. **No hagas links con descargas directas de este add-on o me vere en la obligacion de tumbarte ese link.**
+
+## DESCARGAS RAPIDAS
+
+[**__CLICKEAME PARA DESCARGAR TODO EL ADD-ON__**](https://github.com/HaJuegos/fast_downloads/raw/main/perma/TODO_del_addon.mcaddon)
+
+[**__CLICKEAME PARA DESCARGAR SOLO EL ADD-ON POR SEPARADO__**](https://github.com/HaJuegos/fast_downloads/raw/main/perma/Todo_el_addon_separado.mcaddon)
+
+[**__CLICKEAME PARA DESCARGAR SOLO EL ADD-ON JUNTO__**](https://github.com/HaJuegos/fast_downloads/raw/main/perma/Todo_el_addon_junto.mcaddon)
+
+[**__CLICKEAME PARA DESCARGAR SOLO LAS TEXTURAS__**](https://github.com/HaJuegos/fast_downloads/raw/main/perma/texturas.mcpack)
+
+[**__CLICKEAME PARA DESCARGAR SOLO EL MAPA__**](https://github.com/HaJuegos/fast_downloads/raw/main/perma/Mundo_con_todo_hecho.mctemplate)
 
 ## GUIA DE USO
 
-- **El Add-on solo soporta la version 1.19.40 de Minecraft Bedrock. Esto no es definitivo ya que cualquier version oficial futura, puede provocar daños o bugs inesperados**.
+- **El Add-on solo soporta la version 1.19.50 de Minecraft Bedrock. Esto no es definitivo ya que cualquier version oficial futura, puede provocar daños o bugs inesperados**.
 - Todo en el add-on es automatico.
 - Si deseas instalar el mundo ya creado, por favor sigue estos pasos si no concoces como se hace: [**__Ver imagen__**](https://media.discordapp.net/attachments/964653057390546954/997570733473550536/exmple.png)
 - Para revivir a un compañero, deja un bloque de comandos en repetir con el siguiente comando:
 > `/tag "nombre del jugador" remove Dead`
 y luego el comando en el chat del juego: 
-> `/execute "nombre del jugador" ~ ~ ~ function revivir_lol`
+> `/execute as "nombre del jugador" run function revivir_lol`
 
 - Si quieres aumentar las horas del death train por dias, pon el siguiente comando:
 	> `/function aumentar_dia` 
@@ -45,9 +57,9 @@ y para regresarlo pon:
 ## OPCIONES EXPERIMENTALES
 - _Este add-on, depende de opciones experimentales, ya los puedes ver en el template del mundo y cuando lo crees, Procura tenerlos activos para no tener problemas algunos._
 
-![New](https://cdn.discordapp.com/attachments/997603479822536794/1035704906075603045/unknown.png)
+![New](https://cdn.discordapp.com/attachments/997603479822536794/1054608128022425640/new.png)
 
-![old](https://cdn.discordapp.com/attachments/997603479822536794/1035704412317945948/unknown.png)
+![old](https://cdn.discordapp.com/attachments/997603479822536794/1054608127653318676/old.png)
 
 ## COMO INSTALAR EL ADD-ON EN SERVIDORES
 
