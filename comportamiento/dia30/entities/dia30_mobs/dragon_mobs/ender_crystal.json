@@ -1,0 +1,159 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.15.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minecraft:ender_crystal",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"damage": "controller.animation.ha_ender_crystal_damage",
+				"damage_two": "controller.animation.ha_ender_crystal_damage_two"
+			},
+			"scripts": {
+				"animate": [
+					"damage",
+					"damage_two"
+				]
+			}
+		},
+		"component_groups": {
+			"ha:crystal_no_spawn": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "entity_explosion",
+							"deals_damage": false
+						},
+						{
+							"cause": "block_explosion",
+							"deals_damage": false
+						},
+						{
+							"cause": "falling_block",
+							"deals_damage": false
+						},
+						{
+							"cause": "lightning",
+							"deals_damage": false
+						},
+						{
+							"cause": "any",
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								"event": "ha:crystal_explode",
+								"target": "self"
+							},
+							"deals_damage": true
+						}
+					]
+				}
+			},
+			"ha:crystal_exploding": {
+				"minecraft:explode": {
+					"fuse_length": 0.2,
+					"fuse_lit": true,
+					"power": 6,
+					"causes_fire": false,
+					"destroy_affected_by_griefing": true
+				},
+				"minecraft:skin_id": {
+					"value": 2
+				}
+			},
+			"crystal_exploding": {
+				"minecraft:explode": {
+					"fuse_length": 0,
+					"fuse_lit": true,
+					"power": 6,
+					"causes_fire": false,
+					"destroy_affected_by_griefing": true
+				},
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 2,
+				"height": 2
+			},
+			"minecraft:health": {
+				"value": 1,
+				"max": 1
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "entity_explosion",
+						"deals_damage": false
+					},
+					{
+						"cause": "block_explosion",
+						"deals_damage": false
+					},
+					{
+						"cause": "falling_block",
+						"deals_damage": false
+					},
+					{
+						"cause": "lightning",
+						"deals_damage": false
+					},
+					{
+						"cause": "any",
+						"on_damage": {
+							"filters": {
+								"test": "is_family",
+								"subject": "other",
+								"value": "player"
+							},
+							"event": "minecraft:crystal_explode",
+							"target": "self"
+						},
+						"deals_damage": true
+					}
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {}
+		},
+		"events": {
+			"minecraft:crystal_explode": {
+				"remove": {},
+				"add": {
+					"component_groups": [
+						"crystal_exploding"
+					]
+				}
+			},
+			"ha:crystal_explode": {
+				"remove": {},
+				"add": {
+					"component_groups": [
+						"ha:crystal_exploding"
+					]
+				}
+			},
+			"ha:crystal_normal_spawn": {
+				"add": {
+					"component_groups": [
+						"ha:crystal_no_spawn"
+					]
+				}
+			}
+		}
+	}
+}

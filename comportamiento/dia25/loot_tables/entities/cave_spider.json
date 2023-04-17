@@ -1,0 +1,67 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "killed_by_player_or_pets"
+				}
+			],
+			"entries": [
+				{
+					"type": "empty",
+					"weight": 80
+				},
+				{
+					"type": "item",
+					"name": "minecraft:spider_eye",
+					"weight": 80,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						},
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:string",
+					"weight": 80,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 2
+							}
+						},
+						{
+							"function": "looting_enchant",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:netherite_helmet",
+					"weight": 20
+				}
+			]
+		}
+	]
+}

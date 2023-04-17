@@ -1,0 +1,381 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minecraft:ghast",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"ha:ender_ghast": {
+				"minecraft:teleport": {
+					"random_teleports": true,
+					"max_random_teleport_time": 30,
+					"random_teleport_cube": [
+						32,
+						32,
+						32
+					],
+					"target_distance": 16,
+					"target_teleport_chance": 0.05,
+					"light_teleport_chance": 0.05
+				},
+				"minecraft:health": {
+					"value": 200,
+					"max": 200,
+					"min": 0
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"operator": "==",
+									"value": "attack_dragon"
+								}
+							},
+							"deals_damage": false
+						}
+					]
+				}
+			},
+			"ha:from_ender_crystal_ender_ghast": {
+				"minecraft:persistent": {},
+				"minecraft:teleport": {
+					"random_teleports": true,
+					"max_random_teleport_time": 30,
+					"random_teleport_cube": [
+						32,
+						32,
+						32
+					],
+					"target_distance": 16,
+					"target_teleport_chance": 0.05,
+					"light_teleport_chance": 0.05
+				},
+				"minecraft:health": {
+					"value": 200,
+					"max": 200,
+					"min": 0
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"on_damage": {
+								"filters": {
+									"test": "is_family",
+									"subject": "other",
+									"operator": "==",
+									"value": "attack_dragon"
+								}
+							},
+							"deals_damage": false
+						}
+					]
+				},
+				"minecraft:type_family": {
+					"family": [
+						"ghast",
+						"monster",
+						"mob",
+						"from_endercrystal"
+					]
+				}
+			},
+			"ha:despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			},
+			"ha:variant_health_3": {
+				"minecraft:health": {
+					"value": 60,
+					"max": 60,
+					"min": 0
+				}
+			},
+			"ha:variant_health_2": {
+				"minecraft:health": {
+					"value": 50,
+					"max": 50,
+					"min": 0
+				}
+			},
+			"ha:variant_health_1": {
+				"minecraft:health": {
+					"value": 40,
+					"max": 40,
+					"min": 0
+				}
+			},
+			"ha:clone_mob": {
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"should_leash": false,
+							"num_to_spawn": 2,
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"spawn_entity": "minecraft:ghast",
+							"spawn_event": "ha:entity_cloned",
+							"single_use": true
+						}
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0"
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0
+			},
+			"minecraft:fire_immune": {},
+			"minecraft:nameable": {},
+			"minecraft:health": {
+				"value": 10,
+				"max": 10
+			},
+			"minecraft:collision_box": {
+				"width": 4.02,
+				"height": 4
+			},
+			"minecraft:movement": {
+				"value": 0.03
+			},
+			"minecraft:navigation.float": {
+				"can_path_over_water": true
+			},
+			"minecraft:behavior.float_wander": {
+				"priority": 2,
+				"must_reach": true
+			},
+			"minecraft:can_fly": {},
+			"minecraft:loot": {
+				"table": "loot_tables/empty.json"
+			},
+			"minecraft:shooter": {
+				"def": "minecraft:fireball"
+			},
+			"minecraft:type_family": {
+				"family": [
+					"ghast",
+					"monster",
+					"mob"
+				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "fall",
+					"deals_damage": false
+				}
+			},
+			"minecraft:jump.static": {},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:behavior.ranged_attack": {
+				"priority": 1,
+				"attack_radius": 64,
+				"charge_shoot_trigger": 2,
+				"charge_charged_trigger": 1
+			},
+			"minecraft:follow_range": {
+				"value": 64,
+				"max": 64
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"entity_types": [
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "player"
+						},
+						"max_dist": 28
+					}
+				],
+				"must_see": true
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {}
+		},
+		"events": {
+			"ha:generate_enderghast": {
+				"run_command": {
+					"command": [
+						"tag @s add in_end"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"ha:ender_ghast"
+					]
+				}
+			},
+			"ha:despawn": {
+				"add": {
+					"component_groups": [
+						"ha:despawn"
+					]
+				}
+			},
+			"ha:from_ender_crystal": {
+				"run_command": {
+					"command": [
+						"tag @s add in_end"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"ha:from_ender_crystal_ender_ghast"
+					]
+				}
+			},
+			"ha:entity_cloned": {
+				"sequence": [
+					{
+						"filters": {
+							"test": "has_biome_tag",
+							"operator": "not",
+							"value": "the_end"
+						},
+						"sequence": [
+							{
+								"randomize": [
+									{
+										"weight": 1,
+										"add": {
+											"component_groups": [
+												"ha:variant_health_1"
+											]
+										}
+									},
+									{
+										"weight": 1,
+										"add": {
+											"component_groups": [
+												"ha:variant_health_2"
+											]
+										}
+									},
+									{
+										"weight": 1,
+										"add": {
+											"component_groups": [
+												"ha:variant_health_3"
+											]
+										}
+									}
+								]
+							},
+							{
+								"add": {}
+							}
+						]
+					},
+					{
+						"filters": {
+							"test": "has_biome_tag",
+							"value": "the_end"
+						},
+						"run_command": {
+							"command": [
+								"tag @s add in_end"
+							]
+						},
+						"add": {
+							"component_groups": [
+								"ha:ender_ghast"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:entity_spawned": {
+				"sequence": [
+					{
+						"filters": {
+							"test": "has_biome_tag",
+							"operator": "not",
+							"value": "the_end"
+						},
+						"sequence": [
+							{
+								"randomize": [
+									{
+										"weight": 1,
+										"add": {
+											"component_groups": [
+												"ha:variant_health_1"
+											]
+										}
+									},
+									{
+										"weight": 1,
+										"add": {
+											"component_groups": [
+												"ha:variant_health_2"
+											]
+										}
+									},
+									{
+										"weight": 1,
+										"add": {
+											"component_groups": [
+												"ha:variant_health_3"
+											]
+										}
+									}
+								]
+							},
+							{
+								"add": {
+									"component_groups": [
+										"ha:clone_mob"
+									]
+								}
+							}
+						]
+					},
+					{
+						"filters": {
+							"test": "has_biome_tag",
+							"value": "the_end"
+						},
+						"run_command": {
+							"command": [
+								"tag @s add in_end"
+							]
+						},
+						"add": {
+							"component_groups": [
+								"ha:ender_ghast",
+								"ha:clone_mob"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

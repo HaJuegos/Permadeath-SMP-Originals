@@ -1,1 +1,6 @@
-{"values":["death_train/visible"]}
+{
+	"values": [
+		"death_train/visible",
+		"loop"
+	]
+}

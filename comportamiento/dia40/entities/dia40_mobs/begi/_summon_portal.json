@@ -1,0 +1,118 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ha:summon_portal",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"ha:despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			},
+			"ha:set_skin_id": {
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.1,
+				"height": 0.1
+			},
+			"minecraft:tick_world": {
+				"radius": 2,
+				"never_despawn": true
+			},
+			"minecraft:persistent": {},
+			"minecraft:knockback_resistance": {
+				"value": 1.0
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:physics": {
+				"has_gravity": false
+			},
+			"minecraft:health": {
+				"max": 1,
+				"min": 1
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "any",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"interact_text": "Despawnear",
+						"on_interact": {
+							"filters": {
+								"test": "has_equipment",
+								"subject": "other",
+								"domain": "any",
+								"value": "minecraft:barrier"
+							},
+							"event": "ha:despawn"
+						},
+						"use_item": true
+					}
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"portal_activate",
+					"inanimate",
+					"mob"
+				]
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"test": "is_skin_id",
+							"subject": "self",
+							"value": 1
+						},
+						"event": "ha:loop_tag"
+					}
+				]
+			}
+		},
+		"events": {
+			"ha:despawn": {
+				"add": {
+					"component_groups": [
+						"ha:despawn"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"ha:set_skin_id"
+					]
+				}
+			},
+			"ha:loop_tag": {
+				"run_command": {
+					"command": [
+						"tag @a add nomasbegi",
+						"tag @s add stop"
+					]
+				}
+			}
+		}
+	}
+}

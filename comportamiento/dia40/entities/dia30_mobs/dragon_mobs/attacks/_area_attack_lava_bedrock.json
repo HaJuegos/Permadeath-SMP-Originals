@@ -1,0 +1,204 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ha:area_lava_bedrock",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"ha:spawn_lava": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"stick_in_ground": {
+							"shake_time": 100
+						}
+					},
+					"power": 3,
+					"gravity": 1,
+					"inertia": 1,
+					"anchor": 2,
+					"offset": [
+						0,
+						0.5,
+						0
+					],
+					"semi_random_diff_damage": true,
+					"uncertainty_base": 10,
+					"reflect_on_hurt": false
+				},
+				"minecraft:type_family": {
+					"family": [
+						"lava"
+					]
+				},
+				"minecraft:timer": {
+					"time": [
+						24,
+						24
+					],
+					"time_down_event": {
+						"target": "self",
+						"event": "ha:despawn"
+					}
+				}
+			},
+			"ha:spawn_bedrock": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"stick_in_ground": {
+							"shake_time": 100
+						}
+					},
+					"power": 3,
+					"gravity": 1,
+					"inertia": 1,
+					"anchor": 2,
+					"offset": [
+						0,
+						0.5,
+						0
+					],
+					"semi_random_diff_damage": true,
+					"uncertainty_base": 10,
+					"reflect_on_hurt": false
+				},
+				"minecraft:type_family": {
+					"family": [
+						"bedrock",
+						"attack_dragon"
+					]
+				},
+				"minecraft:timer": {
+					"time": [
+						24,
+						24
+					],
+					"time_down_event": {
+						"target": "self",
+						"event": "ha:despawn"
+					}
+				}
+			},
+			"ha:despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.1,
+				"height": 0.1
+			},
+			"minecraft:physics": {
+				"has_gravity": false
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "any",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:tick_world": {
+				"radius": 2,
+				"never_despawn": true
+			},
+			"minecraft:persistent": {},
+			"minecraft:type_family": {
+				"family": [
+					"attack_dragon"
+				]
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:knockback_resistance": {
+				"value": 99999
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "self",
+									"operator": "==",
+									"value": "lava"
+								}
+							]
+						},
+						"event": "ha:lava",
+						"target": "self"
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "self",
+									"operator": "==",
+									"value": "bedrock"
+								}
+							]
+						},
+						"event": "ha:bedrock",
+						"target": "self"
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:spawn_lava"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:spawn_bedrock"
+							]
+						}
+					}
+				]
+			},
+			"ha:despawn": {
+				"add": {
+					"component_groups": [
+						"ha:despawn"
+					]
+				}
+			},
+			"ha:lava": {
+				"run_command": {
+					"command": [
+						"execute @s ~ ~ ~ fill ~2 ~ ~2 ~-2 ~-2 ~-2 flowing_lava 0 replace end_stone",
+						"execute @s ~ ~ ~ fill ~2 ~ ~2 ~-2 ~-2 ~-2 flowing_lava 0 replace end_bricks"
+					]
+				}
+			},
+			"ha:bedrock": {
+				"run_command": {
+					"command": [
+						"execute @s ~ ~ ~ fill ~2 ~ ~2 ~-2 ~-2 ~-2 bedrock 0 replace end_stone",
+						"execute @s ~ ~ ~ fill ~2 ~ ~2 ~-2 ~-2 ~-2 bedrock 0 replace end_bricks"
+					]
+				}
+			}
+		}
+	}
+}

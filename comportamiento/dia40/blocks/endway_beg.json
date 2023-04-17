@@ -1,5 +1,0 @@
-/* Este archivo fue editado por @Ha_Juegos_Cat!. Cualquier modificacion que hagas a este mismo, Por favor deja el credito inicial que merece del creador del add-on para no tener problemas!. Si quieres contactarme hablame en mi Server de Discord: https://discord.gg/9jZHkhu86P
-Mi Canal de YouTube: https://www.youtube.com/c/HaJuegos */
-/* This file was edited by @Ha_Juegos_Cat!. Any modifications you make to it, please leave the initial credit to the creator of the add-on so you don't have problems. If you want to contact me talk to me on my Discord Server: https://discord.gg/9jZHkhu86P
-My YouTube Channel: https://www.youtube.com/c/HaJuegos */
-{"format_version":"1.18.0","minecraft:block":{"description":{"identifier":"ha:end_way_beg"},"components":{"minecraft:block_light_emission":1,"minecraft:destructible_by_explosion":{"explosion_resistance":99999},"minecraft:collision_box":false,"minecraft:selection_box":false,"minecraft:material_instances":{"*":{"texture":"ha:end_way_beg","render_method":"blend","face_dimming":false,"ambient_occlusion":false}}}}}

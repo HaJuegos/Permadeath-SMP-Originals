@@ -1,0 +1,426 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.12.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minecraft:dragon_fireball",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"system_attacks"
+				]
+			},
+			"animations": {
+				"system_attacks": "controller.animation.ha_all_permademon.attacks_system"
+			}
+		},
+		"component_groups": {
+			"ha:summon_area_cloud_normal": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"spawn_aoe_cloud": {
+							"radius": 6,
+							"radius_on_use": 0,
+							"potion": 23,
+							"particle": "dragonbreath",
+							"duration": 120,
+							"color": [
+								220,
+								0,
+								239
+							],
+							"affect_owner": false,
+							"reapplication_delay": 13
+						},
+						"remove_on_hit": {}
+					},
+					"power": 1.3,
+					"gravity": 0,
+					"inertia": 1,
+					"anchor": 2,
+					"offset": [
+						0,
+						0.5,
+						0
+					],
+					"semi_random_diff_damage": true,
+					"uncertainty_base": 10,
+					"reflect_on_hurt": true,
+					"hit_sound": "explode"
+				}
+			},
+			"ha:summon_attack_tnt": {
+				"minecraft:skin_id": {
+					"value": 3
+				},
+				"minecraft:timer": {
+					"time": [
+						0.3,
+						0.3
+					],
+					"looping": true,
+					"time_down_event": {
+						"event": "ha:despawn"
+					}
+				}
+			},
+			"ha:summon_area_cloud_white": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"spawn_chance": {
+							"first_spawn_percent_chance": 100,
+							"first_spawn_count": 1,
+							"spawn_definition": "ha:area_cloud_white"
+						},
+						"remove_on_hit": {}
+					},
+					"power": 1.3,
+					"gravity": 0,
+					"inertia": 1,
+					"anchor": 2,
+					"offset": [
+						0,
+						0.5,
+						0
+					],
+					"semi_random_diff_damage": true,
+					"uncertainty_base": 10,
+					"reflect_on_hurt": true,
+					"hit_sound": "explode"
+				}
+			},
+			"ha:summon_jockey_wither": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"spawn_chance": {
+							"first_spawn_percent_chance": 100,
+							"first_spawn_count": 1,
+							"spawn_definition": "minecraft:spider"
+						},
+						"remove_on_hit": {}
+					},
+					"power": 1.3,
+					"gravity": 0,
+					"inertia": 1,
+					"anchor": 2,
+					"offset": [
+						0,
+						0.5,
+						0
+					],
+					"semi_random_diff_damage": true,
+					"uncertainty_base": 10,
+					"reflect_on_hurt": true,
+					"hit_sound": "explode"
+				}
+			},
+			"ha:summon_endermite": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"spawn_chance": {
+							"first_spawn_percent_chance": 100,
+							"first_spawn_count": 4,
+							"spawn_definition": "minecraft:endermite"
+						},
+						"remove_on_hit": {}
+					},
+					"power": 1.3,
+					"gravity": 0,
+					"inertia": 1,
+					"anchor": 2,
+					"offset": [
+						0,
+						0.5,
+						0
+					],
+					"semi_random_diff_damage": true,
+					"uncertainty_base": 10,
+					"reflect_on_hurt": true,
+					"hit_sound": "explode"
+				}
+			},
+			"ha:summon_replace_lava_bedrock": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"spawn_chance": {
+							"first_spawn_percent_chance": 100,
+							"first_spawn_count": 1,
+							"spawn_definition": "ha:area_lava_bedrock"
+						},
+						"remove_on_hit": {}
+					},
+					"power": 1.3,
+					"gravity": 0,
+					"inertia": 1,
+					"anchor": 2,
+					"offset": [
+						0,
+						0.5,
+						0
+					],
+					"semi_random_diff_damage": true,
+					"uncertainty_base": 10,
+					"reflect_on_hurt": true,
+					"hit_sound": "explode"
+				}
+			},
+			"ha:summon_any_cloud_effect": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"spawn_chance": {
+							"first_spawn_percent_chance": 100,
+							"first_spawn_count": 1,
+							"spawn_definition": "ha:area_cloud_any_effects"
+						},
+						"remove_on_hit": {}
+					},
+					"power": 1.3,
+					"gravity": 0,
+					"inertia": 1,
+					"anchor": 2,
+					"offset": [
+						0,
+						0.5,
+						0
+					],
+					"semi_random_diff_damage": true,
+					"uncertainty_base": 10,
+					"reflect_on_hurt": true,
+					"hit_sound": "explode"
+				}
+			},
+			"ha:summon_area_cloud_hearths": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"spawn_chance": {
+							"first_spawn_percent_chance": 100,
+							"first_spawn_count": 1,
+							"spawn_definition": "ha:area_cloud_damage_hearth"
+						},
+						"remove_on_hit": {}
+					},
+					"power": 1.3,
+					"gravity": 0,
+					"inertia": 1,
+					"anchor": 2,
+					"offset": [
+						0,
+						0.5,
+						0
+					],
+					"semi_random_diff_damage": true,
+					"uncertainty_base": 10,
+					"reflect_on_hurt": true,
+					"hit_sound": "explode"
+				}
+			},
+			"ha:summon_regenerate_endercrystal": {
+				"minecraft:skin_id": {
+					"value": 4
+				},
+				"minecraft:timer": {
+					"time": [
+						0.3,
+						0.3
+					],
+					"looping": true,
+					"time_down_event": {
+						"event": "ha:despawn"
+					}
+				}
+			},
+			"ha:despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": false
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"dragon_fireball"
+				]
+			},
+			"minecraft:tick_world": {
+				"radius": 2,
+				"never_despawn": true
+			},
+			"minecraft:collision_box": {
+				"width": 0.31,
+				"height": 0.31
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 80.0,
+					"max_dropped_ticks": 7,
+					"use_motion_prediction_hints": true
+				}
+			}
+		},
+		"events": {
+			"ha:test_balls_normal": {
+				"trigger": "ha:normal_balls"
+			},
+			"ha:test_balls_enraged": {
+				"trigger": "ha:enraged_balls"
+			},
+			"minecraft:entity_spawned": {
+				"sequence": [
+					{
+						"filters": {
+							"test": "is_variant",
+							"operator": "!=",
+							"subject": "other",
+							"value": 5
+						},
+						"trigger": "ha:normal_balls"
+					},
+					{
+						"filters": {
+							"test": "is_variant",
+							"operator": "==",
+							"subject": "other",
+							"value": 5
+						},
+						"trigger": "ha:enraged_balls"
+					}
+				]
+			},
+			"ha:despawn": {
+				"add": {
+					"component_groups": [
+						"ha:despawn"
+					]
+				}
+			},
+			"ha:normal_balls": {
+				"randomize": [
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:summon_area_cloud_normal"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:summon_attack_tnt"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:summon_area_cloud_white"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:summon_jockey_wither"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:summon_endermite"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:summon_replace_lava_bedrock"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:summon_any_cloud_effect"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:summon_area_cloud_hearths"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:summon_regenerate_endercrystal"
+							]
+						}
+					}
+				]
+			},
+			"ha:enraged_balls": {
+				"randomize": [
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:summon_attack_tnt"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:summon_area_cloud_white"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:summon_jockey_wither"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:summon_any_cloud_effect"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:summon_regenerate_endercrystal"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

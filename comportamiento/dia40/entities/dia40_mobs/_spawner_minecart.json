@@ -1,0 +1,59 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ha:spawner_minecart",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"summon",
+					"particle"
+				]
+			},
+			"animations": {
+				"summon": "animation.ha_spawner_minecart_summon_potions",
+				"particle": "animation.ha_spawner_minecart_continue_particle"
+			}
+		},
+		"components": {
+			"minecraft:knockback_resistance": {
+				"value": 1.0
+			},
+			"minecraft:type_family": {
+				"family": [
+					"minecart",
+					"inanimate"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.98,
+				"height": 0.7
+			},
+			"minecraft:rail_movement": {},
+			"minecraft:nameable": {},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "any",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:health": {
+				"value": 1,
+				"max": 1,
+				"min": 0
+			},
+			"minecraft:persistent": {}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ha:netherite_helmet_yellow",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 15,
+				"slot": "armor_head"
+			},
+			"minecraft:durability": {
+				"max_durability": 407,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:mining_speed": 9,
+			"minecraft:damage": 4,
+			"minecraft:armor": {
+				"protection": 3
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.head"
+			},
+			"minecraft:knockback_resistance": {
+				"protection": 0.1
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.helmet"
+			},
+			"minecraft:icon": {
+				"texture": "yellow_helmet"
+			},
+			"minecraft:render_offsets": "helmets"
+		}
+	}
+}

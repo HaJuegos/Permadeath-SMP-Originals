@@ -1,5 +1,5 @@
-/* Este archivo fue creado por ୨୧ 𓂅 𝒄𝒐𝒏𝒗𝒆𝒙 ! ♡#9947 (Discord) y @Ha_Juegos_Cat!, Cualquier reutilizacion o modificacion de este, Por favor dejar creditos originales del creador del codigo y del add-on para no tener problemas!. Si quieres contactarte con el creador de este codigo, Ve a su server de Discord: https://discord.gg/C3ZHdnUVmu y https://discord.gg/9jZHkhu86P */
-/* This file was created by ୨୧ 𓂅 𝒄𝒐𝒏𝒗𝒆𝒙 ! ♡#9947 (Discord) and @Ha_Juegos_Cat!, Any reuse or modification of this, please leave original credits to the creator of the code and add-on to avoid problems. If you want to contact the creator of this code, go to his Discord server: https://discord.gg/C3ZHdnUVmu and https://discord.gg/9jZHkhu86P */
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
 {
 	"format_version": "1.18.20",
 	"minecraft:entity": {
@@ -7,23 +7,33 @@
 			"identifier": "minecraft:player",
 			"is_spawnable": false,
 			"is_summonable": false,
-			"is_experimental": false,
-			"scripts": {
-				"animate": [
-					"dead",
-					"rain_active",
-                    "totemtag",
-                    "shieldtag"
-				]
-			},
-			"animations": {
-				"dead": "controller.animation.ha_dead_system",
-				"rain_active": "controller.animation.ha_entry_world",
-                "totemtag": "controller.animation.player.totem_tag",
-                "shieldtag": "controller.animation.player.shield_offhand"
-			}
+			"is_experimental": false
 		},
 		"component_groups": {
+			"ha:timer_ban": {
+				"minecraft:timer": {
+					"time": [
+						6.1,
+						6.1
+					],
+					"looping": false,
+					"time_down_event": {
+						"event": "ha:ban"
+					}
+				}
+			},
+			"ha:timer_message": {
+				"minecraft:timer": {
+					"time": [
+						0.3,
+						0.3
+					],
+					"looping": false,
+					"time_down_event": {
+						"event": "ha:end_message"
+					}
+				}
+			},
 			"minecraft:add_bad_omen": {
 				"minecraft:spell_effects": {
 					"add_effects": [
@@ -59,30 +69,6 @@
 				},
 				"minecraft:spell_effects": {
 					"remove_effects": "bad_omen"
-				}
-			},
-			"ha:timer_ban": {
-				"minecraft:timer": {
-					"time": [
-						6.1,
-						6.1
-					],
-					"looping": false,
-					"time_down_event": {
-						"event": "ha:ban"
-					}
-				}
-			},
-			"ha:timer_message": {
-				"minecraft:timer": {
-					"time": [
-						0.3,
-						0.3
-					],
-					"looping": false,
-					"time_down_event": {
-						"event": "ha:end_message"
-					}
 				}
 			}
 		},
@@ -132,7 +118,7 @@
 				"attack": 0.1,
 				"damage": 0.1,
 				"walk": 0,
-				"sprint": 0.01,
+				"sprint": 0.1,
 				"swim": 0.01
 			},
 			"minecraft:player.saturation": {
@@ -161,7 +147,9 @@
 				"always_show": true,
 				"allow_name_tag_renaming": false
 			},
-			"minecraft:physics": {},
+			"minecraft:physics": {
+				"push_towards_closest_space": true
+			},
 			"minecraft:pushable": {
 				"is_pushable": false,
 				"is_pushable_by_piston": true
@@ -200,6 +188,22 @@
 			},
 			"minecraft:conditional_bandwidth_optimization": {},
 			"minecraft:block_climber": {},
+			"minecraft:on_death": {
+				"event": "ha:end_message",
+				"target": "self"
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "block_explosion",
+						"damage_multiplier": 2.0
+					},
+					{
+						"cause": "entity_explosion",
+						"damage_multiplier": 2.0
+					}
+				]
+			},
 			"minecraft:environment_sensor": {
 				"triggers": [
 					{
@@ -247,98 +251,11 @@
 							"value": false
 						},
 						"event": "ha:no_sleeping"
-					},
-                    {
-                        "filters": {
-                            "test": "has_equipment",
-                            "operator": "==",
-                            "subject": "self",
-                            "value": "minecraft:shield",
-                            "domain": "hand"
-                        },
-                        "event": "cnvx:add_shield_tag"
-                    },
-                    {
-                        "filters": {
-                            "test": "has_equipment",
-                            "operator": "!=",
-                            "subject": "self",
-                            "value": "minecraft:shield",
-                            "domain": "hand"
-                        },
-                        "event": "cnvx:remove_shield_tag"
-                    }
+					}
 				]
 			}
 		},
 		"events": {
-			"minecraft:gain_bad_omen": {
-				"add": {
-					"component_groups": [
-						"minecraft:add_bad_omen"
-					]
-				}
-			},
-			"minecraft:clear_add_bad_omen": {
-				"remove": {
-					"component_groups": [
-						"minecraft:add_bad_omen"
-					]
-				},
-				"add": {
-					"component_groups": [
-						"minecraft:clear_bad_omen_spell_effect"
-					]
-				}
-			},
-			"minecraft:trigger_raid": {
-				"add": {
-					"component_groups": [
-						"minecraft:raid_trigger"
-					]
-				}
-			},
-			"minecraft:remove_raid_trigger": {
-				"remove": {
-					"component_groups": [
-						"minecraft:raid_trigger"
-					]
-				}
-			},
-			"cnvx:add_shield_tag": {
-				"run_command": {
-					"command": [
-						"tag @s add blocking"
-					]
-				}
-			},
-			"cnvx:remove_shield_tag": {
-				"run_command": {
-					"command": [
-						"tag @s remove blocking"
-					]
-				}
-			},
-			"ha:has_ban_peding": {
-				"add": {
-					"component_groups": [
-						"ha:timer_ban"
-					]
-				}
-			},
-			"ha:ban": {
-				"remove": {
-					"component_groups": [
-						"ha:timer_ban"
-					]
-				},
-				"run_command": {
-					"command": [
-						"tag @s add Dead",
-						"event entity @e[type=ha:death_train] ha:death_train_start"
-					]
-				}
-			},
 			"ha:sleeping": {
 				"sequence": [
 					{
@@ -349,10 +266,9 @@
 						},
 						"run_command": {
 							"command": [
-								"damage @s 0",
-								"particle minecraft:huge_explosion_emitter ~ ~ ~",
-								"particle minecraft:huge_explosion_emitter ~1 ~ ~",
-								"particle minecraft:huge_explosion_emitter ~ ~ ~1"
+								"time set day",
+								"execute @s[tag=!inbed] ~ ~ ~ tellraw @a {\"rawtext\": [{\"text\":\"§a\"},{\"selector\":\"@s\"},{\"text\":\" fue a dormir, dulces sueños.\"}]}",
+								"tag @s add inbed"
 							]
 						}
 					},
@@ -389,6 +305,19 @@
 					]
 				}
 			},
+			"ha:end_message": {
+				"run_command": {
+					"command": [
+						"gamemode spectator",
+						"execute @s[tag=!muerto] ~ ~ ~ function system/mensaje_de_muerte"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"ha:timer_message"
+					]
+				}
+			},
 			"ha:start_message": {
 				"add": {
 					"component_groups": [
@@ -396,15 +325,56 @@
 					]
 				}
 			},
-			"ha:end_message": {
-				"run_command": {
-					"command": [
-						"execute @s[tag=!muerto] ~ ~ ~ function system/mensaje_de_muerte"
+			"ha:has_ban_peding": {
+				"add": {
+					"component_groups": [
+						"ha:timer_ban"
 					]
-				},
+				}
+			},
+			"ha:ban": {
 				"remove": {
 					"component_groups": [
-						"ha:timer_message"
+						"ha:timer_ban"
+					]
+				},
+				"run_command": {
+					"command": [
+						"tag @s add Dead",
+						"event entity @e[type=ha:death_train] ha:death_train_start"
+					]
+				}
+			},
+			"minecraft:gain_bad_omen": {
+				"add": {
+					"component_groups": [
+						"minecraft:add_bad_omen"
+					]
+				}
+			},
+			"minecraft:clear_add_bad_omen": {
+				"remove": {
+					"component_groups": [
+						"minecraft:add_bad_omen"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:clear_bad_omen_spell_effect"
+					]
+				}
+			},
+			"minecraft:trigger_raid": {
+				"add": {
+					"component_groups": [
+						"minecraft:raid_trigger"
+					]
+				}
+			},
+			"minecraft:remove_raid_trigger": {
+				"remove": {
+					"component_groups": [
+						"minecraft:raid_trigger"
 					]
 				}
 			}

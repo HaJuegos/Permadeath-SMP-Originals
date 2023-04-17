@@ -1,0 +1,32 @@
+/* Creado/Editado por: HaJuegos Cat! & Convex!. Si necesitas mas informacion, hablamos en Discord: https://discord.com/users/714622708649951272 & https://discord.com/users/736761089056047174 */
+/* Created/Edited by: HaCatto! & Convex! If you need more information, we talk on Discord: https://discord.com/users/714622708649951272 & https://discord.com/users/736761089056047174 */
+{
+	"format_version": "1.16",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:soul_torch_from_soul_sand"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			".",
+			"|",
+			"#"
+		],
+		"key": {
+			".": {
+				"item": "minecraft:coal"
+			},
+			"|": {
+				"item": "minecraft:stick"
+			},
+			"#": {
+				"item": "minecraft:soul_sand"
+			}
+		},
+		"result": {
+			"item": "minecraft:soul_sand"
+		}
+	}
+}

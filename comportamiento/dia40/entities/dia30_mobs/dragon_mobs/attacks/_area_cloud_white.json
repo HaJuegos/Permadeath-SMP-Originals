@@ -1,0 +1,115 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ha:area_cloud_white",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"ha:summon_attack_and_cloud": {
+				"minecraft:timer": {
+					"time": [
+						25,
+						25
+					],
+					"time_down_event": {
+						"event": "ha:despawn"
+					}
+				},
+				"minecraft:area_attack": {
+					"damage_range": 8,
+					"damage_per_tick": 13,
+					"damage_cooldown": 0.5,
+					"cause": "magic",
+					"entity_filter": {
+						"all_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"operator": "==",
+								"value": "player"
+							}
+						]
+					}
+				}
+			},
+			"ha:despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 1
+			},
+			"minecraft:physics": {
+				"has_gravity": false
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "any",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:tick_world": {
+				"radius": 2,
+				"never_despawn": true
+			},
+			"minecraft:persistent": {},
+			"minecraft:type_family": {
+				"family": [
+					"attack_dragon"
+				]
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:knockback_resistance": {
+				"value": 99999
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"run_command": {
+					"command": [
+						"tp @r[tag=in_end]",
+						"particle end:smoke_dragon ~ ~0.8 ~"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"ha:summon_attack_and_cloud"
+					]
+				}
+			},
+			"ha:despawn": {
+				"add": {
+					"component_groups": [
+						"ha:despawn"
+					]
+				}
+			},
+			"ha:from_permademon": {
+				"run_command": {
+					"command": [
+						"particle end:smoke_dragon ~ ~0.8 ~"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"ha:summon_attack_and_cloud"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "ha:recipe_stack_gold_block"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:gold_block",
+				"count": 8
+			}
+		],
+		"result": [
+			{
+				"item": "ha:stack_gold_block",
+				"count": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,118 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ha:cloud_head",
+			"menu_category":{
+				"category":"commands"
+			},
+			"properties": {
+				"ha:rotation": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6
+				]
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					8,
+					8
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					8,
+					8
+				]
+			},
+			"minecraft:destructible_by_explosion": true,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1.5
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:light_emission": 0,
+			"minecraft:unwalkable": false,
+			"minecraft:geometry": "geometry.player_head.block",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cloud_head",
+					"render_method": "alpha_test",
+					"face_dimming": true,
+					"ambient_occlusion": true
+				}
+			},
+			"minecraft:on_player_placing": {
+				"event": "update_rotation"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('ha:rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('ha:rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('ha:rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('ha:rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						-90,
+						0
+					]
+				}
+			}
+		],
+		"events": {
+			"update_rotation": {
+				"set_block_property": {
+					"ha:rotation": "query.cardinal_facing_2d"
+				}
+			}
+		}
+	}
+}

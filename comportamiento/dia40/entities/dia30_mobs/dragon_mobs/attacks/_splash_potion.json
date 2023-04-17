@@ -1,0 +1,119 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ha:splash_potion",
+			"is_summonable": true,
+			"is_spawnable": false,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"ha:spawn_end": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"spawn_aoe_cloud": {
+							"radius": 3,
+							"radius_on_use": 0,
+							"potion": 0,
+							"particle": "mobspell",
+							"duration": 1,
+							"color": [
+								0,
+								255,
+								0
+							],
+							"affect_owner": false,
+							"reapplication_delay": 1
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "ha:effect_end",
+								"target": "self"
+							}
+						},
+						"remove_on_hit": {}
+					},
+					"power": 1.6,
+					"gravity": 0.05,
+					"uncertainty_base": 16,
+					"uncertainty_multiplier": 4,
+					"hit_sound": "glass",
+					"anchor": 1,
+					"should_bounce": true,
+					"offset": [
+						-1,
+						0,
+						0
+					],
+					"reflect_on_hurt": false
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"potion",
+					"attack_dragon"
+				]
+			},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": true
+			},
+			"minecraft:tick_world": {
+				"radius": 2,
+				"never_despawn": true
+			},
+			"minecraft:persistent": {},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:knockback_resistance": {
+				"value": 99999
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 1
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"sequence": [
+					{
+						"filters": {
+							"test": "has_biome_tag",
+							"value": "the_end"
+						},
+						"add": {
+							"component_groups": [
+								"ha:spawn_end"
+							]
+						}
+					}
+				]
+			},
+			"ha:effect_end": {
+				"run_command": {
+					"command": [
+						"execute @s ~ ~ ~ effect @a[r=4] speed 8 3",
+						"execute @s ~ ~ ~ effect @a[r=4] regeneration 24 2",
+						"execute @s ~ ~ ~ effect @a[r=4] resistance 48 0",
+						"execute @s ~ ~ ~ effect @a[r=4] instant_health 1 4"
+					]
+				}
+			}
+		}
+	}
+}

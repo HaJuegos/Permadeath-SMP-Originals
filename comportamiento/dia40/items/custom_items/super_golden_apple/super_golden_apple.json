@@ -1,5 +1,42 @@
-/* Este archivo fue editado por @Ha_Juegos_Cat!. Cualquier modificacion que hagas a este mismo, Por favor deja el credito inicial que merece del creador del add-on para no tener problemas!. Si quieres contactarme hablame en mi Server de Discord: https://discord.gg/9jZHkhu86P
-Mi Canal de YouTube: https://www.youtube.com/c/HaJuegos */
-/* This file was edited by @Ha_Juegos_Cat!. Any modifications you make to it, please leave the initial credit to the creator of the add-on so you don't have problems. If you want to contact me talk to me on my Discord Server: https://discord.gg/9jZHkhu86P
-My YouTube Channel: https://www.youtube.com/c/HaJuegos */
-{"format_version":"1.16.100","minecraft:item":{"description":{"identifier":"ha:super_golden_apple","category":"nature"},"components":{"minecraft:use_duration":1.6,"minecraft:max_stack_size":64,"minecraft:foil":true,"minecraft:can_destroy_in_creative":false,"minecraft:creative_category":{"parent":"itemGroup.name.tools"},"minecraft:creative_category":{"parent":"itemGroup.name.miscFood"},"minecraft:food":{"on_consume":{"event":"ha:efectos"},"nutrition":4,"can_always_eat":true,"saturation_modifier":"supernatural"},"minecraft:icon":{"texture":"apple_golden"},"minecraft:render_offsets":"apple","minecraft:use_animation":"eat"},"events":{"ha:efectos":{"run_command":{"command":["effect @s health_boost 302 0 true"]}}}}}
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ha:super_golden_apple",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:use_duration": 1.6,
+			"minecraft:max_stack_size": 64,
+			"minecraft:foil": true,
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.items"
+			},
+			"minecraft:food": {
+				"on_consume": {
+					"event": "ha:efectos"
+				},
+				"nutrition": 4,
+				"can_always_eat": true,
+				"saturation_modifier": "supernatural"
+			},
+			"minecraft:icon": {
+				"texture": "apple_golden"
+			},
+			"minecraft:render_offsets": "apple",
+			"minecraft:use_animation": "eat"
+		},
+		"events": {
+			"ha:efectos": {
+				"run_command": {
+					"command": [
+						"effect @s health_boost 302 0 true"
+					]
+				}
+			}
+		}
+	}
+}

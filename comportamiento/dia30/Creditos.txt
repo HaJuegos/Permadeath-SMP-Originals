@@ -1,39 +1,49 @@
-/* Este archivo fue editado por @Ha_Juegos_Cat!. Cualquier modificacion que hagas a este mismo, Por favor deja el credito inicial que merece del creador del add-on para no tener problemas!. Si quieres contactarme hablame en mi Server de Discord: https://discord.gg/9jZHkhu86P
-Mi Canal de YouTube: https://www.youtube.com/c/HaJuegos */
-/* This file was edited by @Ha_Juegos_Cat!. Any modifications you make to it, please leave the initial credit to the creator of the add-on so you don't have problems. If you want to contact me talk to me on my Discord Server: https://discord.gg/9jZHkhu86P
-My YouTube Channel: https://www.youtube.com/c/HaJuegos */
+¡Gracias por descargar mi Add-no! Este es una corta recreacion de la serie llamada Permadeath SMP proveniente de Java Edition por ElRichMC. Incompleta o no aqui te presento y espero te agrade todo lo que hice para que este correctamente hecho para todos, Agradeceria que le dieras la debida acreditacion a todas las personas a mencionar para que no tengas problemas luego y asi podamos continuar creando mas contenido similar ya que cada uno de nosotros le metimos esfuerzo y dedicacion, en la serie original y en la creacion de este mismo add-on. Si deseas crear modificaciones o contenido con este mismo, procura hacer minimamente mencion a las personas con algun link para que se les reconozca mejor. ¡Gracias!
 
-[2022] [Ha Juegos Cat!]
+Creditos:
 
-Este complemento no debe ser distribuido o compartido si esta modificado, tambien debe informarse de cualquier modificacion publica de este mismo para no tener problemas con ello mismo. Si necesitas ayuda o informacion de contacto unete a mi server de discord (https://discord.gg/9jZHkhu86P) o hablarme directamente en discord como "HaJuegos Cat!#0069"
+- ElRichMC y Kernel Freeze: (Creadores de la serie original)
+Youtube: https://youtube.com/user/ElRichMC & https://youtube.com/c/KernelFreeze
+Twitter: https://twitter.com/ElRichMC & https://twitter.com/KernelFreeze
+Twitch: https://twitch.tv/elrichmc & https://twitch.tv/kernelfreeze
 
-Mis Redes Sociales:
-Youtube: https://www.youtube.com/@HaJuegos
-Twitter: https://twitter.com/Ha_Juegos_Cat
-Ko-fi Pagina de donaciones: https://ko-fi.com/hajuegos0710
-Discord de Add-on's: https://discord.gg/WH9KpNWXUz 
-Discord Principal: https://discord.gg/9jZHkhu86P
-Twitch: https://www.twitch.tv/ha_juegos
-GitHub: https://github.com/HaJuegos/
+- HaJuegos Cat!: (Creador y programador del add-on)
+Twitters: https://twitter.com/Ha_Juegos_Cat o https://twitter.com/the_stupid_cat_
+GitHub: https://github.com/HaJuegos
+Youtube: https://www.youtube.com/@HaJuegos o https://www.youtube.com/@the_stupid_cat_
+Twitch: https://www.twitch.tv/hajuegoscatto
+Discord: https://discord.gg/9jZHkhu86P o https://discord.gg/WH9KpNWXUz | https://discord.com/users/714622708649951272
 
+- Convex!: (Creador y programador de los scripts del add-on)
+Twitter: https://twitter.com/convex__
+Twitch: https://www.twitch.tv/convex03
+Discord: https://discord.com/invite/C3ZHdnUVmu | https://discord.com/users/736761089056047174 o https://discord.com/users/948057828495605820
+GitHub: https://github.com/conveex
 
-¡ACLARACION!:
-Este complemento no esta autorizado ni promocionado por su creador original: ElRichMC. Todos los respectivos creditos y contenido original de la misma serie hacia el, yo solo hago una recreacion de este mismo sin lucrarme o robar contenido del mismo. Porfavor ve y apoya a los creadores originales de la serie.
-
-Creadores originales de Permadeath Java SMP:
-
-ElRichMC:
-Youtube Channel: https://youtube.com/user/ElRichMC
-Twitter: https://twitter.com/ElRichMC
-Twitch: https://twitch.tv/elrichmc
-
-Kernel Freeze:
-Youtube Channel: https://youtube.com/c/KernelFreeze
-Twitter: https://twitter.com/KernelFreeze
-Twitch: https://twitch.tv/kernelfreeze
-
-Creador de Icono del Add-on:
-
-LouisDoodles:
-Twitch: https://www.twitch.tv/LouisDoodles_
+- LouisDoodles: (Creador del icono del add-on)
 Twitter: https://twitter.com/LouisDoodles_
+Twich: https://www.twitch.tv/LouisDoodles
+Discord: https://discord.com/users/592841318351241248
+
+- Astral302 (Creador de algunas texturas y particulas del add-on)
+Twitter: https://twitter.com/astral302
+Discord: https://discord.com/users/983220765006635018
+
+- Ciosciaa (Creador de la generacion de la estructura del end)
+Github: https://github.com/Ciosciaa
+Twitter: https://twitter.com/Ciosciaa
+Twich: https://www.twitch.tv/ciosciaa
+Youtube: https://www.youtube.com/@ciosciaa6974
+Discord: https://discord.com/users/905553488510079026 o https://discord.gg/zpTv3qur3V
+
+
+Pagina del Add-on Oficial:
+https://github.com/HaJuegos/Permadeath-SMP-Originals
+
+-----------------------------------------------------------------------------
+
+Musica y/o sonidos usados:
+
+"¡PERMADEATH!"(Edit) - By ElRichMC (VideoClips de la serie)
+
+ui.toast.challenge_complete - By Mojang (Minecraft Java)

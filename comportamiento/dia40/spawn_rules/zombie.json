@@ -1,5 +1,81 @@
-/* Este archivo fue editado por @Ha_Juegos_Cat!. Cualquier modificacion que hagas a este mismo, Por favor deja el credito inicial que merece del creador del add-on para no tener problemas!. Si quieres contactarme hablame en mi Server de Discord: https://discord.gg/9jZHkhu86P
-Mi Canal de YouTube: https://www.youtube.com/c/HaJuegos */
-/* This file was edited by @Ha_Juegos_Cat!. Any modifications you make to it, please leave the initial credit to the creator of the add-on so you don't have problems. If you want to contact me talk to me on my Discord Server: https://discord.gg/9jZHkhu86P
-My YouTube Channel: https://www.youtube.com/c/HaJuegos */
-{"format_version":"1.8.0","minecraft:spawn_rules":{"description":{"identifier":"minecraft:zombie","population_control":"monster"},"conditions":[{"minecraft:spawns_on_surface":{},"minecraft:spawns_underground":{},"minecraft:brightness_filter":{"min":0,"max":7,"adjust_for_weather":true},"minecraft:difficulty_filter":{"min":"easy","max":"hard"},"minecraft:weight":{"default":100},"minecraft:herd":{"min_size":2,"max_size":4},"minecraft:permute_type":[{"weight":95},{"weight":5,"entity_type":"minecraft:zombie_villager_v2"}],"minecraft:biome_filter":{"test":"has_biome_tag","operator":"==","value":"monster"}},{"minecraft:spawns_on_surface":{},"minecraft:spawns_underground":{},"minecraft:brightness_filter":{"min":0,"max":7,"adjust_for_weather":true},"minecraft:difficulty_filter":{"min":"easy","max":"hard"},"minecraft:weight":{"default":100},"minecraft:herd":{"min_size":2,"max_size":4},"minecraft:permute_type":[{"weight":95},{"weight":5,"entity_type":"minecraft:zombie_villager_v2"}],"minecraft:biome_filter":{"any_of":[{"test":"has_biome_tag","operator":"==","value":"mooshroom_island"},{"test":"has_biome_tag","operator":"==","value":"deep_dark"}]}}]}}
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.8.0",
+	"minecraft:spawn_rules": {
+		"description": {
+			"identifier": "minecraft:zombie",
+			"population_control": "monster"
+		},
+		"conditions": [
+			{
+				"minecraft:spawns_on_surface": {},
+				"minecraft:spawns_underground": {},
+				"minecraft:brightness_filter": {
+					"min": 0,
+					"max": 7,
+					"adjust_for_weather": true
+				},
+				"minecraft:difficulty_filter": {
+					"min": "easy",
+					"max": "hard"
+				},
+				"minecraft:weight": {
+					"default": 100
+				},
+				"minecraft:herd": {
+					"min_size": 2,
+					"max_size": 4
+				},
+				"minecraft:permute_type": [
+					{
+						"weight": 95
+					},
+					{
+						"weight": 5,
+						"entity_type": "minecraft:zombie_villager_v2"
+					}
+				],
+				"minecraft:biome_filter": {
+					"test": "has_biome_tag",
+					"operator": "==",
+					"value": "mooshroom_island"
+				}
+			},
+			{
+				"minecraft:spawns_on_surface": {},
+				"minecraft:spawns_underground": {},
+				"minecraft:brightness_filter": {
+					"min": 0,
+					"max": 7,
+					"adjust_for_weather": true
+				},
+				"minecraft:difficulty_filter": {
+					"min": "easy",
+					"max": "hard"
+				},
+				"minecraft:weight": {
+					"default": 100
+				},
+				"minecraft:herd": {
+					"min_size": 2,
+					"max_size": 4
+				},
+				"minecraft:permute_type": [
+					{
+						"weight": 95
+					},
+					{
+						"weight": 5,
+						"entity_type": "minecraft:zombie_villager_v2"
+					}
+				],
+				"minecraft:biome_filter": {
+					"test": "has_biome_tag",
+					"operator": "==",
+					"value": "monster"
+				}
+			}
+		]
+	}
+}

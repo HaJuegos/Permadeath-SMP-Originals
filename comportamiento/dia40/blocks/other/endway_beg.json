@@ -1,0 +1,30 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ha:end_way_beg",
+			"menu_category":{
+				"category":"commands"
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_explosion": false,
+			"minecraft:destructible_by_mining": false,
+			"minecraft:light_dampening": 0,
+			"minecraft:light_emission": 1.5,
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": false,
+			"minecraft:unwalkable": true,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ha:end_way_beg",
+					"render_method": "alpha_test",
+					"face_dimming": false,
+					"ambient_occlusion": false
+				}
+			}
+		}
+	}
+}

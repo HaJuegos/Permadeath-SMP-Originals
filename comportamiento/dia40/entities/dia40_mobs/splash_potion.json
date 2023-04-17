@@ -1,0 +1,259 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.12.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minecraft:splash_potion",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"ha:for_module": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"spawn_aoe_cloud": {
+							"radius": 1,
+							"radius_on_use": 0,
+							"potion": 24,
+							"duration": 1,
+							"color": [
+								220,
+								0,
+								239
+							],
+							"affect_owner": false,
+							"reapplication_delay": 10
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "ha:run_command_module",
+								"target": "self"
+							}
+						},
+						"douse_fire": {},
+						"remove_on_hit": {}
+					},
+					"power": 0.5,
+					"gravity": 0.05,
+					"angle_offset": -20,
+					"hit_sound": "glass"
+				}
+			},
+			"ha:witch_potion_one": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"douse_fire": {},
+						"thrown_potion_effect": {},
+						"remove_on_hit": {},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "ha:run_command_damage",
+								"target": "self"
+							}
+						}
+					},
+					"power": 0.5,
+					"gravity": 0.05,
+					"angle_offset": -20,
+					"hit_sound": "glass"
+				}
+			},
+			"ha:witch_potion_two": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"douse_fire": {},
+						"thrown_potion_effect": {},
+						"remove_on_hit": {},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "ha:run_command_potion",
+								"target": "self"
+							}
+						}
+					},
+					"power": 0.5,
+					"gravity": 0.05,
+					"angle_offset": -20,
+					"hit_sound": "glass"
+				}
+			},
+			"ha:witch_potion_three": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"douse_fire": {},
+						"thrown_potion_effect": {},
+						"remove_on_hit": {},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "ha:run_command_slowness",
+								"target": "self"
+							}
+						}
+					},
+					"power": 0.5,
+					"gravity": 0.05,
+					"angle_offset": -20,
+					"hit_sound": "glass"
+				}
+			},
+			"ha:for_module": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"spawn_aoe_cloud": {
+							"radius": 1,
+							"radius_on_use": 0,
+							"potion": 24,
+							"duration": 1,
+							"color": [
+								220,
+								0,
+								239
+							],
+							"affect_owner": false,
+							"reapplication_delay": 10
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "ha:run_command_module",
+								"target": "self"
+							}
+						},
+						"douse_fire": {},
+						"remove_on_hit": {}
+					},
+					"power": 0.5,
+					"gravity": 0.05,
+					"angle_offset": -20,
+					"hit_sound": "glass"
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"douse_fire": {},
+					"thrown_potion_effect": {},
+					"remove_on_hit": {}
+				},
+				"power": 0.5,
+				"gravity": 0.05,
+				"angle_offset": -20.0,
+				"hit_sound": "glass"
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 80.0,
+					"max_dropped_ticks": 5,
+					"use_motion_prediction_hints": true
+				}
+			}
+		},
+		"events": {
+			"ha:run_command_module": {
+				"run_command": {
+					"command": [
+						"damage @e[family=!modulejockey,r=6] 48 magic entity @e[type=ha:spawner_minecart,c=1]"
+					]
+				}
+			},
+			"ha:summon_potion_module": {
+				"add": {
+					"component_groups": [
+						"ha:for_module"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"sequence": [
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "witch"
+						},
+						"trigger": "ha:randomize_witch"
+					}
+				]
+			},
+			"ha:randomize_witch": {
+				"randomize": [
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:witch_potion_one"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:witch_potion_two"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"ha:witch_potion_three"
+							]
+						}
+					}
+				]
+			},
+			"ha:run_command_damage": {
+				"run_command": {
+					"command": [
+						"damage @e[r=3] 106 magic entity @e[type=witch,c=1]"
+					]
+				}
+			},
+			"ha:run_command_potion": {
+				"run_command": {
+					"command": [
+						"effect @e[r=3] poison 300 3"
+					]
+				}
+			},
+			"ha:run_command_slowness": {
+				"run_command": {
+					"command": [
+						"effect @e[r=3] slowness 20 5"
+					]
+				}
+			},
+			"ha:run_command_module": {
+				"run_command": {
+					"command": [
+						"damage @e[family=!modulejockey,r=6] 48 magic entity @e[type=ha:spawner_minecart,c=1]"
+					]
+				}
+			},
+			"ha:summon_potion_module": {
+				"add": {
+					"component_groups": [
+						"ha:for_module"
+					]
+				}
+			}
+		}
+	}
+}

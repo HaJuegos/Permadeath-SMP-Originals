@@ -1,0 +1,88 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:diamond_helmet",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "enchant_random_gear",
+							"chance": 0.25
+						}
+					],
+					"pools": [
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "minecraft:diamond_chestplate",
+									"weight": 1,
+									"functions": [
+										{
+											"function": "enchant_random_gear",
+											"chance": 0.25
+										}
+									],
+									"pools": [
+										{
+											"rolls": 1,
+											"entries": [
+												{
+													"type": "item",
+													"name": "minecraft:diamond_leggings",
+													"weight": 1,
+													"functions": [
+														{
+															"function": "enchant_random_gear",
+															"chance": 0.25
+														}
+													],
+													"pools": [
+														{
+															"rolls": 1,
+															"entries": [
+																{
+																	"type": "item",
+																	"name": "minecraft:diamond_boots",
+																	"weight": 1,
+																	"functions": [
+																		{
+																			"function": "enchant_random_gear",
+																			"chance": 0.25
+																		}
+																	],
+																	"pools": [
+																		{
+																			"rolls": 1,
+																			"entries": [
+																				{
+																					"type": "item",
+																					"name": "minecraft:warped_fungus_on_a_stick",
+																					"weight": 1
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

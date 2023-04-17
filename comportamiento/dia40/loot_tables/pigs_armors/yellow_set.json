@@ -1,0 +1,89 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "ha:netherite_helmet_yellow",
+					"functions": [
+						{
+							"function": "enchant_random_gear",
+							"chance": 0.25
+						}
+					],
+					"pools": [
+						{
+							"rolls": 1,
+							"entries": [
+								{
+									"type": "item",
+									"name": "ha:netherite_chestplate_yellow",
+									"functions": [
+										{
+											"function": "enchant_random_gear",
+											"chance": 0.25
+										}
+									],
+									"pools": [
+										{
+											"rolls": 1,
+											"entries": [
+												{
+													"type": "item",
+													"name": "ha:netherite_leggings_yellow",
+													"functions": [
+														{
+															"function": "enchant_random_gear",
+															"chance": 0.25
+														}
+													],
+													"pools": [
+														{
+															"rolls": 1,
+															"entries": [
+																{
+																	"type": "item",
+																	"name": "ha:netherite_boots_yellow",
+																	"functions": [
+																		{
+																			"function": "enchant_random_gear",
+																			"chance": 0.25
+																		}
+																	],
+																	"pools": [
+																		{
+																			"rolls": 1,
+																			"entries": [
+																				{
+																					"type": "item",
+																					"name": "minecraft:golden_sword",
+																					"functions": [
+																						{
+																							"function": "enchant_random_gear",
+																							"chance": 0.25
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,69 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.10.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minecraft:shulker_bullet",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.625,
+				"height": 0.625
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"spawn_chance": {
+						"first_spawn_percent_chance": 100,
+						"first_spawn_count": 1,
+						"spawn_definition": "minecraft:tnt"
+					},
+					"impact_damage": {
+						"damage": 4,
+						"knockback": true,
+						"should_bounce": true
+					},
+					"mob_effect": {
+						"effect": "levitation",
+						"durationeasy": 200,
+						"durationnormal": 200,
+						"durationhard": 200,
+						"amplifier": 0
+					},
+					"remove_on_hit": {},
+					"particle_on_hit": {
+						"particle_type": "largeexplode",
+						"on_other_hit": true
+					}
+				},
+				"hit_sound": "bullet.hit",
+				"destroyOnHurt": true,
+				"crit_particle_on_hurt": true,
+				"power": 1.6,
+				"gravity": 0.05,
+				"uncertainty_base": 16,
+				"uncertainty_multiplier": 4,
+				"anchor": 1,
+				"offset": [
+					0,
+					-0.1,
+					0
+				],
+				"homing": true
+			},
+			"minecraft:physics": {
+				"has_collision": false
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 80,
+					"max_dropped_ticks": 7,
+					"use_motion_prediction_hints": true
+				}
+			}
+		}
+	}
+}

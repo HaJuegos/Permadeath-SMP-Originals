@@ -1,0 +1,214 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minecraft:elder_guardian",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"ha:set_despawn": {
+				"minecraft:despawn": {
+					"despawn_from_distance": {},
+					"despawn_from_inactivity": true,
+					"min_range_inactivity_timer": 180
+				},
+				"minecraft:spell_effects": {
+					"add_effects": [
+						{
+							"effect": "speed",
+							"duration": 99999,
+							"amplifier": 2,
+							"visible": true,
+							"ambient": false
+						}
+					]
+				}
+			},
+			"ha:clone_mob": {
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"should_leash": false,
+							"num_to_spawn": 2,
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"spawn_entity": "minecraft:elder_guardian",
+							"spawn_event": "ha:entity_cloned",
+							"single_use": true
+						}
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player ? 10 : 0"
+			},
+			"minecraft:collision_box": {
+				"width": 1.99,
+				"height": 1.99
+			},
+			"minecraft:nameable": {},
+			"minecraft:loot": {
+				"table": "loot_tables/empty.json"
+			},
+			"minecraft:navigation.generic": {
+				"is_amphibious": true,
+				"can_path_over_water": false,
+				"can_swim": true,
+				"can_walk": false,
+				"can_breach": true
+			},
+			"minecraft:movement.sway": {},
+			"minecraft:jump.static": {},
+			"minecraft:health": {
+				"value": 80,
+				"max": 80
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:movement": {
+				"value": 0.3
+			},
+			"minecraft:underwater_movement": {
+				"value": 0.3
+			},
+			"minecraft:attack": {
+				"damage": 5
+			},
+			"minecraft:follow_range": {
+				"value": 16,
+				"max": 16
+			},
+			"minecraft:breathable": {
+				"breathes_water": true
+			},
+			"minecraft:home": {
+				"restriction_radius": 16
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 1,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "squid"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "axolotl"
+								}
+							]
+						},
+						"max_dist": 35
+					}
+				],
+				"attack_interval_min": 0.4,
+				"must_see": true
+			},
+			"minecraft:behavior.guardian_attack": {
+				"priority": 4,
+				"elder_extra_magic_damage": 2,
+				"hard_mode_extra_magic_damage": 2,
+				"magic_damage": 1,
+				"min_distance": 20,
+				"sound_delay_time": 0.5,
+				"x_max_rotation": 90,
+				"y_max_head_rotation": 90
+			},
+			"minecraft:behavior.move_towards_home_restriction": {
+				"priority": 5,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.random_swim": {
+				"priority": 7,
+				"speed_multiplier": 0.5,
+				"avoid_surface": false
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 8,
+				"look_distance": 12,
+				"probability": 0.01
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 9
+			},
+			"minecraft:type_family": {
+				"family": [
+					"guardian_elder",
+					"monster",
+					"mob"
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:spell_effects": {
+				"add_effects": [
+					{
+						"effect": "resistance",
+						"duration": 99999,
+						"amplifier": 2,
+						"visible": true,
+						"ambient": false
+					},
+					{
+						"effect": "speed",
+						"duration": 99999,
+						"amplifier": 3,
+						"visible": true,
+						"ambient": false
+					}
+				]
+			}
+		},
+		"events": {
+			"ha:spawn_rare": {
+				"add": {
+					"component_groups": [
+						"ha:set_despawn"
+					]
+				}
+			},
+			"ha:entity_cloned": {
+				"add": {}
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"ha:clone_mob"
+					]
+				}
+			}
+		}
+	}
+}

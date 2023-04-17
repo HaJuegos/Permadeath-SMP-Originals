@@ -1,3 +1,143 @@
-/* Este archivo fue creado por ୨୧ 𓂅 𝒄𝒐𝒏𝒗𝒆𝒙 ! ♡#9947 (Discord) y @Ha_Juegos_Cat!, Cualquier reutilizacion o modificacion de este, Por favor dejar creditos originales del creador del codigo y del add-on para no tener problemas!. Si quieres contactarte con el creador de este codigo, Ve a su server de Discord: https://discord.gg/C3ZHdnUVmu y https://discord.gg/9jZHkhu86P */
-/* This file was created by ୨୧ 𓂅 𝒄𝒐𝒏𝒗𝒆𝒙 ! ♡#9947 (Discord) and @Ha_Juegos_Cat!, Any reuse or modification of this, please leave original credits to the creator of the code and add-on to avoid problems. If you want to contact the creator of this code, go to his Discord server: https://discord.gg/C3ZHdnUVmu and https://discord.gg/9jZHkhu86P */
-{"format_version":"1.17.30","animations":{"animation.ha_looping_rain":{"timeline":{"0.0":["/function death_train/contador"]},"animation_length":1.1,"loop":true},"animation.ha_ender_crystal_replace":{"loop":true,"animation_length":0.9,"timeline":{"0.0":["/function end_attacks/remplazar_obsidiana"]}},"animation.ha_sand_replace_and_bedrock_trigger":{"animation_length":0.1,"loop":true,"timeline":{"0.0":["/execute @a[tag=in_end] ~ ~ ~ fill ~24 ~4 ~24 ~-24 ~-4 ~-24 end_stone 0 replace sand","/execute @a[tag=in_end] ~ ~ ~ fill ~24 ~4 ~24 ~-24 ~-4 ~-24 end_bricks 0 replace sand","/execute @a[tag=in_end] ~ ~ ~ kill @e[type=item,r=100,name=\"Arena\"]","/execute @a[tag=in_end] ~ ~ ~ kill @e[type=item,r=100,name=\"Sand\"]","/execute @e[type=ghast,family=!from_endercrystal] ~ ~ ~ event entity @s ha:despawn","/execute @a[tag=in_end] ~ ~ ~ detect ~ ~-1 ~ bedrock 0 effect @s levitation 9 12 true","/execute @a[tag=in_end] ~ ~ ~ detect ~ ~-1 ~ bedrock 1 effect @s levitation 9 12 true"]}},"animation.ha_loop_lightning_bolt":{"animation_length":50.9,"loop":true,"timeline":{"4.0":["/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~5 ~ ~"],"10.5":["/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~5"],"20.0":["/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~-5 ~ ~"],"25.0":["/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~-5"],"30.2":["/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~5 ~ ~"],"35.0":["/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~5"],"40.0":["/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~-5 ~ ~"],"49.0":["/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~-5"],"50.1":["/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~-5"]}},"animation.ha_cloud_timer_ejecuted":{"animation_length":10.9,"loop":false,"timeline":{"0.0":["/execute @e[tag=!started,family=loop] ~ ~ ~ effect @a[tag=in_end] night_vision 10 1 true"],"1.0":["/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"],"2.0":["/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"],"3.0":["/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"],"4.0":["/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"],"5.0":["/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"],"6.0":["/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"],"7.0":["/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"],"8.0":["/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"],"9.0":["/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"],"9.7":["/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.levelup @a[tag=in_end] ~ ~ ~ 900 2"],"9.9":["/execute @e[tag=!started,family=loop] ~ ~ ~ execute @a[tag=in_end] ~ ~1 ~ summon ha:area_cloud_alert_damage ~ ~ ~ ha:summon_cloud","/tag @s add started"],"10.1":["@s ha:despawn"]}},"animation.ha_loop_area_cloud_alert_system":{"animation_length":64.0,"loop":true,"timeline":{"63.9":["/execute @r[tag=in_end] ~ ~ ~ summon ha:area_cloud_alert_damage ~ ~1 ~ ha:summon_start_timer"]}}}}
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.17.30",
+	"animations": {
+		"animation.ha_looping_rain": {
+			"timeline": {
+				"0.0": [
+					"/function death_train/contador"
+				]
+			},
+			"animation_length": 0.9,
+			"loop": true
+		},
+		"animation.ha_ender_crystal_replace": {
+			"loop": true,
+			"animation_length": 0.9,
+			"timeline": {
+				"0.0": [
+					"/function end_attacks/remplazar_obsidiana"
+				]
+			}
+		},
+		"animation.ha_sand_replace_and_bedrock_trigger": {
+			"animation_length": 0.1,
+			"loop": true,
+			"timeline": {
+				"0.0": [
+					"/execute @a[tag=in_end] ~ ~ ~ fill ~24 ~4 ~24 ~-24 ~-4 ~-24 end_stone 0 replace sand",
+					"/execute @a[tag=in_end] ~ ~ ~ fill ~24 ~4 ~24 ~-24 ~-4 ~-24 end_bricks 0 replace sand",
+					"/execute @a[tag=in_end] ~ ~ ~ kill @e[type=item,r=100,name=\"Arena\"]",
+					"/execute @a[tag=in_end] ~ ~ ~ kill @e[type=item,r=100,name=\"Sand\"]",
+					"/execute @e[type=ghast,family=!from_endercrystal] ~ ~ ~ event entity @s ha:despawn",
+					"/execute @a[tag=in_end] ~ ~ ~ detect ~ ~-1 ~ bedrock 0 effect @s levitation 9 12 true",
+					"/execute @a[tag=in_end] ~ ~ ~ detect ~ ~-1 ~ bedrock 1 effect @s levitation 9 12 true"
+				]
+			}
+		},
+		"animation.ha_loop_lightning_bolt": {
+			"animation_length": 50.9,
+			"loop": true,
+			"timeline": {
+				"2.0": [
+					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+				],
+				"4.0": [
+					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+				],
+				"6.0": [
+					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+				],
+				"9.0": [
+					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+				],
+				"10.5": [
+					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+				],
+				"15.0": [
+					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+				],
+				"20.0": [
+					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+				],
+				"25.0": [
+					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+				],
+				"30.2": [
+					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+				],
+				"35.0": [
+					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+				],
+				"40.0": [
+					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+				],
+				"45.0": [
+					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+				],
+				"49.0": [
+					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+				],
+				"50.0": [
+					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+				]
+			}
+		},
+		"animation.ha_cloud_timer_ejecuted": {
+			"animation_length": 10.9,
+			"loop": false,
+			"timeline": {
+				"0.0": [
+					"/execute @e[tag=!started,family=loop] ~ ~ ~ effect @a[tag=in_end] night_vision 10 1 true"
+				],
+				"1.0": [
+					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+				],
+				"2.0": [
+					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+				],
+				"3.0": [
+					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+				],
+				"4.0": [
+					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+				],
+				"5.0": [
+					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+				],
+				"6.0": [
+					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+				],
+				"7.0": [
+					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+				],
+				"8.0": [
+					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+				],
+				"9.0": [
+					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+				],
+				"9.7": [
+					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.levelup @a[tag=in_end] ~ ~ ~ 900 2"
+				],
+				"9.9": [
+					"/execute @e[tag=!started,family=loop] ~ ~ ~ execute @a[tag=in_end] ~ ~1 ~ summon ha:area_cloud_alert_damage ~ ~ ~ ha:summon_cloud",
+					"/tag @s add started"
+				],
+				"10.1": [
+					"@s ha:despawn"
+				]
+			}
+		},
+		"animation.ha_loop_area_cloud_alert_system": {
+			"animation_length": 64.0,
+			"loop": true,
+			"timeline": {
+				"63.9": [
+					"/execute @r[tag=in_end] ~ ~ ~ summon ha:area_cloud_alert_damage ~ ~1 ~ ha:summon_start_timer"
+				]
+			}
+		}
+	}
+}
