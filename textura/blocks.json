@@ -1,8 +1,212 @@
-/* Este archivo fue editado por @Ha_Juegos_Cat!. Cualquier modificacion que hagas a este mismo, Por favor deja el credito inicial que merece del creador del add-on para no tener problemas!. Si quieres contactarme hablame en mi Server de Discord: https://discord.gg/9jZHkhu86P
-Mi Canal de YouTube: https://www.youtube.com/c/HaJuegos */
-/* This file was edited by @Ha_Juegos_Cat!. Any modifications you make to it, please leave the initial credit to the creator of the add-on so you don't have problems. If you want to contact me talk to me on my Discord Server: https://discord.gg/9jZHkhu86P
-My YouTube Channel: https://www.youtube.com/c/HaJuegos */
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
 {
+	// head sounds
+	"ha:kevin_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:rayo_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:abdiel_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:ancient_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:anderson_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:andrw_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:angel_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:apex_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:awa_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:azrag_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:bendel_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:blade_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:chungus_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:chuyito_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:cloud_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:convex_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:dao_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:dark_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:debris_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:dino_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:dyan_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:ehbunny_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:enzo_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:eric_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:espectro_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:fran_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:generic_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:geo_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:janter_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:jost_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:lexwix_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:louis_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:metwe_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:miguel_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:hacatto_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:mistik_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:naru_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:neither_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:norman_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:robot_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:sokw_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:stazku_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:tara_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:verde_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:zip_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:krekoh_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:axol_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:actu_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:slog_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:peley_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:royer_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	// other blocks sounds
 	"ha:end_way_beg": {
 		"sound": "stone",
 		"textures": "end_way_beginning"

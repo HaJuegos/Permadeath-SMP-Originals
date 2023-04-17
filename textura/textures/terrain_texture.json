@@ -1,12 +1,272 @@
-/* Este archivo fue editado por @Ha_Juegos_Cat!. Cualquier modificacion que hagas a este mismo, Por favor deja el credito inicial que merece del creador del add-on para no tener problemas!. Si quieres contactarme hablame en mi Server de Discord: https://discord.gg/9jZHkhu86P
-Mi Canal de YouTube: https://www.youtube.com/c/HaJuegos */
-/* This file was edited by @Ha_Juegos_Cat!. Any modifications you make to it, please leave the initial credit to the creator of the add-on so you don't have problems. If you want to contact me talk to me on my Discord Server: https://discord.gg/9jZHkhu86P
-My YouTube Channel: https://www.youtube.com/c/HaJuegos */
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
 {
 	"num_mip_levels": 4,
 	"padding": 8,
 	"resource_pack_name": "vanilla",
 	"texture_data": {
+		// heads
+		"kevin_head": {
+			"textures": [
+				"textures/blocks/heads/kevin"
+			]
+		},
+		"rayo_head": {
+			"textures": [
+				"textures/blocks/heads/rayo"
+			]
+		},
+		"hacatto_head": {
+			"textures": [
+				"textures/blocks/heads/hacatto"
+			]
+		},
+		"abdiel_head": {
+			"textures": [
+				"textures/blocks/heads/abdiel"
+			]
+		},
+		"ancient_head": {
+			"textures": [
+				"textures/blocks/heads/ancient"
+			]
+		},
+		"anderson_head": {
+			"textures": [
+				"textures/blocks/heads/anderson"
+			]
+		},
+		"andrw_head": {
+			"textures": [
+				"textures/blocks/heads/andrw"
+			]
+		},
+		"angel_head": {
+			"textures": [
+				"textures/blocks/heads/angel"
+			]
+		},
+		"apex_head": {
+			"textures": [
+				"textures/blocks/heads/apex"
+			]
+		},
+		"awa_head": {
+			"textures": [
+				"textures/blocks/heads/awa"
+			]
+		},
+		"azrag_head": {
+			"textures": [
+				"textures/blocks/heads/scare"
+			]
+		},
+		"bendel_head": {
+			"textures": [
+				"textures/blocks/heads/bendel"
+			]
+		},
+		"blade_head": {
+			"textures": [
+				"textures/blocks/heads/blade"
+			]
+		},
+		"chungus_head": {
+			"textures": [
+				"textures/blocks/heads/pony"
+			]
+		},
+		"chuyito_head": {
+			"textures": [
+				"textures/blocks/heads/chuyito"
+			]
+		},
+		"cloud_head": {
+			"textures": [
+				"textures/blocks/heads/cloud"
+			]
+		},
+		"convex_head": {
+			"textures": [
+				"textures/blocks/heads/convex"
+			]
+		},
+		"dao_head": {
+			"textures": [
+				"textures/blocks/heads/dao"
+			]
+		},
+		"dark_head": {
+			"textures": [
+				"textures/blocks/heads/dark"
+			]
+		},
+		"debris_head": {
+			"textures": [
+				"textures/blocks/heads/debris"
+			]
+		},
+		"dino_head": {
+			"textures": [
+				"textures/blocks/heads/dino"
+			]
+		},
+		"dyan_head": {
+			"textures": [
+				"textures/blocks/heads/dyan"
+			]
+		},
+		"ehbunny_head": {
+			"textures": [
+				"textures/blocks/heads/ehbuny"
+			]
+		},
+		"enzo_head": {
+			"textures": [
+				"textures/blocks/heads/enzo"
+			]
+		},
+		"eric_head": {
+			"textures": [
+				"textures/blocks/heads/eric"
+			]
+		},
+		"espectro_head": {
+			"textures": [
+				"textures/blocks/heads/espectro"
+			]
+		},
+		"fran_head": {
+			"textures": [
+				"textures/blocks/heads/fran"
+			]
+		},
+		"generic_head": {
+			"textures": [
+				"textures/blocks/heads/generic"
+			]
+		},
+		"geo_head": {
+			"textures": [
+				"textures/blocks/heads/geo"
+			]
+		},
+		"janter_head": {
+			"textures": [
+				"textures/blocks/heads/janter"
+			]
+		},
+		"jost_head": {
+			"textures": [
+				"textures/blocks/heads/jost"
+			]
+		},
+		"louis_head": {
+			"textures": [
+				"textures/blocks/heads/louis"
+			]
+		},
+		"lexwix_head": {
+			"textures": [
+				"textures/blocks/heads/lexi"
+			]
+		},
+		"metwe_head": {
+			"textures": [
+				"textures/blocks/heads/metwe"
+			]
+		},
+		"miguel_head": {
+			"textures": [
+				"textures/blocks/heads/miguel"
+			]
+		},
+		"mistik_head": {
+			"textures": [
+				"textures/blocks/heads/mistik"
+			]
+		},
+		"naru_head": {
+			"textures": [
+				"textures/blocks/heads/naru"
+			]
+		},
+		"neither_head": {
+			"textures": [
+				"textures/blocks/heads/neither"
+			]
+		},
+		"norman_head": {
+			"textures": [
+				"textures/blocks/heads/norman"
+			]
+		},
+		"robot_head": {
+			"textures": [
+				"textures/blocks/heads/robot"
+			]
+		},
+		"sokw_head": {
+			"textures": [
+				"textures/blocks/heads/sokwe"
+			]
+		},
+		"stazku_head": {
+			"textures": [
+				"textures/blocks/heads/stazku"
+			]
+		},
+		"tara_head": {
+			"textures": [
+				"textures/blocks/heads/tara"
+			]
+		},
+		"treicol_head": {
+			"textures": [
+				"textures/blocks/heads/treicol"
+			]
+		},
+		"verde_head": {
+			"textures": [
+				"textures/blocks/heads/verde"
+			]
+		},
+		"zip_head": {
+			"textures": [
+				"textures/blocks/heads/zip"
+			]
+		},
+		"krekoh_head": {
+			"textures": [
+				"textures/blocks/heads/krekoh"
+			]
+		},
+		"axol_head": {
+			"textures": [
+				"textures/blocks/heads/axol"
+			]
+		},
+		"actu_head": {
+			"textures": [
+				"textures/blocks/heads/actu"
+			]
+		},
+		"slog_head": {
+			"textures": [
+				"textures/blocks/heads/slog"
+			]
+		},
+		"peley_head": {
+			"textures": [
+				"textures/blocks/heads/peley"
+			]
+		},
+		"royer_head": {
+			"textures": [
+				"textures/blocks/heads/royer"
+			]
+		},
+		// other blocks
 		"end_way_beginning": {
 			"textures": [
 				"textures/blocks/beginning_portal"
@@ -19,3 +279,5 @@ My YouTube Channel: https://www.youtube.com/c/HaJuegos */
 		}
 	}
 }
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */

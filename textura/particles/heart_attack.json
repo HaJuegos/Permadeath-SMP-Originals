@@ -1,5 +1,78 @@
-/* Este archivo fue creado por Astral302#6969 (Discord), Cualquier reutilizacion o modificacion de este, Por favor dejar creditos originales del creador del codigo y del add-on para no tener problemas!.*/
-/* This file was created by Astral302#6969 (Discord), Any reuse or modification of this, please leave original credits to the creator of the code and add-on to avoid problems.*/
-{"format_version":"1.10.0","particle_effect":{"description":{"identifier":"end:heart_attack","basic_render_parameters":{"material":"particles_blend","texture":"textures/particle/heart_attack"}},"components":{"minecraft:emitter_local_space":{"position":true,"rotation":false},"minecraft:emitter_rate_steady":{"spawn_rate":570,"max_particles":800},"minecraft:emitter_lifetime_once":{"active_time":10.9},"minecraft:emitter_shape_disc":{"radius":5,"direction":[0,10,0]},"minecraft:particle_lifetime_expression":{"max_lifetime":"2 / (Math.random(2.0, 16.0) + 3.0)"},"minecraft:particle_initial_speed":36,"minecraft:particle_motion_dynamic":{"linear_acceleration":[0,-100,0],"linear_drag_coefficient":9},"minecraft:particle_appearance_billboard":{"size":["0.075 + variable.particle_random_1*0.125","0.075 + variable.particle_random_1*0.125"],"facing_camera_mode":"lookat_xyz","uv":{"texture_width":7,"texture_height":7,"uv":[0,0],"uv_size":[7,7]}},"minecraft:particle_motion_collision":{"coefficient_of_restitution":2,"collision_radius":0.5},"minecraft:particle_appearance_tinting":{"color":[0.57255,0.4902,0.41176,1]}}}}
-/* Este archivo fue creado por Astral302#6969 (Discord), Cualquier reutilizacion o modificacion de este, Por favor dejar creditos originales del creador del codigo y del add-on para no tener problemas!.*/
-/* This file was created by Astral302#6969 (Discord), Any reuse or modification of this, please leave original credits to the creator of the code and add-on to avoid problems.*/
+/* Creado/Editado por: Astral. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/983220765006635018 */
+/* Created/Edited by: Astral If you need more information, write me on Discord: https://discord.com/users/983220765006635018 */
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "end:heart_attack",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/heart_attack"
+			}
+		},
+		"components": {
+			"minecraft:emitter_local_space": {
+				"position": true,
+				"rotation": false
+			},
+			"minecraft:emitter_rate_steady": {
+				"spawn_rate": 570,
+				"max_particles": 800
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 10.9
+			},
+			"minecraft:emitter_shape_disc": {
+				"radius": 5,
+				"direction": [
+					0,
+					10,
+					0
+				]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "2 / (Math.random(2.0, 16.0) + 3.0)"
+			},
+			"minecraft:particle_initial_speed": 36,
+			"minecraft:particle_motion_dynamic": {
+				"linear_acceleration": [
+					0,
+					-100,
+					0
+				],
+				"linear_drag_coefficient": 9
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": [
+					"0.075 + variable.particle_random_1*0.125",
+					"0.075 + variable.particle_random_1*0.125"
+				],
+				"facing_camera_mode": "lookat_xyz",
+				"uv": {
+					"texture_width": 7,
+					"texture_height": 7,
+					"uv": [
+						0,
+						0
+					],
+					"uv_size": [
+						7,
+						7
+					]
+				}
+			},
+			"minecraft:particle_motion_collision": {
+				"coefficient_of_restitution": 2,
+				"collision_radius": 0.5
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": [
+					0.57255,
+					0.4902,
+					0.41176,
+					1
+				]
+			}
+		}
+	}
+}

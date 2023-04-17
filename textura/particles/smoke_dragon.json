@@ -1,5 +1,84 @@
-/* Este archivo fue creado por Astral302#6969 (Discord), Cualquier reutilizacion o modificacion de este, Por favor dejar creditos originales del creador del codigo y del add-on para no tener problemas!.*/
-/* This file was created by Astral302#6969 (Discord), Any reuse or modification of this, please leave original credits to the creator of the code and add-on to avoid problems.*/
-{"format_version":"1.10.0","particle_effect":{"description":{"identifier":"end:smoke_dragon","basic_render_parameters":{"material":"particles_blend","texture":"textures/particle/smoke_dragon"}},"components":{"minecraft:emitter_local_space":{"position":true,"rotation":false},"minecraft:emitter_rate_steady":{"spawn_rate":280,"max_particles":310},"minecraft:emitter_lifetime_once":{"active_time":56},"minecraft:emitter_shape_disc":{"radius":8,"direction":[0.1,0.3,0.1]},"minecraft:particle_lifetime_expression":{"max_lifetime":"17.0 / (Math.random(2.0, 16.0) + 3.0)"},"minecraft:particle_initial_speed":0.3,"minecraft:particle_motion_dynamic":{"linear_acceleration":[0,2,0],"linear_drag_coefficient":0.7},"minecraft:particle_appearance_billboard":{"size":["0.375 + variable.particle_random_1*0.3","0.365 + variable.particle_random_1*0.3"],"facing_camera_mode":"lookat_xyz","uv":{"texture_width":64,"texture_height":8,"flipbook":{"base_UV":[0,0],"size_UV":[8,8],"step_UV":[8,0],"frames_per_second":2,"max_frame":10}}},"minecraft:particle_appearance_lighting":{},"minecraft:particle_appearance_tinting":{"color":{"interpolant":"v.particle_age / v.particle_lifetime","gradient":{"0.49":"#ffffffff","1.49":"#FF3E3E3E"}}}}}}
-/* Este archivo fue creado por Astral302#6969 (Discord), Cualquier reutilizacion o modificacion de este, Por favor dejar creditos originales del creador del codigo y del add-on para no tener problemas!.*/
-/* This file was created by Astral302#6969 (Discord), Any reuse or modification of this, please leave original credits to the creator of the code and add-on to avoid problems.*/
+/* Creado/Editado por: Astral. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/983220765006635018 */
+/* Created/Edited by: Astral If you need more information, write me on Discord: https://discord.com/users/983220765006635018 */
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "end:smoke_dragon",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/smoke_dragon"
+			}
+		},
+		"components": {
+			"minecraft:emitter_local_space": {
+				"position": true,
+				"rotation": false
+			},
+			"minecraft:emitter_rate_steady": {
+				"spawn_rate": 280,
+				"max_particles": 310
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 26
+			},
+			"minecraft:emitter_shape_disc": {
+				"radius": 8,
+				"direction": [
+					0.1,
+					0.3,
+					0.1
+				]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "17.0 / (Math.random(2.0, 16.0) + 3.0)"
+			},
+			"minecraft:particle_initial_speed": 0.3,
+			"minecraft:particle_motion_dynamic": {
+				"linear_acceleration": [
+					0,
+					2,
+					0
+				],
+				"linear_drag_coefficient": 0.7
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": [
+					"0.375 + variable.particle_random_1*0.3",
+					"0.365 + variable.particle_random_1*0.3"
+				],
+				"facing_camera_mode": "lookat_xyz",
+				"uv": {
+					"texture_width": 64,
+					"texture_height": 8,
+					"flipbook": {
+						"base_UV": [
+							0,
+							0
+						],
+						"size_UV": [
+							8,
+							8
+						],
+						"step_UV": [
+							8,
+							0
+						],
+						"frames_per_second": 2,
+						"max_frame": 10
+					}
+				}
+			},
+			"minecraft:particle_appearance_lighting": {},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"interpolant": "v.particle_age / v.particle_lifetime",
+					"gradient": {
+						"0.49": "#ffffffff",
+						"1.49": "#FF3E3E3E"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,95 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.8.0",
+	"geometry.player_head.block": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 2,
+		"visible_bounds_height": 2,
+		"visible_bounds_offset": [
+			0,
+			1,
+			0
+		],
+		"bones": [
+			{
+				"name": "waist",
+				"pivot": [
+					0,
+					-0.5,
+					0
+				],
+				"rotation": [
+					180,
+					0,
+					180
+				]
+			},
+			{
+				"name": "body",
+				"parent": "waist",
+				"pivot": [
+					0,
+					0,
+					0
+				]
+			},
+			{
+				"name": "head",
+				"parent": "body",
+				"pivot": [
+					0,
+					0,
+					0
+				],
+				"cubes": [
+					{
+						"origin": [
+							-4,
+							0,
+							-4
+						],
+						"size": [
+							8,
+							8,
+							8
+						],
+						"uv": [
+							0,
+							0
+						]
+					}
+				]
+			},
+			{
+				"name": "hat",
+				"parent": "head",
+				"pivot": [
+					0,
+					0,
+					0
+				],
+				"cubes": [
+					{
+						"origin": [
+							-4,
+							0,
+							-4
+						],
+						"size": [
+							8,
+							8,
+							8
+						],
+						"uv": [
+							32,
+							0
+						],
+						"inflate": 0.5
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,8 +1,5 @@
-## This file belongs to: "Ha Juegos" (Copyright 2022), Any unauthorized modification or change will be penalized, more information to authorize your copies you can contact me on discord: https://discord.gg/p6a7tqVJxn
-## My youtube channel for more updates: https://www.youtube.com/c/HaJuegos
-## ********************************************************************
-## Este archivo pertenece a: "Ha Juegos" (Copyright 2022), Cualquier modificación o cambio no autorizado será sancionado, más información para autorizar tus copias puedes contactar conmigo en discord: https://discord.gg/p6a7tqVJxn
-## Mi canal de youtube para más actualizaciones: https://www.youtube.com/c/HaJuegos
+## Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272
+## Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272
 
 disconnect.kicked=§cHas sido ¡PERMABANEADO!
 disconnect.kicked.reason=§cHas sido ¡PERMABANEADO!
@@ -56,3 +53,58 @@ item.ha:netherite_helmet_yellow=Casco de netherite amarilla
 item.ha:netherite_chestplate_yellow=Pechera de netherite amarilla
 item.ha:netherite_leggings_yellow=Pantalones de netherite amarilla
 item.ha:netherite_boots_yellow=Botas de netherite amarilla
+
+## Heads
+
+tile.ha:hacatto_head.name=Cabeza de HaJuegos Cat!
+tile.ha:abdiel_head.name=Cabeza de AbdielSL8706
+tile.ha:ancient_head.name=Cabeza de ItsAncientMC
+tile.ha:anderson_head.name=Cabeza de AndersonGTX3508
+tile.ha:andrw_head.name=Cabeza de AndrwGamerYT656
+tile.ha:angel_head.name=Cabeza de AngelToksXD
+tile.ha:apex_head.name=Cabeza de ApexPrdtrMx
+tile.ha:awa_head.name=Cabeza de AwaScrawny
+tile.ha:azrag_head.name=Cabeza de SCAREG7
+tile.ha:bendel_head.name=Cabeza de Bendel20094368
+tile.ha:blade_head.name=Cabeza de BladeStorm4412
+tile.ha:chungus_head.name=Cabeza de Lapony3331x
+tile.ha:chuyito_head.name=Cabeza de ChuyitoBoy
+tile.ha:cloud_head.name=Cabeza de CloudMrcZ
+tile.ha:convex_head.name=Cabeza de llConvex38ll
+tile.ha:dao_head.name=Cabeza de Daos1to
+tile.ha:dark_head.name=Cabeza de D4RKS1D3R 360
+tile.ha:debris_head.name=Cabeza de DebrisEMZI
+tile.ha:dino_head.name=Cabeza de Din0rider10
+tile.ha:dyan_head.name=Cabeza de DyanGamerYT
+tile.ha:ehbunny_head.name=Cabeza de ehbunny7013
+tile.ha:enzo_head.name=Cabeza de EnzoAle235
+tile.ha:eric_head.name=Cabeza de ericjohnale
+tile.ha:espectro_head.name=Cabeza de Espectro22022
+tile.ha:fran_head.name=Cabeza de Fran CDM7882
+tile.ha:generic_head.name=Cabeza de Generic6515
+tile.ha:geo_head.name=Cabeza de GE0KILLER
+tile.ha:janter_head.name=Cabeza de JanterZz
+tile.ha:jost_head.name=Cabeza de XJostxw
+tile.ha:lexwix_head.name=Cabeza de Lexxwix3405
+tile.ha:louis_head.name=Cabeza de ImLouisM
+tile.ha:metwe_head.name=Cabeza de MetWee's Head
+tile.ha:miguel_head.name=Cabeza de MiguelVeraXd
+tile.ha:mistik_head.name=Cabeza de FANDEHAZARD
+tile.ha:naru_head.name=Cabeza de IamN4ru
+tile.ha:neither_head.name=Cabeza de NeitherDMC
+tile.ha:norman_head.name=Cabeza de NormanliumZz
+tile.ha:robot_head.name=Cabeza de Robot777X5577
+tile.ha:sokw_head.name=Cabeza de S0KWEYD
+tile.ha:stazku_head.name=Cabeza de Stazku
+tile.ha:tara_head.name=Cabeza de taracubayano
+tile.ha:verde_head.name=Cabeza de ZDiegxLz
+tile.ha:treicol_head.name=Cabeza de TreicolMC
+tile.ha:zip_head.name=Cabeza de XxZipxX7902
+tile.ha:krekoh_head.name=Cabeza de Krekoh
+tile.ha:axol_head.name=Cabeza de KidAxolotl
+tile.ha:actu_head.name=Cabeza de Actucutel YT
+tile.ha:slog_head.name=Cabeza de zSlog
+tile.ha:royer_head.name=Cabeza de BigRoyer
+tile.ha:peley_head.name=Cabeza de Popogamer9952
+tile.ha:rayo_head.name=Cabeza de ElRayoo7u7
+tile.ha:kevin_head.name=Cabeza de Kevin294GG

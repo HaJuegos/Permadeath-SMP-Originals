@@ -1,7 +1,5 @@
-/* Este archivo fue editado por @Ha_Juegos_Cat!. Cualquier modificacion que hagas a este mismo, Por favor deja el credito inicial que merece del creador del add-on para no tener problemas!. Si quieres contactarme hablame en mi Server de Discord: https://discord.gg/9jZHkhu86P
-Mi Canal de YouTube: https://www.youtube.com/c/HaJuegos */
-/* This file was edited by @Ha_Juegos_Cat!. Any modifications you make to it, please leave the initial credit to the creator of the add-on so you don't have problems. If you want to contact me talk to me on my Discord Server: https://discord.gg/9jZHkhu86P
-My YouTube Channel: https://www.youtube.com/c/HaJuegos */
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
 {
 	"namespace": "hacustom_animations",
 	"version_and_profile_panel": {
@@ -14,8 +12,8 @@ My YouTube Channel: https://www.youtube.com/c/HaJuegos */
 					"anchor_from": "bottom_right",
 					"anchor_to": "bottom_right",
 					"shadow": true,
-					"font_size": "normal",
-					"text": "v0.0.3",
+					"font_size": "small",
+					"text": "v0.0.4",
 					"layer": 200,
 					"offset": [
 						"-1.3%",
@@ -30,7 +28,7 @@ My YouTube Channel: https://www.youtube.com/c/HaJuegos */
 					"anchor_from": "bottom_left",
 					"anchor_to": "bottom_left",
 					"shadow": true,
-					"font_size": "normal",
+					"font_size": "small",
 					"text": "§c@Ha_Juegos_Cat §r",
 					"layer": 200,
 					"offset": [
@@ -46,28 +44,12 @@ My YouTube Channel: https://www.youtube.com/c/HaJuegos */
 					"anchor_from": "bottom_left",
 					"anchor_to": "bottom_left",
 					"shadow": true,
-					"font_size": "normal",
-					"text": "§4@ElRichMC §r",
+					"font_size": "small",
+					"text": "§5@convex__ §r",
 					"layer": 200,
 					"offset": [
 						"1.3%",
-						"-56%x"
-					],
-					"alpha": 0.4
-				}
-			},
-			{
-				"kernel_name": {
-					"type": "label",
-					"anchor_from": "bottom_left",
-					"anchor_to": "bottom_left",
-					"shadow": true,
-					"font_size": "normal",
-					"text": "§b@KernelFreeze §r",
-					"layer": 200,
-					"offset": [
-						"1.3%",
-						"-25%x"
+						"-35%x"
 					],
 					"alpha": 0.4
 				}
@@ -824,33 +806,48 @@ My YouTube Channel: https://www.youtube.com/c/HaJuegos */
 	},
 	"extra_info_panel": {
 		"type": "panel",
-		"offset": [ "0%", "0%x" ],
+		"offset": [
+			"0%",
+			"0%x"
+		],
 		"anims": [
 			"@hacustom_animations.info_extra_animation_0"
 		],
 		"controls": [
 			{
 				"imagen_0": {
-					"type":"image",
+					"type": "image",
 					"layer": 1,
-					"size":[ "1%c + 180px", "1%c + 36px" ],
-					"texture":"textures/ui/popup_display",
+					"size": [
+						"1%c + 180px",
+						"1%c + 36px"
+					],
+					"texture": "textures/ui/popup_display",
 					"force_texture_reload": true,
 					"anchor_from": "top_right",
 					"anchor_to": "top_right",
-					"offset": [ 0, 0 ]
+					"offset": [
+						0,
+						0
+					]
 				}
 			},
 			{
 				"image_1": {
-					"type":"image",
+					"type": "image",
 					"layer": 1,
-					"size":[ "1%c + 20px", "1%c + 20px" ],
-					"texture":"textures/ui/totem_rollet",
+					"size": [
+						"1%c + 20px",
+						"1%c + 20px"
+					],
+					"texture": "textures/ui/totem_rollet",
 					"force_texture_reload": true,
 					"anchor_from": "top_right",
 					"anchor_to": "top_right",
-					"offset": [ -152 , 6.8 ]
+					"offset": [
+						-152,
+						6.8
+					]
 				}
 			},
 			{
@@ -862,7 +859,10 @@ My YouTube Channel: https://www.youtube.com/c/HaJuegos */
 					"anchor_from": "top_right",
 					"anchor_to": "top_right",
 					"layer": 2,
-					"offset": [ -77 , 6 ]  // Titulo
+					"offset": [
+						-77,
+						6
+					]
 				}
 			},
 			{
@@ -874,7 +874,10 @@ My YouTube Channel: https://www.youtube.com/c/HaJuegos */
 					"anchor_from": "top_right",
 					"anchor_to": "top_right",
 					"layer": 2,
-					"offset": [ -39 , 20 ],
+					"offset": [
+						-39,
+						20
+					],
 					"anims": [
 						"@hacustom_animations.text_0_info_extra_animation_0"
 					]
@@ -890,14 +893,16 @@ My YouTube Channel: https://www.youtube.com/c/HaJuegos */
 					"anchor_from": "top_right",
 					"anchor_to": "top_right",
 					"layer": 2,
-					"offset": [ -17 , 20 ],
+					"offset": [
+						-17,
+						20
+					],
 					"anims": [
 						"@hacustom_animations.text_1_info_extra_animation_0"
 					]
 				}
 			}
 		]
-		
 	},
 	"info_extra_animation_0": {
 		"anim_type": "wait",
@@ -908,8 +913,14 @@ My YouTube Channel: https://www.youtube.com/c/HaJuegos */
 		"anim_type": "offset",
 		"easing": "linear",
 		"duration": 0,
-		"from": [ "0%", "0%x"],
-		"to": [ "100%", "0%x" ],
+		"from": [
+			"0%",
+			"0%x"
+		],
+		"to": [
+			"100%",
+			"0%x"
+		],
 		"next": "@hacustom_animations.info_extra_animation_2"
 	},
 	"info_extra_animation_2": {
@@ -921,8 +932,14 @@ My YouTube Channel: https://www.youtube.com/c/HaJuegos */
 		"anim_type": "offset",
 		"easing": "linear",
 		"duration": 2,
-		"to": [ "0%", "0%x"],
-		"from": [ "100%", "0%x" ],
+		"to": [
+			"0%",
+			"0%x"
+		],
+		"from": [
+			"100%",
+			"0%x"
+		],
 		"next": "@hacustom_animations.info_extra_animation_4"
 	},
 	"info_extra_animation_4": {
@@ -934,8 +951,14 @@ My YouTube Channel: https://www.youtube.com/c/HaJuegos */
 		"anim_type": "offset",
 		"easing": "linear",
 		"duration": 2,
-		"from": [ "0%", "0%x"],
-		"to": [ "100%", "0%x" ]
+		"from": [
+			"0%",
+			"0%x"
+		],
+		"to": [
+			"100%",
+			"0%x"
+		]
 	},
 	"text_0_info_extra_animation_0": {
 		"anim_type": "wait",
@@ -943,11 +966,11 @@ My YouTube Channel: https://www.youtube.com/c/HaJuegos */
 		"next": "@hacustom_animations.text_0_info_extra_animation_1"
 	},
 	"text_0_info_extra_animation_1": {
-		"anim_type":"alpha",
-		"easing":"linear",
-		"duration":3.4,
-		"from":1.0,
-		"to":0.0
+		"anim_type": "alpha",
+		"easing": "linear",
+		"duration": 3.4,
+		"from": 1.0,
+		"to": 0.0
 	},
 	"text_1_info_extra_animation_0": {
 		"anim_type": "wait",
@@ -955,11 +978,11 @@ My YouTube Channel: https://www.youtube.com/c/HaJuegos */
 		"next": "@hacustom_animations.text_1_info_extra_animation_1"
 	},
 	"text_1_info_extra_animation_1": {
-		"anim_type":"alpha",
-		"easing":"linear",
-		"duration":3.4,
-		"from":0.0,
-		"to":1.0
+		"anim_type": "alpha",
+		"easing": "linear",
+		"duration": 3.4,
+		"from": 0.0,
+		"to": 1.0
 	},
 	"haall_panel_content": {
 		"type": "panel",
@@ -992,7 +1015,3 @@ My YouTube Channel: https://www.youtube.com/c/HaJuegos */
 		]
 	}
 }
-/* Este archivo fue editado por @Ha_Juegos_Cat!. Cualquier modificacion que hagas a este mismo, Por favor deja el credito inicial que merece del creador del add-on para no tener problemas!. Si quieres contactarme hablame en mi Server de Discord: https://discord.gg/9jZHkhu86P
-Mi Canal de YouTube: https://www.youtube.com/c/HaJuegos */
-/* This file was edited by @Ha_Juegos_Cat!. Any modifications you make to it, please leave the initial credit to the creator of the add-on so you don't have problems. If you want to contact me talk to me on my Discord Server: https://discord.gg/9jZHkhu86P
-My YouTube Channel: https://www.youtube.com/c/HaJuegos */

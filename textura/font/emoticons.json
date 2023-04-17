@@ -1,5 +1,33 @@
 [
 	{
+		"name": "ha",
+		"code": "0xE108"
+	},
+	{
+		"name": "axol",
+		"code": "0xE109"
+	},
+	{
+		"name": "kernel",
+		"code": "0xE10A"
+	},
+	{
+		"name": "rich",
+		"code": "0xE10B"
+	},
+	{
+		"name": "medal",
+		"code": "0xE10C"
+	},
+		{
+		"name": "louis",
+		"code": "0xE10D"
+	},
+	{
+		"name": "convez",
+		"code": "0xE10E"
+	},
+	{
 		"name": "xbox_face_button_down",
 		"code": "0xE000"
 	},
@@ -466,33 +494,5 @@
 	{
 		"name": "nbsp",
 		"code": "0xE0FF"
-	},
-	{
-		"name": "ha",
-		"code": "0xE108"
-	},
-	{
-		"name": "axol",
-		"code": "0xE109"
-	},
-	{
-		"name": "kernel",
-		"code": "0xE10A"
-	},
-	{
-		"name": "rich",
-		"code": "0xE10B"
-	},
-	{
-		"name": "medal",
-		"code": "0xE10C"
-	},
-		{
-		"name": "louis",
-		"code": "0xE10D"
-	},
-	{
-		"name": "convez",
-		"code": "0xE10E"
 	}
 ]
