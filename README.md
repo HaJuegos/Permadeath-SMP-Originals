@@ -23,13 +23,13 @@
 
 ## DESCARGAS RAPIDAS
 
-- [**CLICK PARA DESCARGAR TODO**]()
+- [**CLICK PARA DESCARGAR TODO**](https://drive.google.com/uc?export=download&id=1tdB-ClYFeuV6h7Ro3yn8aQENNg6bp1W2)
 
-- [**CLICK PARA DESCARGAR EL ADD-ON JUNTO**]()
+- [**CLICK PARA DESCARGAR EL ADD-ON JUNTO**](https://drive.google.com/uc?export=download&id=1hWc_QB-NxwvLLRfmnEJDxGdS8UV6Za8L)
 
-- [**CLICK PARA DESCARGAR EL ADD-ON POR SEPARADO**]()
+- [**CLICK PARA DESCARGAR EL ADD-ON POR SEPARADO**](https://drive.google.com/uc?export=download&id=1LvS9yTKcdNhsry8VnNRuQuqOHmpczoEl)
 
-- [**CLICK PARA DESCARGAR EL MUNDO YA CONFIGURADO**]()
+- [**CLICK PARA DESCARGAR EL MUNDO YA CONFIGURADO**](https://drive.google.com/uc?export=download&id=1C4HEASfDnDl2B20v3iEWqGiMzSxUz6TX)
 
 ## GUIA DE USO
 
