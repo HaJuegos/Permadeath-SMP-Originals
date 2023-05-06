@@ -1988,6 +1988,14 @@
 				"triggers": [
 					{
 						"on_damage": {
+							"filters": {
+								"other_with_families": "villager"
+							}
+						},
+						"deals_damage": false
+					},
+					{
+						"on_damage": {
 							"filters": [
 								{
 									"test": "is_family",

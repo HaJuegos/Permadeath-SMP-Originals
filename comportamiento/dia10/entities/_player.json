@@ -7,30 +7,29 @@
 			"identifier": "minecraft:player",
 			"is_spawnable": false,
 			"is_summonable": false,
-			"is_experimental": false
+			"is_experimental": false,
+			"animations": {
+				"intro": "controller.animation.intro_world",
+				"death": "controller.animation.death_sensor"
+			},
+			"scripts": {
+				"animate": [
+					"intro",
+					"death"
+				]
+			}
 		},
 		"component_groups": {
-			"ha:timer_ban": {
+			"ha:delay_ban": {
 				"minecraft:timer": {
 					"time": [
-						6.1,
-						6.1
+						4.2,
+						4.2
 					],
-					"looping": false,
+					"looping": true,
 					"time_down_event": {
-						"event": "ha:ban"
-					}
-				}
-			},
-			"ha:timer_message": {
-				"minecraft:timer": {
-					"time": [
-						0.3,
-						0.3
-					],
-					"looping": false,
-					"time_down_event": {
-						"event": "ha:end_message"
+						"event": "ha:end_dead",
+						"target": "self"
 					}
 				}
 			},
@@ -47,8 +46,8 @@
 				},
 				"minecraft:timer": {
 					"time": [
-						0,
-						0
+						0.0,
+						0.0
 					],
 					"looping": false,
 					"time_down_event": {
@@ -117,7 +116,7 @@
 				"mine": 0.005,
 				"attack": 0.1,
 				"damage": 0.1,
-				"walk": 0,
+				"walk": 0.0,
 				"sprint": 0.1,
 				"swim": 0.01
 			},
@@ -188,19 +187,15 @@
 			},
 			"minecraft:conditional_bandwidth_optimization": {},
 			"minecraft:block_climber": {},
-			"minecraft:on_death": {
-				"event": "ha:end_message",
-				"target": "self"
-			},
 			"minecraft:damage_sensor": {
 				"triggers": [
 					{
 						"cause": "block_explosion",
-						"damage_multiplier": 2.0
+						"damage_multiplier": 2
 					},
 					{
 						"cause": "entity_explosion",
-						"damage_multiplier": 2.0
+						"damage_multiplier": 2
 					}
 				]
 			},
@@ -256,6 +251,35 @@
 			}
 		},
 		"events": {
+			"ha:start_dead": {
+				"remove": {
+					"component_groups": [
+						"minecraft:add_bad_omen"
+					]
+				},
+				"run_command": {
+					"command": [
+						"function system/run_dead"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"ha:delay_ban"
+					]
+				}
+			},
+			"ha:end_dead": {
+				"remove": {
+					"component_groups": [
+						"ha:delay_ban"
+					]
+				},
+				"run_command": {
+					"command": [
+						"tag @s add banned"
+					]
+				}
+			},
 			"ha:sleeping": {
 				"sequence": [
 					{
@@ -299,46 +323,6 @@
 					"command": [
 						"tellraw @a {\"rawtext\": [{\"text\":\"§c\"},{\"selector\":\"@s\"},{\"text\":\" ha intentado ir al End antes de Tiempo.\"}]}",
 						"kill @s"
-					]
-				}
-			},
-			"ha:end_message": {
-				"run_command": {
-					"command": [
-						"gamemode spectator",
-						"execute @s[tag=!muerto] ~ ~ ~ function system/mensaje_de_muerte"
-					]
-				},
-				"remove": {
-					"component_groups": [
-						"ha:timer_message"
-					]
-				}
-			},
-			"ha:start_message": {
-				"add": {
-					"component_groups": [
-						"ha:timer_message"
-					]
-				}
-			},
-			"ha:has_ban_peding": {
-				"add": {
-					"component_groups": [
-						"ha:timer_ban"
-					]
-				}
-			},
-			"ha:ban": {
-				"remove": {
-					"component_groups": [
-						"ha:timer_ban"
-					]
-				},
-				"run_command": {
-					"command": [
-						"tag @s add Dead",
-						"event entity @e[type=ha:death_train] ha:death_train_start"
 					]
 				}
 			},

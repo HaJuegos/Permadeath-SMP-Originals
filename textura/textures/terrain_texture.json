@@ -6,6 +6,16 @@
 	"resource_pack_name": "vanilla",
 	"texture_data": {
 		// heads
+		"fznix_head": {
+			"textures": [
+				"textures/blocks/heads/fznix"
+			]
+		},
+		"wqp_head": {
+			"textures": [
+				"textures/blocks/heads/wqp"
+			]
+		},
 		"kevin_head": {
 			"textures": [
 				"textures/blocks/heads/kevin"

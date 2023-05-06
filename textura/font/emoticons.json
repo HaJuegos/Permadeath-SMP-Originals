@@ -1,5 +1,9 @@
 [
 	{
+		"name": "corason",
+		"code": "0xE10F" // 
+	},
+	{
 		"name": "ha",
 		"code": "0xE108"
 	},

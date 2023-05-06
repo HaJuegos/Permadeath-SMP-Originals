@@ -11,11 +11,11 @@ world.events.entityHurt.subscribe(({ damage, hurtEntity }) => {
         let player = Array.from(world.getPlayers()).find(plr => plr.name == hurtEntity.name);
         let health = player.getComponent('minecraft:health');
         if (runCommandAsync(`execute "${player.name}" ~ ~ ~ testfor @s[hasitem={item=totem,location=slot.weapon.offhand}]`).error == false) {
-            if (damage < 0 && health.current <= 1) {
+            if (damage <= 0 && health.current <= 1) {
                 player.runCommandAsync(`function system/alerta_de_totem`)
             };
         } else if (runCommandAsync(`execute "${player.name}" ~ ~ ~ testfor @s[hasitem={item=totem,location=slot.weapon.mainhand}]`).error == false) {
-            if (damage < 0 && health.current <= 1) {
+            if (damage <= 0 && health.current <= 1) {
                 player.runCommandAsync(`function system/alerta_de_totem`)
             };
         };
@@ -81,11 +81,15 @@ world.events.playerSpawn.subscribe(playerspawned =>{
     let player = playerspawned.player;
     if (!player.hasTag("yaesta")) {
 		player.runCommandAsync(`function death_train/poner`);
-    } else if (!player.hasTag("dia30")) {
-		player.runCommandAsync(`tellraw @s {"rawtext": [{"text":"§cOk Dia 30, Suerte!§r.}]}`);
-		player.addTag(`dia30`);
-		player.removeTag(`dia25`);
     };
+	if (!player.hasTag('setupend')) {
+		player.runCommandAsync(`function system/setup_world`);
+	};
+	player.removeTag(`dia25`);
+	player.removeTag(`dia26`);
+	player.removeTag(`dia27`);
+	player.removeTag(`dia28`);
+	player.removeTag(`dia29`);
 });
 
 world.events.beforeChat.subscribe(eventData => {
@@ -97,13 +101,18 @@ world.events.beforeChat.subscribe(eventData => {
 	});
 });
 
+world.events.playerLeave.subscribe(playerBye=> {
+	let player = playerBye.player;
+	world.getDimension("overworld").runCommandAsync(`scoreboard players reset * vida`);
+});
+
 system.runInterval(() => {
 	for (const player of world.getPlayers()) {
-		player.nameTag = (player.getTags().find((tag) => tag.startsWith("r:"))?.substring(2)?.split("-") ?? ["§a§l[MIEMBRO]§r"]).join() + " §r\n" + player.name
-        if (player.hasTag("Dead")) {
-            player.runCommandAsync(`kick "${player.name}" `).catch((alert_data) => {
-				console.warn(alert_data);
-			});
+		const health = player.getComponent("health");
+		player.nameTag = (player.getTags().find((tag) => tag.startsWith("r:"))?.substring(2)?.split("-") ?? ["§a§l[MIEMBRO]§r"]).join() + " §r\n" + player.name + "§7 " + Math.round(health.current) + "/" + Math.round(health.value) + ""
+		player.runCommandAsync(`execute @s[tag=!dead] ~ ~ ~ scoreboard players set @s vida ${Math.round(health.current)}`);
+        if (player.hasTag("banned")) {
+            player.runCommandAsync(`kick "${player.name}" `);
         };
     };
 }, 20);
@@ -128,31 +137,31 @@ world.events.entitySpawn.subscribe(entitySpawned => {
             speed: {
                 effectType: MinecraftEffectTypes.speed,
                 duration: 99999,
-                amplifier: 2,
+                amplifier: 3,
                 showParticles: true
             },
             strength: {
                 effectType: MinecraftEffectTypes.strength,
                 duration: 99999,
-                amplifier: 7,
+                amplifier: 4,
                 showParticles: true
             },
             jumpBoost: {
                 effectType: MinecraftEffectTypes.jumpBoost,
 				duration: 99999,
-                amplifier: 4,
+                amplifier: 5,
                 showParticles: true
             },
             regeneration: {
                 effectType: MinecraftEffectTypes.regeneration,
 				duration: 99999,
-                amplifier: 1,
+                amplifier: 4,
                 showParticles: true
             },
             invisibility: {
                 effectType: MinecraftEffectTypes.invisibility,
 				duration: 99999,
-                amplifier: 0,
+                amplifier: 1,
                 showParticles: true
             },
             slowFalling: {
@@ -164,7 +173,13 @@ world.events.entitySpawn.subscribe(entitySpawned => {
             resistance: {
                 effectType: MinecraftEffectTypes.resistance,
 				duration: 99999,
-                amplifier: 2,
+                amplifier: 3,
+                showParticles: true
+            },
+            fireResistance: {
+                effectType: MinecraftEffectTypes.fireResistance,
+				duration: 99999,
+                amplifier: 3,
                 showParticles: true
             }
         };
@@ -179,31 +194,31 @@ world.events.entitySpawn.subscribe(entitySpawned => {
             speed: {
                 effectType: MinecraftEffectTypes.speed,
                 duration: 99999,
-                amplifier: 2,
+                amplifier: 3,
                 showParticles: true
             },
             strength: {
                 effectType: MinecraftEffectTypes.strength,
                 duration: 99999,
-                amplifier: 7,
+                amplifier: 4,
                 showParticles: true
             },
             jumpBoost: {
                 effectType: MinecraftEffectTypes.jumpBoost,
 				duration: 99999,
-                amplifier: 4,
+                amplifier: 5,
                 showParticles: true
             },
             regeneration: {
                 effectType: MinecraftEffectTypes.regeneration,
 				duration: 99999,
-                amplifier: 1,
+                amplifier: 4,
                 showParticles: true
             },
             invisibility: {
                 effectType: MinecraftEffectTypes.invisibility,
 				duration: 99999,
-                amplifier: 0,
+                amplifier: 1,
                 showParticles: true
             },
             slowFalling: {
@@ -215,7 +230,13 @@ world.events.entitySpawn.subscribe(entitySpawned => {
             resistance: {
                 effectType: MinecraftEffectTypes.resistance,
 				duration: 99999,
-                amplifier: 2,
+                amplifier: 3,
+                showParticles: true
+            },
+            fireResistance: {
+                effectType: MinecraftEffectTypes.fireResistance,
+				duration: 99999,
+                amplifier: 3,
                 showParticles: true
             }
         };
@@ -230,31 +251,31 @@ world.events.entitySpawn.subscribe(entitySpawned => {
             speed: {
                 effectType: MinecraftEffectTypes.speed,
                 duration: 99999,
-                amplifier: 2,
+                amplifier: 3,
                 showParticles: true
             },
             strength: {
                 effectType: MinecraftEffectTypes.strength,
                 duration: 99999,
-                amplifier: 7,
+                amplifier: 4,
                 showParticles: true
             },
             jumpBoost: {
                 effectType: MinecraftEffectTypes.jumpBoost,
 				duration: 99999,
-                amplifier: 4,
+                amplifier: 5,
                 showParticles: true
             },
             regeneration: {
                 effectType: MinecraftEffectTypes.regeneration,
 				duration: 99999,
-                amplifier: 1,
+                amplifier: 4,
                 showParticles: true
             },
             invisibility: {
                 effectType: MinecraftEffectTypes.invisibility,
 				duration: 99999,
-                amplifier: 0,
+                amplifier: 1,
                 showParticles: true
             },
             slowFalling: {
@@ -266,7 +287,13 @@ world.events.entitySpawn.subscribe(entitySpawned => {
             resistance: {
                 effectType: MinecraftEffectTypes.resistance,
 				duration: 99999,
-                amplifier: 2,
+                amplifier: 3,
+                showParticles: true
+            },
+            fireResistance: {
+                effectType: MinecraftEffectTypes.fireResistance,
+				duration: 99999,
+                amplifier: 3,
                 showParticles: true
             }
         };
@@ -281,31 +308,31 @@ world.events.entitySpawn.subscribe(entitySpawned => {
             speed: {
                 effectType: MinecraftEffectTypes.speed,
                 duration: 99999,
-                amplifier: 2,
+                amplifier: 3,
                 showParticles: true
             },
             strength: {
                 effectType: MinecraftEffectTypes.strength,
                 duration: 99999,
-                amplifier: 7,
+                amplifier: 4,
                 showParticles: true
             },
             jumpBoost: {
                 effectType: MinecraftEffectTypes.jumpBoost,
 				duration: 99999,
-                amplifier: 4,
+                amplifier: 5,
                 showParticles: true
             },
             regeneration: {
                 effectType: MinecraftEffectTypes.regeneration,
 				duration: 99999,
-                amplifier: 1,
+                amplifier: 4,
                 showParticles: true
             },
             invisibility: {
                 effectType: MinecraftEffectTypes.invisibility,
 				duration: 99999,
-                amplifier: 0,
+                amplifier: 1,
                 showParticles: true
             },
             slowFalling: {
@@ -317,7 +344,13 @@ world.events.entitySpawn.subscribe(entitySpawned => {
             resistance: {
                 effectType: MinecraftEffectTypes.resistance,
 				duration: 99999,
-                amplifier: 2,
+                amplifier: 3,
+                showParticles: true
+            },
+            fireResistance: {
+                effectType: MinecraftEffectTypes.fireResistance,
+				duration: 99999,
+                amplifier: 3,
                 showParticles: true
             }
         };

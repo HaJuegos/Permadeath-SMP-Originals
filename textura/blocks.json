@@ -2,6 +2,14 @@
 /* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
 {
 	// head sounds
+	"ha:fznix_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
+	"ha:wqp_head": {
+		"sound" : "stone",
+		"textures" : "soul_sand"
+	},
 	"ha:kevin_head": {
 		"sound" : "stone",
 		"textures" : "soul_sand"

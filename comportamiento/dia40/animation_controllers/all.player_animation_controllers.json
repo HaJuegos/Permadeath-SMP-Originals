@@ -1,0 +1,65 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.death_sensor": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"repeat": "query.is_alive == 0"
+						}
+					]
+				},
+				"repeat": {
+					"on_entry": [
+						"/event entity @s ha:start_dead"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_alive == 0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.intro_world": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"detect": "!query.is_moving"
+						},
+						{
+							"detect": "query.is_moving"
+						}
+					]
+				},
+				"detect": {
+					"on_entry": [
+						"v.ui = query.life_time;"
+					],
+					"transitions": [
+						{
+							"ejecuted": "(query.life_time - v.ui) >= 20 && !query.is_moving"
+						},
+						{
+							"ejecuted": "(query.life_time - v.ui) >= 20 && query.is_moving"
+						}
+					]
+				},
+				"ejecuted": {
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/execute @s[tag=!wm] ~ ~ ~ function system/welcome_message"
+					]
+				}
+			}
+		}
+	}
+}

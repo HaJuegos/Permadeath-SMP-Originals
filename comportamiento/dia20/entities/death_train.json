@@ -1,0 +1,191 @@
+/* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
+/* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
+{
+	"format_version": "1.19.10",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ha:death_train",
+			"is_summonable": true,
+			"is_spawnable": false,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"rain"
+				]
+			},
+			"animations": {
+				"rain": "animation.ha_looping_rain"
+			}
+		},
+		"component_groups": {
+			"ha:delay_sound": {
+				"minecraft:timer": {
+					"time": [
+						6.19,
+						6.19
+					],
+					"looping": true,
+					"time_down_event": {
+						"event": "ha:run_rain",
+						"target": "self"
+					}
+				}
+			},
+			"ha:set_skin_id": {
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			},
+			"ha:despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 1
+			},
+			"minecraft:persistent": {},
+			"minecraft:knockback_resistance": {
+				"value": 99999
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:physics": {
+				"has_gravity": false
+			},
+			"minecraft:health": {
+				"value": 1,
+				"max": 1,
+				"min": 1
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "any",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"interact_text": "Despawnear",
+						"on_interact": {
+							"filters": {
+								"test": "has_equipment",
+								"subject": "other",
+								"domain": "any",
+								"value": "minecraft:barrier"
+							},
+							"event": "ha:despawn"
+						},
+						"use_item": true
+					}
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"death_train",
+					"inanimate",
+					"mob"
+				]
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"test": "is_skin_id",
+							"subject": "self",
+							"value": 1
+						},
+						"event": "ha:loop_tag"
+					},
+					{
+						"filters": {
+							"test": "has_tag",
+							"subject": "self",
+							"value": "activate_rain"
+						},
+						"event": "ha:in_rain_activate"
+					},
+					{
+						"filters": {
+							"test": "has_tag",
+							"subject": "self",
+							"operator": "!=",
+							"value": "activate_rain"
+						},
+						"event": "ha:no_activate_rain"
+					}
+				]
+			}
+		},
+		"events": {
+			"ha:start_train": {
+				"add": {
+					"component_groups": [
+						"ha:delay_sound"
+					]
+				}
+			},
+			"ha:run_rain": {
+				"remove": {
+					"component_groups": [
+						"ha:delay_sound"
+					]
+				},
+				"run_command": {
+					"command": [
+						"function system/iniciar_death_train"
+					]
+				}
+			},
+			"ha:despawn": {
+				"add": {
+					"component_groups": [
+						"ha:despawn"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"run_command": {
+					"command": [
+						"tickingarea add circle ~ ~ ~ 2 death_train"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"ha:set_skin_id"
+					]
+				}
+			},
+			"ha:loop_tag": {
+				"run_command": {
+					"command": [
+						"tag @a add yaesta"
+					]
+				}
+			},
+			"ha:in_rain_activate": {
+				"run_command": {
+					"command": [
+						"tag @a add rain"
+					]
+				}
+			},
+			"ha:no_activate_rain": {
+				"run_command": {
+					"command": [
+						"tag @a remove rain"
+					]
+				}
+			}
+		}
+	}
+}

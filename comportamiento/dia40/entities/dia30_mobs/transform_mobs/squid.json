@@ -13,7 +13,7 @@
 			"minecraft:transformation": {
 				"into": "minecraft:guardian<ha:spawn_from_squid>",
 				"delay": {
-					"value": 0.1
+					"value": 0
 				}
 			}
 		},

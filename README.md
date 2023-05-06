@@ -96,12 +96,13 @@ Cambios del add-on
 • Dia 10:
 - Ahora las arañas y arañas de cueva, tienen entre 1 a 3 efectos de pocion de esta lista:
 	- Velocidad III
-	- Fuerza VIII
+	- Fuerza IV
 	- Salto V
-	- Regeneracion I
+	- Regeneracion IV
 	- Invisibilidad
-	- Caida lenta
+	- Slow Falling
 	- Resistencia III
+	- Resistencia al Fuego
 
 - Ahora todos los mobs hostiles del overworld se duplican al spawnear.
 - Ahora para pasar la noche o la tormenta, se requieren de 4 jugadores en cama a la misma vez.

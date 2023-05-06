@@ -6,13 +6,31 @@ execute @a[tag=!nomasbegi,r=100,x=2506,y=96,z=1915] ~ ~ ~ function beginning_sys
 execute @a ~ ~ ~ detect ~ ~ ~ ha:end_way_beg 0 function beginning_system/no_entry
 execute @a ~ ~ ~ detect ~ ~-1 ~ ha:end_way_beg 0 function beginning_system/no_entry
 
+execute @e[type=ha:death_train,scores={dia=40}] ~ ~ ~ tellraw @a[tag=!dia40] {"rawtext": [{"text":"§aEstas en el Dia 40."}]}
+execute @e[type=ha:death_train,scores={dia=41}] ~ ~ ~ tellraw @a[tag=!dia41] {"rawtext": [{"text":"§aEstas en el Dia 41."}]}
+execute @e[type=ha:death_train,scores={dia=42}] ~ ~ ~ tellraw @a[tag=!dia42] {"rawtext": [{"text":"§aEstas en el Dia 42."}]}
+execute @e[type=ha:death_train,scores={dia=43}] ~ ~ ~ tellraw @a[tag=!dia43] {"rawtext": [{"text":"§aEstas en el Dia 43."}]}
+execute @e[type=ha:death_train,scores={dia=44}] ~ ~ ~ tellraw @a[tag=!dia44] {"rawtext": [{"text":"§aEstas en el Dia 44."}]}
+execute @e[type=ha:death_train,scores={dia=45}] ~ ~ ~ tellraw @a[tag=!dia45] {"rawtext": [{"text":"§aEstas en el Dia 45."}]}
+execute @e[type=ha:death_train,scores={dia=46}] ~ ~ ~ tellraw @a[tag=!dia46] {"rawtext": [{"text":"§aEstas en el Dia 46."}]}
+execute @e[type=ha:death_train,scores={dia=47}] ~ ~ ~ tellraw @a[tag=!dia47] {"rawtext": [{"text":"§aEstas en el Dia 47."}]}
+execute @e[type=ha:death_train,scores={dia=48}] ~ ~ ~ tellraw @a[tag=!dia48] {"rawtext": [{"text":"§aEstas en el Dia 48."}]}
+execute @e[type=ha:death_train,scores={dia=49}] ~ ~ ~ tellraw @a[tag=!dia49] {"rawtext": [{"text":"§aEstas en el Dia 49."}]}
+
+execute @e[type=ha:death_train,scores={dia=40}] ~ ~ ~ tag @a add dia40
+execute @e[type=ha:death_train,scores={dia=41}] ~ ~ ~ tag @a add dia41
+execute @e[type=ha:death_train,scores={dia=42}] ~ ~ ~ tag @a add dia42
+execute @e[type=ha:death_train,scores={dia=43}] ~ ~ ~ tag @a add dia43
+execute @e[type=ha:death_train,scores={dia=44}] ~ ~ ~ tag @a add dia44
+execute @e[type=ha:death_train,scores={dia=45}] ~ ~ ~ tag @a add dia45
+execute @e[type=ha:death_train,scores={dia=46}] ~ ~ ~ tag @a add dia46
+execute @e[type=ha:death_train,scores={dia=47}] ~ ~ ~ tag @a add dia47
+execute @e[type=ha:death_train,scores={dia=48}] ~ ~ ~ tag @a add dia48
+execute @e[type=ha:death_train,scores={dia=49}] ~ ~ ~ tag @a add dia49
+
 clear @a netherite_ingot
 clear @a netherite_block
-clear @a end_crystal
-gamerule doimmediaterespawn true
-gamerule commandblockoutput false
-gamerule showtags false
-gamerule pvp true
+
 replaceitem entity @e[family=skeleton] slot.weapon.offhand 1 arrow 1 25
 
 damage @a[tag=totemkill] 99

@@ -1,16 +1,22 @@
 /* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
 /* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
 {
-	"ui.death_sound_perma": {
+	"ui.permadeath_sound": {
 		"category": "ui",
 		"sounds": [
-			"sounds/ui/death_sound/1"
+			"sounds/ui/permadeath"
 		]
 	},
-	"ui.yei_netherite_sound": {
+	"ui.challenge_complete": {
 		"category": "ui",
 		"sounds": [
-			"sounds/ui/logro_sonido/1"
+			"sounds/ui/achievement_sound"
+		]
+	},
+	"ui.new_player_sound": {
+		"category": "ui",
+		"sounds": [
+			"sounds/ui/new_player"
 		]
 	}
 }

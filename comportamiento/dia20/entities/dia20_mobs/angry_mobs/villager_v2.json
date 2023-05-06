@@ -46,10 +46,10 @@
 				"minecraft:behavior.celebrate_survive": {
 					"priority": 5,
 					"fireworks_interval": {
-						"range_min": 2.0,
-						"range_max": 7.0
+						"range_min": 2,
+						"range_max": 7
 					},
-					"duration": 30.0,
+					"duration": 30,
 					"on_celebration_end_event": {
 						"event": "minecraft:stop_celebrating",
 						"target": "self"
@@ -58,7 +58,7 @@
 				"minecraft:behavior.move_outdoors": {
 					"priority": 2,
 					"speed_multiplier": 0.8,
-					"timeout_cooldown": 8.0
+					"timeout_cooldown": 8
 				}
 			},
 			"trade_resupply_component_group": {
@@ -848,7 +848,7 @@
 					"duration": 30,
 					"cooldown_time": 10,
 					"mingle_partner_type": "minecraft:villager_v2",
-					"mingle_distance": 2.0
+					"mingle_distance": 2
 				}
 			},
 			"home_schedule_villager": {},
@@ -858,9 +858,9 @@
 					"goal_radius": 1.5,
 					"speed_multiplier": 0.6,
 					"sleep_collider_height": 0.3,
-					"sleep_collider_width": 1.0,
+					"sleep_collider_width": 1,
 					"sleep_y_offset": 0.6,
-					"timeout_cooldown": 10.0
+					"timeout_cooldown": 10
 				}
 			},
 			"wander_schedule_villager": {
@@ -868,18 +868,18 @@
 					"priority": 9,
 					"next_xz": 5,
 					"next_y": 3,
-					"min_wait_time": 3.0,
-					"max_wait_time": 10.0,
-					"max_travel_time": 60.0,
+					"min_wait_time": 3,
+					"max_wait_time": 10,
+					"max_travel_time": 60,
 					"speed_multiplier": 0.6,
-					"explore_dist": 6.0,
-					"min_perimeter": 1.0,
+					"explore_dist": 6,
+					"min_perimeter": 1,
 					"min_dist_from_target": 2.5,
-					"timer_ratio": 2.0,
+					"timer_ratio": 2,
 					"dist_from_boundary": [
-						5.0,
-						0.0,
-						5.0
+						5,
+						0,
+						5
 					]
 				}
 			},
@@ -995,11 +995,11 @@
 				},
 				"minecraft:behavior.trade_interest": {
 					"priority": 5,
-					"within_radius": 6.0,
-					"interest_time": 45.0,
-					"remove_item_time": 1.0,
-					"carried_item_switch_time": 2.0,
-					"cooldown": 2.0
+					"within_radius": 6,
+					"interest_time": 45,
+					"remove_item_time": 1,
+					"carried_item_switch_time": 2,
+					"cooldown": 2
 				},
 				"minecraft:economy_trade_table": {
 					"display_name": "entity.villager.farmer",
@@ -1040,11 +1040,11 @@
 				},
 				"minecraft:behavior.trade_interest": {
 					"priority": 5,
-					"within_radius": 6.0,
-					"interest_time": 45.0,
-					"remove_item_time": 1.0,
-					"carried_item_switch_time": 2.0,
-					"cooldown": 2.0
+					"within_radius": 6,
+					"interest_time": 45,
+					"remove_item_time": 1,
+					"carried_item_switch_time": 2,
+					"cooldown": 2
 				},
 				"minecraft:economy_trade_table": {
 					"display_name": "entity.villager.fisherman",
@@ -1085,11 +1085,11 @@
 				},
 				"minecraft:behavior.trade_interest": {
 					"priority": 5,
-					"within_radius": 6.0,
-					"interest_time": 45.0,
-					"remove_item_time": 1.0,
-					"carried_item_switch_time": 2.0,
-					"cooldown": 2.0
+					"within_radius": 6,
+					"interest_time": 45,
+					"remove_item_time": 1,
+					"carried_item_switch_time": 2,
+					"cooldown": 2
 				},
 				"minecraft:economy_trade_table": {
 					"display_name": "entity.villager.shepherd",
@@ -1130,11 +1130,11 @@
 				},
 				"minecraft:behavior.trade_interest": {
 					"priority": 5,
-					"within_radius": 6.0,
-					"interest_time": 45.0,
-					"remove_item_time": 1.0,
-					"carried_item_switch_time": 2.0,
-					"cooldown": 2.0
+					"within_radius": 6,
+					"interest_time": 45,
+					"remove_item_time": 1,
+					"carried_item_switch_time": 2,
+					"cooldown": 2
 				},
 				"minecraft:economy_trade_table": {
 					"display_name": "entity.villager.fletcher",
@@ -1174,11 +1174,11 @@
 				},
 				"minecraft:behavior.trade_interest": {
 					"priority": 5,
-					"within_radius": 6.0,
-					"interest_time": 45.0,
-					"remove_item_time": 1.0,
-					"carried_item_switch_time": 2.0,
-					"cooldown": 2.0
+					"within_radius": 6,
+					"interest_time": 45,
+					"remove_item_time": 1,
+					"carried_item_switch_time": 2,
+					"cooldown": 2
 				},
 				"minecraft:economy_trade_table": {
 					"display_name": "entity.villager.librarian",
@@ -1218,11 +1218,11 @@
 				},
 				"minecraft:behavior.trade_interest": {
 					"priority": 5,
-					"within_radius": 6.0,
-					"interest_time": 45.0,
-					"remove_item_time": 1.0,
-					"carried_item_switch_time": 2.0,
-					"cooldown": 2.0
+					"within_radius": 6,
+					"interest_time": 45,
+					"remove_item_time": 1,
+					"carried_item_switch_time": 2,
+					"cooldown": 2
 				},
 				"minecraft:economy_trade_table": {
 					"display_name": "entity.villager.cartographer",
@@ -1263,11 +1263,11 @@
 				},
 				"minecraft:behavior.trade_interest": {
 					"priority": 5,
-					"within_radius": 6.0,
-					"interest_time": 45.0,
-					"remove_item_time": 1.0,
-					"carried_item_switch_time": 2.0,
-					"cooldown": 2.0
+					"within_radius": 6,
+					"interest_time": 45,
+					"remove_item_time": 1,
+					"carried_item_switch_time": 2,
+					"cooldown": 2
 				},
 				"minecraft:economy_trade_table": {
 					"display_name": "entity.villager.cleric",
@@ -1308,11 +1308,11 @@
 				},
 				"minecraft:behavior.trade_interest": {
 					"priority": 5,
-					"within_radius": 6.0,
-					"interest_time": 45.0,
-					"remove_item_time": 1.0,
-					"carried_item_switch_time": 2.0,
-					"cooldown": 2.0
+					"within_radius": 6,
+					"interest_time": 45,
+					"remove_item_time": 1,
+					"carried_item_switch_time": 2,
+					"cooldown": 2
 				},
 				"minecraft:economy_trade_table": {
 					"display_name": "entity.villager.armor",
@@ -1353,11 +1353,11 @@
 				},
 				"minecraft:behavior.trade_interest": {
 					"priority": 5,
-					"within_radius": 6.0,
-					"interest_time": 45.0,
-					"remove_item_time": 1.0,
-					"carried_item_switch_time": 2.0,
-					"cooldown": 2.0
+					"within_radius": 6,
+					"interest_time": 45,
+					"remove_item_time": 1,
+					"carried_item_switch_time": 2,
+					"cooldown": 2
 				},
 				"minecraft:economy_trade_table": {
 					"display_name": "entity.villager.weapon",
@@ -1398,11 +1398,11 @@
 				},
 				"minecraft:behavior.trade_interest": {
 					"priority": 5,
-					"within_radius": 6.0,
-					"interest_time": 45.0,
-					"remove_item_time": 1.0,
-					"carried_item_switch_time": 2.0,
-					"cooldown": 2.0
+					"within_radius": 6,
+					"interest_time": 45,
+					"remove_item_time": 1,
+					"carried_item_switch_time": 2,
+					"cooldown": 2
 				},
 				"minecraft:economy_trade_table": {
 					"display_name": "entity.villager.tool",
@@ -1443,11 +1443,11 @@
 				},
 				"minecraft:behavior.trade_interest": {
 					"priority": 5,
-					"within_radius": 6.0,
-					"interest_time": 45.0,
-					"remove_item_time": 1.0,
-					"carried_item_switch_time": 2.0,
-					"cooldown": 2.0
+					"within_radius": 6,
+					"interest_time": 45,
+					"remove_item_time": 1,
+					"carried_item_switch_time": 2,
+					"cooldown": 2
 				},
 				"minecraft:economy_trade_table": {
 					"display_name": "entity.villager.butcher",
@@ -1488,11 +1488,11 @@
 				},
 				"minecraft:behavior.trade_interest": {
 					"priority": 5,
-					"within_radius": 6.0,
-					"interest_time": 45.0,
-					"remove_item_time": 1.0,
-					"carried_item_switch_time": 2.0,
-					"cooldown": 2.0
+					"within_radius": 6,
+					"interest_time": 45,
+					"remove_item_time": 1,
+					"carried_item_switch_time": 2,
+					"cooldown": 2
 				},
 				"minecraft:economy_trade_table": {
 					"display_name": "entity.villager.leather",
@@ -1533,11 +1533,11 @@
 				},
 				"minecraft:behavior.trade_interest": {
 					"priority": 5,
-					"within_radius": 6.0,
-					"interest_time": 45.0,
-					"remove_item_time": 1.0,
-					"carried_item_switch_time": 2.0,
-					"cooldown": 2.0
+					"within_radius": 6,
+					"interest_time": 45,
+					"remove_item_time": 1,
+					"carried_item_switch_time": 2,
+					"cooldown": 2
 				},
 				"minecraft:economy_trade_table": {
 					"display_name": "entity.villager.mason",
@@ -1911,6 +1911,14 @@
 				"triggers": [
 					{
 						"on_damage": {
+							"filters": {
+								"other_with_families": "villager"
+							}
+						},
+						"deals_damage": false
+					},
+					{
+						"on_damage": {
 							"filters": [
 								{
 									"test": "is_family",
@@ -1962,7 +1970,7 @@
 				"priority": 0,
 				"speed_multiplier": 0.8,
 				"poi_type": "bed",
-				"duration": 30.0
+				"duration": 30
 			},
 			"minecraft:behavior.trade_with_player": {
 				"priority": 2,
@@ -2040,7 +2048,7 @@
 			"minecraft:behavior.move_indoors": {
 				"priority": 6,
 				"speed_multiplier": 0.8,
-				"timeout_cooldown": 8.0
+				"timeout_cooldown": 8
 			},
 			"minecraft:behavior.look_at_trading_player": {
 				"priority": 7
@@ -2053,7 +2061,7 @@
 			"minecraft:behavior.share_items": {
 				"priority": 10,
 				"max_dist": 3,
-				"goal_radius": 2.0,
+				"goal_radius": 2,
 				"speed_multiplier": 0.5,
 				"entity_types": [
 					{
