@@ -47,3 +47,5 @@ Musica y/o sonidos usados:
 "¡PERMADEATH!"(Edit) - By ElRichMC (VideoClips de la serie)
 
 ui.toast.challenge_complete - By Mojang (Minecraft Java)
+
+achievement_sound - By Rozebud (FNF B-Side - GameOver)

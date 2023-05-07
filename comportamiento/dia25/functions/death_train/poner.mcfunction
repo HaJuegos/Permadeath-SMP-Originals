@@ -3,4 +3,4 @@
 
 execute @s[tag=!yaesta] ~ ~ ~ summon ha:death_train ~ ~-30 ~
 scoreboard objectives add dia dummy
-execute @s[tag=!yaesta] ~ ~ ~ execute @e[type=ha:death_train] ~ ~ ~ scoreboard players set @s dia 20
+execute @s[tag=!yaesta] ~ ~ ~ execute @e[type=ha:death_train] ~ ~ ~ scoreboard players set @s dia 25
