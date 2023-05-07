@@ -453,7 +453,7 @@
 						},
 						"run_command": {
 							"command": [
-								"execute @s[tag=!primeron] ~ ~ ~ playsound ui.yei_netherite_sound @s",
+								"execute @s[tag=!primeron] ~ ~ ~ playsound ui.challenge_complete @s",
 								"tag @s add primeron"
 							]
 						},
@@ -479,7 +479,7 @@
 						},
 						"run_command": {
 							"command": [
-								"execute @s[tag=!primeron] ~ ~ ~ playsound ui.yei_netherite_sound @s",
+								"execute @s[tag=!primeron] ~ ~ ~ playsound ui.challenge_complete @s",
 								"tag @s add primeron"
 							]
 						},
@@ -508,7 +508,7 @@
 						},
 						"run_command": {
 							"command": [
-								"execute @s[tag=!primeron] ~ ~ ~ playsound ui.yei_netherite_sound @s",
+								"execute @s[tag=!primeron] ~ ~ ~ playsound ui.challenge_complete @s",
 								"tag @s add primeron"
 							]
 						},
@@ -534,7 +534,7 @@
 						},
 						"run_command": {
 							"command": [
-								"execute @s[tag=!primeron] ~ ~ ~ playsound ui.yei_netherite_sound @s",
+								"execute @s[tag=!primeron] ~ ~ ~ playsound ui.challenge_complete @s",
 								"tag @s add primeron"
 							]
 						},
