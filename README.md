@@ -25,7 +25,7 @@
 
 - [**CLICK PARA DESCARGAR TODO**](https://drive.google.com/uc?export=download&id=1tdB-ClYFeuV6h7Ro3yn8aQENNg6bp1W2)
 
-- [**CLICK PARA DESCARGAR EL ADD-ON JUNTO**](https://drive.google.com/uc?export=download&id=1hWc_QB-NxwvLLRfmnEJDxGdS8UV6Za8L)
+- [**CLICK PARA DESCARGAR EL ADD-ON JUNTO**](https://drive.google.com/uc?export=download&id=1Dgfruv_9skyIt3pX5OVhGsepL_NMqPPa)
 
 - [**CLICK PARA DESCARGAR EL ADD-ON POR SEPARADO**](https://drive.google.com/uc?export=download&id=1LvS9yTKcdNhsry8VnNRuQuqOHmpczoEl)
 
