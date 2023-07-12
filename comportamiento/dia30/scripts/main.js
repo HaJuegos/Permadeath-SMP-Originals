@@ -123,11 +123,6 @@ world.afterEvents.entityDie.subscribe(eventDead => {
 		let cause = source.cause;
 		let entityCause = source.damagingEntity;
 		if (entity.typeId == 'minecraft:player') {
-			if (!entity.hasTag("coords")) {
-				entity.runCommandAsync(`summon ha:ghost_player "§e${entity.name} Inventory§r" ~ ~ ~`);
-				entity.runCommandAsync(`tellraw @a {"rawtext": [{"translate":"dead_player_coordinates", "with": {"rawtext": [{"selector":"@s"},{"text":"${Math.floor(entity.location.x)} ${Math.floor(entity.location.y)} ${Math.floor(entity.location.z)}"},{"translate":"${getDimension(entity.dimension)}"}]}}]}`);
-				entity.addTag("coords");
-			};
 			if (entityCause) {
 				try {
 					let name = entityCause.name ?? entityCause.typeId;
