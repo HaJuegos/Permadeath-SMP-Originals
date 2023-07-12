@@ -1,4 +1,4 @@
 ## Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272
 ## Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272
  
-execute @e[type=ha:death_train,scores={dh=0..,dm=0..}] ~ ~ ~ titleraw @a actionbar {"rawtext":[{"text":"§7Quedan "},{"score":{"name":"@s","objective":"dhs"}},{"score":{"name":"@s","objective":"dh"}},{"text":":"},{"score":{"name":"@s","objective":"dms"}},{"score":{"name":"@s","objective":"dm"}},{"text":":"},{"score":{"name":"@s","objective":"dss"}},{"score":{"name":"@s","objective":"ds"}},{"text":" de tormenta §r"}]}
+execute as @e[type=ha:death_train,scores={dh=0..,dm=0..}] at @s run titleraw @a actionbar {"rawtext":[{"text":"§7Quedan "},{"score":{"name":"@s","objective":"dhs"}},{"score":{"name":"@s","objective":"dh"}},{"text":":"},{"score":{"name":"@s","objective":"dms"}},{"score":{"name":"@s","objective":"dm"}},{"text":":"},{"score":{"name":"@s","objective":"dss"}},{"score":{"name":"@s","objective":"ds"}},{"text":" de tormenta §r"}]}

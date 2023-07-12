@@ -186,16 +186,16 @@
 			"ha:lava": {
 				"run_command": {
 					"command": [
-						"execute @s ~ ~ ~ fill ~2 ~ ~2 ~-2 ~-2 ~-2 flowing_lava 0 replace end_stone",
-						"execute @s ~ ~ ~ fill ~2 ~ ~2 ~-2 ~-2 ~-2 flowing_lava 0 replace end_bricks"
+						"execute as @s at @s run fill ~2 ~ ~2 ~-2 ~-2 ~-2 flowing_lava 0 replace end_stone",
+						"execute as @s at @s run fill ~2 ~ ~2 ~-2 ~-2 ~-2 flowing_lava 0 replace end_bricks"
 					]
 				}
 			},
 			"ha:bedrock": {
 				"run_command": {
 					"command": [
-						"execute @s ~ ~ ~ fill ~2 ~ ~2 ~-2 ~-2 ~-2 bedrock 0 replace end_stone",
-						"execute @s ~ ~ ~ fill ~2 ~ ~2 ~-2 ~-2 ~-2 bedrock 0 replace end_bricks"
+						"execute as @s at @s run fill ~2 ~ ~2 ~-2 ~-2 ~-2 bedrock 0 replace end_stone",
+						"execute as @s at @s run fill ~2 ~ ~2 ~-2 ~-2 ~-2 bedrock 0 replace end_bricks"
 					]
 				}
 			}

@@ -9,7 +9,7 @@
 		},
 		"components": {
 			"minecraft:use_duration": 0.1,
-			"minecraft:max_stack_size": 1,
+			"minecraft:max_stack_size": 2,
 			"minecraft:foil": true,
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:creative_category": {
@@ -17,7 +17,8 @@
 			},
 			"minecraft:food": {
 				"on_consume": {
-					"event": "ha:consume"
+					"event": "ha:consume",
+					"target": "self"
 				},
 				"nutrition": 4,
 				"can_always_eat": true,
@@ -31,14 +32,24 @@
 		},
 		"events": {
 			"ha:consume": {
-				"run_command": {
-					"command": [
-						"execute @s[tag=appleconsumeone] ~ ~ ~ tellraw @s {\"rawtext\": [{\"text\":\"§7Ya has consumido muchas manzanas por hoy...\"}]}",
-						"execute @s[tag=appleconsumeone] ~ ~ ~ replaceitem entity @s slot.weapon.mainhand 1 ha:hyper_golden_apple",
-						"execute @s[tag=!appleconsumeone] ~ ~ ~ tellraw @s {\"rawtext\": [{\"text\":\"§a¡Han aumentado tus contenedores!§r\"}]}",
-						"execute @s[tag=!appleconsumeone] ~ ~ ~ tag @s add appleconsumeone"
-					]
-				}
+				"sequence": [
+					{
+						"decrement_stack": {}
+					},
+					{
+						"swing": {}
+					},
+					{
+						"run_command": {
+							"command": [
+								"execute @s[tag=appleconsumeone] ~ ~ ~ tellraw @s {\"rawtext\": [{\"text\":\"§7Ya has consumido muchas manzanas por hoy...\"}]}",
+								"execute @s[tag=appleconsumeone] ~ ~ ~ replaceitem entity @s slot.weapon.mainhand 1 ha:hyper_golden_apple",
+								"execute @s[tag=!appleconsumeone] ~ ~ ~ tellraw @s {\"rawtext\": [{\"text\":\"§a¡Han aumentado tus contenedores!§r\"}]}",
+								"execute @s[tag=!appleconsumeone] ~ ~ ~ tag @s add appleconsumeone"
+							]
+						}
+					}
+				]
 			}
 		}
 	}

@@ -164,7 +164,7 @@
 			"ha:run_command_damage": {
 				"run_command": {
 					"command": [
-						"summon ha:area_cloud_alert_damage ~ ~ ~ ha:summon_damage"
+						"summon ha:area_cloud_alert_damage ~ ~ ~ 0 0 ha:summon_damage"
 					]
 				}
 			}

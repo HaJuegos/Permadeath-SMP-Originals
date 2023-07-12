@@ -18,5 +18,11 @@
 		"sounds": [
 			"sounds/ui/new_player"
 		]
+	},
+	"ui.error_item": {
+		"category": "ui",
+		"sounds": [
+			"sounds/ui/royermanifest"
+		]
 	}
 }

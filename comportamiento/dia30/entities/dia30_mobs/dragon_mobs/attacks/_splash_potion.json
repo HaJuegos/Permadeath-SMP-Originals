@@ -107,10 +107,10 @@
 			"ha:effect_end": {
 				"run_command": {
 					"command": [
-						"execute @s ~ ~ ~ effect @a[r=4] speed 8 3",
-						"execute @s ~ ~ ~ effect @a[r=4] regeneration 24 2",
-						"execute @s ~ ~ ~ effect @a[r=4] resistance 48 0",
-						"execute @s ~ ~ ~ effect @a[r=4] instant_health 1 4"
+						"execute as @s at @s run effect @a[r=4] speed 8 3",
+						"execute as @s at @s run effect @a[r=4] regeneration 24 2",
+						"execute as @s at @s run effect @a[r=4] resistance 48 0",
+						"execute as @s at @s run effect @a[r=4] instant_health 1 4"
 					]
 				}
 			}

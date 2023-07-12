@@ -4,9 +4,9 @@
 scoreboard objectives add totem dummy
 scoreboard players random @s totem 0 100
 
-execute @s[scores={totem=0..98}] ~ ~ ~ tellraw @a {"rawtext":[{"text":"§7"},{"selector":"@s"},{"text":" ha usado un totem! (Probabilidad "},{"score": {"name":"@s", "objective":"totem"}},{"text":" < 99)§r"}]}
+execute as @s[scores={totem=0..98}] at @s run tellraw @a {"rawtext":[{"text":"§7"},{"selector":"@s"},{"text":" ha usado un totem! (Probabilidad "},{"score": {"name":"@s", "objective":"totem"}},{"text":" < 99)§r"}]}
 
-execute @s[scores={totem=99..}] ~ ~ ~ tellraw @a {"rawtext":[{"text":"§7"},{"selector":"@s"},{"text":" ha usado un totem! (Probabilidad "},{"score": {"name":"@s", "objective":"totem"}},{"text":" == 99)§r"}]}
-execute @s[scores={totem=99..}] ~ ~ ~ tag @s add totemkill
+execute as @s[scores={totem=99..}] at @s run tellraw @a {"rawtext":[{"text":"§7"},{"selector":"@s"},{"text":" ha usado un totem! (Probabilidad "},{"score": {"name":"@s", "objective":"totem"}},{"text":" == 99)§r"}]}
+execute as @s[scores={totem=99..}] at @s run tag @s add totemkill
 
 playsound random.totem @a

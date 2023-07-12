@@ -12,20 +12,20 @@
 					"/particle minecraft:ice_evaporation_emitter ~ ~2 ~4",
 					"/particle minecraft:ice_evaporation_emitter ~-4 ~2 ~",
 					"/particle minecraft:ice_evaporation_emitter ~ ~2 ~-4",
-					"/summon minecraft:splash_potion ~4 ~2 ~ ha:summon_potion_module",
-					"/summon minecraft:splash_potion ~ ~2 ~4 ha:summon_potion_module",
-					"/summon minecraft:splash_potion ~-4 ~2 ~ ha:summon_potion_module",
-					"/summon minecraft:splash_potion ~ ~2 ~-4 ha:summon_potion_module"
+					"/summon minecraft:splash_potion ~4 ~2 ~ 0 0 ha:summon_potion_module",
+					"/summon minecraft:splash_potion ~ ~2 ~4 0 0 ha:summon_potion_module",
+					"/summon minecraft:splash_potion ~-4 ~2 ~ 0 0 ha:summon_potion_module",
+					"/summon minecraft:splash_potion ~ ~2 ~-4 0 0 ha:summon_potion_module"
 				],
 				"19.9": [
 					"/particle minecraft:ice_evaporation_emitter ~4 ~2 ~",
 					"/particle minecraft:ice_evaporation_emitter ~ ~2 ~4",
 					"/particle minecraft:ice_evaporation_emitter ~-4 ~2 ~",
 					"/particle minecraft:ice_evaporation_emitter ~ ~2 ~-4",
-					"/summon minecraft:splash_potion ~4 ~2 ~ ha:summon_potion_module",
-					"/summon minecraft:splash_potion ~ ~2 ~4 ha:summon_potion_module",
-					"/summon minecraft:splash_potion ~-4 ~2 ~ ha:summon_potion_module",
-					"/summon minecraft:splash_potion ~ ~2 ~-4 ha:summon_potion_module"
+					"/summon minecraft:splash_potion ~4 ~2 ~ 0 0 ha:summon_potion_module",
+					"/summon minecraft:splash_potion ~ ~2 ~4 0 0 ha:summon_potion_module",
+					"/summon minecraft:splash_potion ~-4 ~2 ~ 0 0 ha:summon_potion_module",
+					"/summon minecraft:splash_potion ~ ~2 ~-4 0 0 ha:summon_potion_module"
 				]
 			}
 		},
@@ -65,13 +65,13 @@
 			"loop": true,
 			"timeline": {
 				"0.0": [
-					"/execute @a[tag=in_end] ~ ~ ~ fill ~24 ~4 ~24 ~-24 ~-4 ~-24 end_stone 0 replace sand",
-					"/execute @a[tag=in_end] ~ ~ ~ fill ~24 ~4 ~24 ~-24 ~-4 ~-24 end_bricks 0 replace sand",
-					"/execute @a[tag=in_end] ~ ~ ~ kill @e[type=item,r=100,name=\"Arena\"]",
-					"/execute @a[tag=in_end] ~ ~ ~ kill @e[type=item,r=100,name=\"Sand\"]",
-					"/execute @e[type=ghast,family=!from_endercrystal] ~ ~ ~ event entity @s ha:despawn",
-					"/execute @a[tag=in_end] ~ ~ ~ detect ~ ~-1 ~ bedrock 0 effect @s levitation 9 12 true",
-					"/execute @a[tag=in_end] ~ ~ ~ detect ~ ~-1 ~ bedrock 1 effect @s levitation 9 12 true"
+					"/execute as @a[tag=in_end] at @s run fill ~24 ~4 ~24 ~-24 ~-4 ~-24 end_stone 0 replace sand",
+					"/execute as @a[tag=in_end] at @s run fill ~24 ~4 ~24 ~-24 ~-4 ~-24 end_bricks 0 replace sand",
+					"/execute as @a[tag=in_end] at @s run kill @e[type=item,r=100,name=\"Arena\"]",
+					"/execute as @a[tag=in_end] at @s run kill @e[type=item,r=100,name=\"Sand\"]",
+					"/execute as @e[type=ghast,family=!from_endercrystal] at @s run event entity @s ha:despawn",
+					"/execute as @a[tag=in_end] at @s if block ~~-1~ bedrock run effect @s levitation 9 12 true",
+					"/execute as @a[tag=in_end] at @s if block ~~-1~ bedrock run effect @s levitation 9 12 true"
 				]
 			}
 		},
@@ -80,46 +80,46 @@
 			"loop": true,
 			"timeline": {
 				"2.0": [
-					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+					"/execute as @r[tag=in_end] at @s run summon lightning_bolt ~ ~ ~"
 				],
 				"4.0": [
-					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+					"/execute as @r[tag=in_end] at @s run summon lightning_bolt ~ ~ ~"
 				],
 				"6.0": [
-					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+					"/execute as @r[tag=in_end] at @s run summon lightning_bolt ~ ~ ~"
 				],
 				"9.0": [
-					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+					"/execute as @r[tag=in_end] at @s run summon lightning_bolt ~ ~ ~"
 				],
 				"10.5": [
-					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+					"/execute as @r[tag=in_end] at @s run summon lightning_bolt ~ ~ ~"
 				],
 				"15.0": [
-					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+					"/execute as @r[tag=in_end] at @s run summon lightning_bolt ~ ~ ~"
 				],
 				"20.0": [
-					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+					"/execute as @r[tag=in_end] at @s run summon lightning_bolt ~ ~ ~"
 				],
 				"25.0": [
-					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+					"/execute as @r[tag=in_end] at @s run summon lightning_bolt ~ ~ ~"
 				],
 				"30.2": [
-					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+					"/execute as @r[tag=in_end] at @s run summon lightning_bolt ~ ~ ~"
 				],
 				"35.0": [
-					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+					"/execute as @r[tag=in_end] at @s run summon lightning_bolt ~ ~ ~"
 				],
 				"40.0": [
-					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+					"/execute as @r[tag=in_end] at @s run summon lightning_bolt ~ ~ ~"
 				],
 				"45.0": [
-					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+					"/execute as @r[tag=in_end] at @s run summon lightning_bolt ~ ~ ~"
 				],
 				"49.0": [
-					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+					"/execute as @r[tag=in_end] at @s run summon lightning_bolt ~ ~ ~"
 				],
 				"50.0": [
-					"/execute @r[tag=in_end] ~ ~ ~ summon lightning_bolt ~ ~ ~"
+					"/execute as @r[tag=in_end] at @s run summon lightning_bolt ~ ~ ~"
 				]
 			}
 		},
@@ -128,40 +128,40 @@
 			"loop": false,
 			"timeline": {
 				"0.0": [
-					"/execute @e[tag=!started,family=loop] ~ ~ ~ effect @a[tag=in_end] night_vision 10 1 true"
+					"/execute as @e[tag=!started,family=loop] at @s run effect @a[tag=in_end] night_vision 10 1 true"
 				],
 				"1.0": [
-					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+					"/execute as @e[tag=!started,family=loop] at @s run playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
 				],
 				"2.0": [
-					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+					"/execute as @e[tag=!started,family=loop] at @s run playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
 				],
 				"3.0": [
-					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+					"/execute as @e[tag=!started,family=loop] at @s run playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
 				],
 				"4.0": [
-					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+					"/execute as @e[tag=!started,family=loop] at @s run playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
 				],
 				"5.0": [
-					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+					"/execute as @e[tag=!started,family=loop] at @s run playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
 				],
 				"6.0": [
-					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+					"/execute as @e[tag=!started,family=loop] at @s run playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
 				],
 				"7.0": [
-					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+					"/execute as @e[tag=!started,family=loop] at @s run playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
 				],
 				"8.0": [
-					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+					"/execute as @e[tag=!started,family=loop] at @s run playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
 				],
 				"9.0": [
-					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
+					"/execute as @e[tag=!started,family=loop] at @s run playsound random.click @a[tag=in_end] ~ ~ ~ 900 2"
 				],
 				"9.7": [
-					"/execute @e[tag=!started,family=loop] ~ ~ ~ playsound random.levelup @a[tag=in_end] ~ ~ ~ 900 2"
+					"/execute as @e[tag=!started,family=loop] at @s run playsound random.levelup @a[tag=in_end] ~ ~ ~ 900 2"
 				],
 				"9.9": [
-					"/execute @e[tag=!started,family=loop] ~ ~ ~ execute @a[tag=in_end] ~ ~1 ~ summon ha:area_cloud_alert_damage ~ ~ ~ ha:summon_cloud",
+					"/execute as @e[tag=!started,family=loop] at @s run execute as @a[tag=in_end] at @s run summon ha:area_cloud_alert_damage ~ ~ ~ 0 0 ha:summon_cloud",
 					"/tag @s add started"
 				],
 				"10.1": [
@@ -174,7 +174,7 @@
 			"loop": true,
 			"timeline": {
 				"63.9": [
-					"/execute @r[tag=in_end] ~ ~ ~ summon ha:area_cloud_alert_damage ~ ~1 ~ ha:summon_start_timer"
+					"/execute as @r[tag=in_end] at @s run summon ha:area_cloud_alert_damage ~ ~1 ~ 0 0 ha:summon_start_timer"
 				]
 			}
 		}

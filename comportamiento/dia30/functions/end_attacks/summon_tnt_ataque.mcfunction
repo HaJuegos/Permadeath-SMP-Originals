@@ -2,56 +2,56 @@
 ## Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272
 
 playsound mob.wither.spawn @a ~~~ 32 1.5
-summon tnt ~8 ~40 ~-2 ha:spawn_from_attack 
-summon tnt ~8 ~40 ~2 ha:spawn_from_attack 
-summon tnt ~6 ~40 ~6 ha:spawn_from_attack 
-summon tnt ~2 ~40 ~8 ha:spawn_from_attack 
-summon tnt ~-2 ~40 ~8 ha:spawn_from_attack 
-summon tnt ~-6 ~40 ~6 ha:spawn_from_attack 
-summon tnt ~-8 ~40 ~2 ha:spawn_from_attack 
-summon tnt ~-8 ~40 ~-2 ha:spawn_from_attack 
-summon tnt ~-6 ~40 ~-6 ha:spawn_from_attack 
-summon tnt ~-2 ~40  ~-8 ha:spawn_from_attack 
-summon tnt ~2 ~40 ~-8 ha:spawn_from_attack 
-summon tnt ~6 ~40 ~-6 ha:spawn_from_attack 
-summon tnt ~8 ~40 ~-2 ha:spawn_from_attack 
-summon tnt ~8 ~40 ~2 ha:spawn_from_attack 
-summon tnt ~6 ~40 ~6 ha:spawn_from_attack 
-summon tnt ~2 ~40 ~8 ha:spawn_from_attack 
-summon tnt ~-2 ~40 ~8 ha:spawn_from_attack 
-summon tnt ~-6 ~40 ~6 ha:spawn_from_attack 
-summon tnt ~-8 ~40 ~2 ha:spawn_from_attack 
-summon tnt ~-8 ~40 ~-2 ha:spawn_from_attack 
-summon tnt ~-6 ~40 ~-6 ha:spawn_from_attack 
-summon tnt ~-2 ~40  ~-8 ha:spawn_from_attack 
-summon tnt ~2 ~40 ~-8 ha:spawn_from_attack 
-summon tnt ~6 ~40 ~-6 ha:spawn_from_attack 
-summon tnt ~8 ~40 ~-2 ha:spawn_from_attack 
-summon tnt ~8 ~40 ~ ha:spawn_from_attack 
-summon tnt ~8 ~40 ~2 ha:spawn_from_attack 
-summon tnt ~7 ~40 ~4 ha:spawn_from_attack 
-summon tnt ~6 ~40 ~6 ha:spawn_from_attack 
-summon tnt ~4 ~40 ~7 ha:spawn_from_attack 
-summon tnt ~2 ~40 ~8 ha:spawn_from_attack 
-summon tnt ~ ~40 ~8 ha:spawn_from_attack 
-summon tnt ~-2 ~40 ~8 ha:spawn_from_attack 
-summon tnt ~-4 ~40 ~7 ha:spawn_from_attack 
-summon tnt ~-6 ~40 ~6 ha:spawn_from_attack 
-summon tnt ~-7 ~40 ~4 ha:spawn_from_attack 
-summon tnt ~-8 ~40 ~2 ha:spawn_from_attack 
-summon tnt ~-8 ~40 ~ ha:spawn_from_attack 
-summon tnt ~-8 ~40 ~-2 ha:spawn_from_attack 
-summon tnt ~-7 ~40 ~-4 ha:spawn_from_attack 
-summon tnt ~-6 ~40 ~-6 ha:spawn_from_attack 
-summon tnt ~-4 ~40 ~-7 ha:spawn_from_attack 
-summon tnt ~-2 ~40 ~-8 ha:spawn_from_attack 
-summon tnt ~ ~40 ~-8 ha:spawn_from_attack 
-summon tnt ~2 ~40 ~-8 ha:spawn_from_attack 
-summon tnt ~4 ~40 ~-7 ha:spawn_from_attack 
-summon tnt ~6 ~40 ~-6 ha:spawn_from_attack 
-summon tnt ~7 ~40 ~-4 ha:spawn_from_attack 
-summon tnt ~ ~40 ~ ha:spawn_from_attack 
-summon tnt ~3 ~40 ~ ha:spawn_from_attack 
-summon tnt ~-3 ~40 ~ ha:spawn_from_attack 
-summon tnt ~ ~40 ~3 ha:spawn_from_attack 
-summon tnt ~ ~40 ~-3 ha:spawn_from_attack 
+summon tnt ~8 ~40 ~-2 0 0 ha:spawn_from_attack 
+summon tnt ~8 ~40 ~2 0 0 ha:spawn_from_attack 
+summon tnt ~6 ~40 ~6 0 0 ha:spawn_from_attack 
+summon tnt ~2 ~40 ~8 0 0 ha:spawn_from_attack 
+summon tnt ~-2 ~40 ~8 0 0 ha:spawn_from_attack 
+summon tnt ~-6 ~40 ~6 0 0 ha:spawn_from_attack 
+summon tnt ~-8 ~40 ~2 0 0 ha:spawn_from_attack 
+summon tnt ~-8 ~40 ~-2 0 0 ha:spawn_from_attack 
+summon tnt ~-6 ~40 ~-6 0 0 ha:spawn_from_attack 
+summon tnt ~-2 ~40  ~-8 0 0 ha:spawn_from_attack 
+summon tnt ~2 ~40 ~-8 0 0 ha:spawn_from_attack 
+summon tnt ~6 ~40 ~-6 0 0 ha:spawn_from_attack 
+summon tnt ~8 ~40 ~-2 0 0 ha:spawn_from_attack 
+summon tnt ~8 ~40 ~2 0 0 ha:spawn_from_attack 
+summon tnt ~6 ~40 ~6 0 0 ha:spawn_from_attack 
+summon tnt ~2 ~40 ~8 0 0 ha:spawn_from_attack 
+summon tnt ~-2 ~40 ~8 0 0 ha:spawn_from_attack 
+summon tnt ~-6 ~40 ~6 0 0 ha:spawn_from_attack 
+summon tnt ~-8 ~40 ~2 0 0 ha:spawn_from_attack 
+summon tnt ~-8 ~40 ~-2 0 0 ha:spawn_from_attack 
+summon tnt ~-6 ~40 ~-6 0 0 ha:spawn_from_attack 
+summon tnt ~-2 ~40  ~-8 0 0 ha:spawn_from_attack 
+summon tnt ~2 ~40 ~-8 0 0 ha:spawn_from_attack 
+summon tnt ~6 ~40 ~-6 0 0 ha:spawn_from_attack 
+summon tnt ~8 ~40 ~-2 0 0 ha:spawn_from_attack 
+summon tnt ~8 ~40 ~ 0 0 ha:spawn_from_attack 
+summon tnt ~8 ~40 ~2 0 0 ha:spawn_from_attack 
+summon tnt ~7 ~40 ~4 0 0 ha:spawn_from_attack 
+summon tnt ~6 ~40 ~6 0 0 ha:spawn_from_attack 
+summon tnt ~4 ~40 ~7 0 0 ha:spawn_from_attack 
+summon tnt ~2 ~40 ~8 0 0 ha:spawn_from_attack 
+summon tnt ~ ~40 ~8 0 0 ha:spawn_from_attack 
+summon tnt ~-2 ~40 ~8 0 0 ha:spawn_from_attack 
+summon tnt ~-4 ~40 ~7 0 0 ha:spawn_from_attack 
+summon tnt ~-6 ~40 ~6 0 0 ha:spawn_from_attack 
+summon tnt ~-7 ~40 ~4 0 0 ha:spawn_from_attack 
+summon tnt ~-8 ~40 ~2 0 0 ha:spawn_from_attack 
+summon tnt ~-8 ~40 ~ 0 0 ha:spawn_from_attack 
+summon tnt ~-8 ~40 ~-2 0 0 ha:spawn_from_attack 
+summon tnt ~-7 ~40 ~-4 0 0 ha:spawn_from_attack 
+summon tnt ~-6 ~40 ~-6 0 0 ha:spawn_from_attack 
+summon tnt ~-4 ~40 ~-7 0 0 ha:spawn_from_attack 
+summon tnt ~-2 ~40 ~-8 0 0 ha:spawn_from_attack 
+summon tnt ~ ~40 ~-8 0 0 ha:spawn_from_attack 
+summon tnt ~2 ~40 ~-8 0 0 ha:spawn_from_attack 
+summon tnt ~4 ~40 ~-7 0 0 ha:spawn_from_attack 
+summon tnt ~6 ~40 ~-6 0 0 ha:spawn_from_attack 
+summon tnt ~7 ~40 ~-4 0 0 ha:spawn_from_attack 
+summon tnt ~ ~40 ~ 0 0 ha:spawn_from_attack 
+summon tnt ~3 ~40 ~ 0 0 ha:spawn_from_attack 
+summon tnt ~-3 ~40 ~ 0 0 ha:spawn_from_attack 
+summon tnt ~ ~40 ~3 0 0 ha:spawn_from_attack 
+summon tnt ~ ~40 ~-3 0 0 ha:spawn_from_attack 

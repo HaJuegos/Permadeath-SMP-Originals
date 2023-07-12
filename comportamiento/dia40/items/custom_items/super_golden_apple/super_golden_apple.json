@@ -1,41 +1,28 @@
 /* Creado/Editado por: HaJuegos Cat!. Si necesitas mas informacion, escribeme en Discord: https://discord.com/users/714622708649951272 */
 /* Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272 */
 {
-	"format_version": "1.16.100",
+	"format_version": "1.10",
 	"minecraft:item": {
 		"description": {
-			"identifier": "ha:super_golden_apple",
-			"category": "items"
+			"identifier": "ha:super_golden_apple"
 		},
 		"components": {
-			"minecraft:use_duration": 1.6,
-			"minecraft:max_stack_size": 64,
-			"minecraft:foil": true,
-			"minecraft:can_destroy_in_creative": false,
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.items"
-			},
-			"minecraft:food": {
-				"on_consume": {
-					"event": "ha:efectos"
-				},
-				"nutrition": 4,
-				"can_always_eat": true,
-				"saturation_modifier": "supernatural"
-			},
-			"minecraft:icon": {
-				"texture": "apple_golden"
-			},
+			"minecraft:use_duration": 32,
+			"minecraft:stacked_by_data": true,
+			"minecraft:foil": false,
 			"minecraft:render_offsets": "apple",
-			"minecraft:use_animation": "eat"
-		},
-		"events": {
-			"ha:efectos": {
-				"run_command": {
-					"command": [
-						"effect @s health_boost 302 0 true"
-					]
-				}
+			"minecraft:food": {
+				"nutrition": 4,
+				"saturation_modifier": "supernatural",
+				"can_always_eat": true,
+				"effects": [
+					{
+						"name": "health_boost",
+						"chance": 1.0,
+						"duration": 302,
+						"amplifier": 0
+					}
+				]
 			}
 		}
 	}

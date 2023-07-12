@@ -15,7 +15,7 @@
 				},
 				"summon_entity": {
 					"on_entry": [
-						"/summon ghast ~ ~ ~ ha:from_ender_crystal",
+						"/summon ghast ~ ~ ~ 0 0 ha:from_ender_crystal",
 						"/summon ha:regenerate_ender_crystal ~ ~ ~"
 					]
 				}
@@ -33,7 +33,7 @@
 				},
 				"summon_entity": {
 					"on_entry": [
-						"/summon ghast ~ ~ ~ ha:from_ender_crystal"
+						"/summon ghast ~ ~ ~ 0 0 ha:from_ender_crystal"
 					]
 				}
 			}
@@ -57,7 +57,7 @@
 					"on_entry": [
 						"/kill @e[type=ha:area_cloud_white,x=0,y=67,z=0,r=10,type=!player]",
 						"/kill @e[type=minecraft:area_effect_cloud,x=0,y=67,z=0,r=10,type=!player]",
-						"/summon ha:area_cloud_white 0 64 0 ha:from_permademon"
+						"/summon ha:area_cloud_white 0 64 0 0 0 ha:from_permademon"
 					]
 				}
 			}
@@ -99,7 +99,7 @@
 						}
 					],
 					"on_entry": [
-						"/execute @r[tag=in_end] ~ ~ ~ function end_attacks/summon_tnt_ataque",
+						"/execute as @r[tag=in_end] at @s run function end_attacks/summon_tnt_ataque",
 						"@s ha:despawn"
 					]
 				},
@@ -110,7 +110,7 @@
 						}
 					],
 					"on_entry": [
-						"/execute @e[type=ha:regenerate_ender_crystal,c=1] ~ ~ ~ summon ender_crystal ~ ~ ~ ha:crystal_normal_spawn",
+						"/execute as @e[type=ha:regenerate_ender_crystal,c=1] at @s run summon ender_crystal ~ ~ ~ ha:crystal_normal_spawn",
 						"@s ha:despawn"
 					]
 				}

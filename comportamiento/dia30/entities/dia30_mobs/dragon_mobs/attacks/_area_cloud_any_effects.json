@@ -414,9 +414,9 @@
 			"ha:gray_loop_commands": {
 				"run_command": {
 					"command": [
-						"execute @s ~ ~ ~ effect @e[type=player,r=5] blindness 30 2 false",
-						"execute @s ~ ~ ~ effect @e[type=player,r=5] wither 30 5 false",
-						"execute @s ~ ~ ~ effect @e[type=player,r=5] weakness 30 3 false",
+						"execute as @s at @s run effect @e[type=player,r=5] blindness 30 2 false",
+						"execute as @s at @s run effect @e[type=player,r=5] wither 30 5 false",
+						"execute as @s at @s run effect @e[type=player,r=5] weakness 30 3 false",
 						"effect @s clear"
 					]
 				}
@@ -431,7 +431,7 @@
 			"ha:white_loop_commands": {
 				"run_command": {
 					"command": [
-						"execute @s ~ ~ ~ effect @e[type=player,r=5] clear",
+						"execute as @s at @s run effect @e[type=player,r=5] clear",
 						"effect @s clear"
 					]
 				}
@@ -446,7 +446,7 @@
 			"ha:purple_loop_commands": {
 				"run_command": {
 					"command": [
-						"execute @s ~ ~ ~ effect @e[type=player,r=5] fatal_poison 120 1 false"
+						"execute as @s at @s run effect @e[type=player,r=5] fatal_poison 120 1 false"
 					]
 				}
 			},
@@ -460,8 +460,8 @@
 			"ha:endermanboost_loop_commands": {
 				"run_command": {
 					"command": [
-						"execute @s ~ ~ ~ effect @e[type=enderman,r=10] resistance 20 2 false",
-						"execute @s ~ ~ ~ replaceitem entity @e[type=enderman,r=10] slot.weapon.offhand 1 totem",
+						"execute as @s at @s run effect @e[type=enderman,r=10] resistance 20 2 false",
+						"execute as @s at @s run replaceitem entity @e[type=enderman,r=10] slot.weapon.offhand 1 totem",
 						"effect @s clear"
 					]
 				}

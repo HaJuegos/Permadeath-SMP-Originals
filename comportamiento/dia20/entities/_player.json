@@ -291,9 +291,9 @@
 						"run_command": {
 							"command": [
 								"damage @s 0",
-								"particle minecraft:huge_explosion_emitter ~ ~ ~",
+								"particle minecraft:huge_explosion_emitter at @s run",
 								"particle minecraft:huge_explosion_emitter ~1 ~ ~",
-								"particle minecraft:huge_explosion_emitter ~ ~ ~1"
+								"particle minecraft:huge_explosion_emitter at @s run1"
 							]
 						}
 					},
@@ -307,9 +307,9 @@
 						"run_command": {
 							"command": [
 								"damage @s 0",
-								"particle minecraft:huge_explosion_emitter ~ ~ ~",
+								"particle minecraft:huge_explosion_emitter at @s run",
 								"particle minecraft:huge_explosion_emitter ~1 ~ ~",
-								"particle minecraft:huge_explosion_emitter ~ ~ ~1"
+								"particle minecraft:huge_explosion_emitter at @s run1"
 							]
 						}
 					}
@@ -319,7 +319,7 @@
 				"run_command": {
 					"command": [
 						"tag @s remove inbed",
-						"execute @s[tag=!ejecuted] ~ ~ ~ scoreboard players remove @e[type=ha:death_train,scores={dormir=!-1}] dormir 1",
+						"execute as @s[tag=!ejecuted] at @s run scoreboard players remove @e[type=ha:death_train,scores={dormir=!-1}] dormir 1",
 						"tag @s add ejecuted"
 					]
 				}
