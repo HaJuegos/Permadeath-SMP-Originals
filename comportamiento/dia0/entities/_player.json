@@ -291,7 +291,7 @@
 						"run_command": {
 							"command": [
 								"time set day",
-								"execute @s[tag=!inbed] ~ ~ ~ tellraw @a {\"rawtext\": [{\"text\":\"§a\"},{\"selector\":\"@s\"},{\"text\":\" fue a dormir, dulces sueños.\"}]}",
+								"execute as @s[tag=!inbed] at @s run tellraw @a {\"rawtext\": [{\"text\":\"§a\"},{\"selector\":\"@s\"},{\"text\":\" fue a dormir, dulces sueños.\"}]}",
 								"tag @s add inbed"
 							]
 						}
@@ -307,7 +307,7 @@
 							"command": [
 								"time set day",
 								"weather clear",
-								"execute @s[tag=!inbed] ~ ~ ~ tellraw @a {\"rawtext\": [{\"text\":\"§a\"},{\"selector\":\"@s\"},{\"text\":\" fue a dormir, dulces sueños.\"}]}",
+								"execute as @s[tag=!inbed] at @s run tellraw @a {\"rawtext\": [{\"text\":\"§a\"},{\"selector\":\"@s\"},{\"text\":\" fue a dormir, dulces sueños.\"}]}",
 								"tag @s add inbed"
 							]
 						}

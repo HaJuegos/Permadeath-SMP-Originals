@@ -110,7 +110,7 @@
 						}
 					],
 					"on_entry": [
-						"/execute as @e[type=ha:regenerate_ender_crystal,c=1] at @s run summon ender_crystal ~ ~ ~ ha:crystal_normal_spawn",
+						"/execute as @e[type=ha:regenerate_ender_crystal,c=1] at @s run summon ender_crystal ~ ~ ~ 0 0 ha:crystal_normal_spawn",
 						"@s ha:despawn"
 					]
 				}

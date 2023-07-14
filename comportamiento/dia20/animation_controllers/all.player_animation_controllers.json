@@ -50,13 +50,8 @@
 					]
 				},
 				"ejecuted": {
-					"transitions": [
-						{
-							"default": "(1.0)"
-						}
-					],
 					"on_entry": [
-						"/execute @s[tag=!wm] ~ ~ ~ function system/welcome_message"
+						"/execute as @s[tag=!wm] at @s run function system/welcome_message"
 					]
 				}
 			}

@@ -2,8 +2,8 @@
 ## Created/Edited by: HaCatto! If you need more information, write me on Discord: https://discord.com/users/714622708649951272
 
 playsound ui.new_player_sound
-title @a title §a¡Bienvenido!
-title @a subtitle Gracias por descargar el add-on :3
+title @s title §a¡Bienvenido!
+title @s subtitle Gracias por descargar el add-on :3
 particle minecraft:totem_particle ~~~
 particle minecraft:totem_particle ~1~~
 particle minecraft:totem_particle ~~~1

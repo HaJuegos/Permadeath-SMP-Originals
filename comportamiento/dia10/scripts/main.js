@@ -7,12 +7,13 @@ system.beforeEvents.watchdogTerminate.subscribe(eventData => {
 	eventData.cancel = true;
 });
 
-world.afterEvents.playerSpawn.subscribe(playerSpawned=> {
+world.afterEvents.playerSpawn.subscribe(playerSpawned => {
 	try {
 		let player = playerSpawned.player;
 		if (!player.hasTag("yaesta")) {
 			player.runCommandAsync(`function death_train/poner`);
-		} else if(!player.hasTag('setupend')) {
+		};
+		if (!player.hasTag("setupend")) {
 			player.runCommandAsync(`function system/setup_world`);
 		};
 	} catch {};

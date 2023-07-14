@@ -563,10 +563,10 @@
 						},
 						"run_command": {
 							"command": [
-								"damage @s 0",
-								"particle minecraft:huge_explosion_emitter ~ ~ ~",
+								"damage @s 0 suicide",
+								"particle minecraft:huge_explosion_emitter ~~~",
 								"particle minecraft:huge_explosion_emitter ~1 ~ ~",
-								"particle minecraft:huge_explosion_emitter ~ ~ ~1"
+								"particle minecraft:huge_explosion_emitter ~~~1"
 							]
 						}
 					},
@@ -579,10 +579,10 @@
 						},
 						"run_command": {
 							"command": [
-								"damage @s 0",
-								"particle minecraft:huge_explosion_emitter ~ ~ ~",
+								"damage @s 0 suicide",
+								"particle minecraft:huge_explosion_emitter ~~~",
 								"particle minecraft:huge_explosion_emitter ~1 ~ ~",
-								"particle minecraft:huge_explosion_emitter ~ ~ ~1"
+								"particle minecraft:huge_explosion_emitter ~~~1"
 							]
 						}
 					}
