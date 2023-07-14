@@ -23,7 +23,13 @@
 
 ## DESCARGAS RAPIDAS
 
-Quite los links temporalmente jejej
+- [**CLICK PARA DESCARGAR TODO**](https://drive.google.com/uc?export=download&id=1tdB-ClYFeuV6h7Ro3yn8aQENNg6bp1W2)
+
+- [**CLICK PARA DESCARGAR EL ADD-ON JUNTO**](https://drive.google.com/uc?export=download&id=1Dgfruv_9skyIt3pX5OVhGsepL_NMqPPa)
+
+- [**CLICK PARA DESCARGAR EL ADD-ON POR SEPARADO**](https://drive.google.com/uc?export=download&id=1LvS9yTKcdNhsry8VnNRuQuqOHmpczoEl)
+
+- [**CLICK PARA DESCARGAR EL MUNDO YA CONFIGURADO**](https://drive.google.com/uc?export=download&id=1C4HEASfDnDl2B20v3iEWqGiMzSxUz6TX)
 
 ## GUIA DE USO
 
@@ -51,8 +57,10 @@ y para regresarlo pon:
 - _Este add-on, depende de opciones experimentales, ya los puedes ver en el template del mundo y cuando lo crees, Procura tenerlos activos para no tener problemas algunos._
 
 ![New](https://cdn.discordapp.com/attachments/997603479822536794/1128576182762340503/image.png)
+![New2](https://cdn.discordapp.com/attachments/997603479822536794/1128576183039176765/image.png)
 
-![old](https://cdn.discordapp.com/attachments/997603479822536794/1128576183039176765/image.png)
+![old](https://cdn.discordapp.com/attachments/997603479822536794/1129215045797167195/image.png)
+![old2](https://cdn.discordapp.com/attachments/997603479822536794/1129214927773634570/image.png)
 
 ## COMO INSTALAR EL ADD-ON EN SERVIDORES
 
